@@ -4,8 +4,8 @@ import duoc.mantenciones.client.ClienteClient;
 import duoc.mantenciones.client.MecanicoClient;
 import duoc.mantenciones.client.VehiculoClient;
 import duoc.mantenciones.dto.MantencionesRequest;
-import duoc.mantenciones.exception.idMantencionNoEncontradaException;
-import duoc.mantenciones.exception.idVehiculoDuplicadoException;
+import duoc.mantenciones.exception.IdMantencionNoEncontradaException;
+import duoc.mantenciones.exception.IdVehiculoDuplicadoException;
 import duoc.mantenciones.model.Mantenciones;
 import duoc.mantenciones.repository.MantencionesRepository;
 import jakarta.transaction.Transactional;
@@ -40,7 +40,7 @@ public class MantencionesService {
 
     public Mantenciones guardarMantencion(MantencionesRequest request){
         if(mantencionesRepository.existsByIdVehiculo(request.getIdVehiculo())){
-            throw new idVehiculoDuplicadoException("No se puede realizar dos mantenciones al mismo tiempo al mismo vehiculo");
+            throw new IdVehiculoDuplicadoException("No se puede realizar dos mantenciones al mismo tiempo al mismo vehiculo");
         }
         Mantenciones mantenciones = crearDesdeRequest(request);
         return mantencionesRepository.save(mantenciones);
@@ -49,7 +49,7 @@ public class MantencionesService {
     public Mantenciones buscarPorId(Integer idMantencion){
         log.info("Buscando mantencion con id: {}", idMantencion);
         return mantencionesRepository.findById(idMantencion)
-                .orElseThrow(() -> new idMantencionNoEncontradaException("No se ha encontrado la mantencion con id: "+ idMantencion));
+                .orElseThrow(() -> new IdMantencionNoEncontradaException("No se ha encontrado la mantencion con id: "+ idMantencion));
     }
 
     public Mantenciones crearDesdeRequest(MantencionesRequest mantencionesRequest){
@@ -70,7 +70,7 @@ public class MantencionesService {
         Mantenciones mantenciones = buscarPorId(idMantencion);
         if (mantencionesRepository.existsByIdVehiculo(request.getIdVehiculo())
         ) {
-            throw new idVehiculoDuplicadoException("El vehiculo ya tiene una mantencion vigente");
+            throw new IdVehiculoDuplicadoException("El vehiculo ya tiene una mantencion vigente");
         }
 
         mantenciones.setFechaMantencion(request.getFechaMantencion());
