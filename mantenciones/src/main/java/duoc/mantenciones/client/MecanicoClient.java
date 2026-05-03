@@ -14,7 +14,7 @@ public class MecanicoClient {
         this.webClient = WebClient.builder().baseUrl(mecanicosServidor).build();
     }
 
-    public Map<String, Object> obtenerClienteId(Integer id,String token){
+    public Map<String, Object> obtenerMecanicoId(Integer id,String token){
         return this.webClient.get()
                 .uri("/{id}", id)
                 .header("Authorization", token)
