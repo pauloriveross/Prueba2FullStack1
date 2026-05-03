@@ -18,7 +18,7 @@ public class MecanicoController {
     @Autowired
     private MecanicoService mecanicoService;
 
-    //Listar Todos Los Mecanicos
+    //Listar Todos Los Mecánicos
     @GetMapping("/listar")
     public ResponseEntity<List<Mecanico>> listarMecanicos() {
         List<Mecanico> mecanicos = mecanicoService.listarTodos();
@@ -55,7 +55,7 @@ public class MecanicoController {
     }
 
 
-    //Error Simulado
+    //Error simulado
     @GetMapping("/error")
     public ResponseEntity<Void>simularError(){
         mecanicoService.simularError();;

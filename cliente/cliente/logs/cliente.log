@@ -1,0 +1,25 @@
+2026-05-03T00:12:20.520-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T00:12:20.524-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T00:12:20.526-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-03T00:12:20.561-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T00:12:40.805-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T00:12:48.937-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T00:14:12.998-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
+2026-05-03T00:15:17.340-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
+2026-05-03T00:44:38.890-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
+2026-05-03T00:44:38.909-04:00  WARN 6363 --- [cliente] [http-nio-8082-exec-9] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
+2026-05-03T00:45:25.935-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
+2026-05-03T00:45:25.937-04:00  WARN 6363 --- [cliente] [http-nio-8082-exec-1] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
+2026-05-03T00:56:29.571-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
+2026-05-03T00:56:29.578-04:00  WARN 6363 --- [cliente] [http-nio-8082-exec-3] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
+2026-05-03T00:56:41.023-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T00:56:59.678-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T00:57:06.734-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T01:24:08.950-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
+2026-05-03T01:24:44.638-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
+2026-05-03T01:24:52.810-04:00  INFO 6363 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
+2026-05-03T01:31:39.148-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T01:31:39.154-04:00  INFO 6363 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T01:31:39.159-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03T01:31:39.161-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-03T01:31:39.163-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

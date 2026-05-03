@@ -1,0 +1,39 @@
+2026-05-03T00:05:07.672-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T00:05:07.674-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T00:05:07.677-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-03T00:05:07.745-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-2] d.vehiculo.dto.GlobalExceptionHandler    : Error de validación en la ruta /api/v1/vehiculos
+2026-05-03T00:05:53.533-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: PCVJ61
+2026-05-03T00:07:07.898-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: PCVJ61
+2026-05-03T00:07:07.921-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-6] d.vehiculo.dto.GlobalExceptionHandler    : Ya existe un auto con esa patente en la ruta /api/v1/vehiculos
+2026-05-03T00:07:55.222-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: VDXW32
+2026-05-03T00:08:16.076-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
+2026-05-03T00:08:21.461-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:08:26.270-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-03T00:08:29.797-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 6
+2026-05-03T00:08:29.805-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-2] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 6 en la ruta /api/v1/vehiculos/6
+2026-05-03T00:08:36.126-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Eliminando Vehiculo con id: 6
+2026-05-03T00:08:36.127-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 6
+2026-05-03T00:08:36.132-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-4] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 6 en la ruta /api/v1/vehiculos/6
+2026-05-03T00:12:20.655-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-03T00:12:20.661-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-5] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 3 en la ruta /api/v1/vehiculos/3
+2026-05-03T00:12:40.820-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:12:48.960-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:14:13.014-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:15:17.362-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:31:43.828-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 6
+2026-05-03T00:31:43.833-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-4] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 6 en la ruta /api/v1/vehiculos/6
+2026-05-03T00:35:00.714-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-03T00:47:38.779-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
+2026-05-03T00:56:41.049-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-03T00:56:41.056-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-10] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 3 en la ruta /api/v1/vehiculos/3
+2026-05-03T00:56:59.690-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T00:57:06.746-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-03T01:24:08.987-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-05-03T01:24:08.996-04:00  WARN 6366 --- [vehiculo] [http-nio-8080-exec-3] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 7 en la ruta /api/v1/vehiculos/7
+2026-05-03T01:24:44.650-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-03T01:24:52.823-04:00  INFO 6366 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-03T01:32:00.152-04:00  INFO 6366 --- [vehiculo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T01:32:00.157-04:00  INFO 6366 --- [vehiculo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T01:32:00.162-04:00  INFO 6366 --- [vehiculo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03T01:32:00.166-04:00  INFO 6366 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-03T01:32:00.167-04:00  INFO 6366 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

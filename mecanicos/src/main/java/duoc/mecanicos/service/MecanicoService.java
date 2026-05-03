@@ -2,6 +2,7 @@ package duoc.mecanicos.service;
 
 import duoc.mecanicos.dto.MecanicoRequest;
 import duoc.mecanicos.exception.MecanicoNoEncontradoException;
+import duoc.mecanicos.exception.RutDuplicadoException;
 import duoc.mecanicos.model.Mecanico;
 import duoc.mecanicos.repository.MecanicoRepository;
 import jakarta.persistence.EntityExistsException;
@@ -34,13 +35,12 @@ public class MecanicoService {
                 .orElseThrow(() -> new MecanicoNoEncontradoException("No se encontro el mecanico con id: " + idMecanico));
     }
 
-    public @Transactional Mecanico crearDesdeRequest(MecanicoRequest request){
+    public Mecanico crearDesdeRequest(MecanicoRequest request){
         log.info("Creando cliente con rut: {}", request.getRutMecanico());
 
         if (mecanicoRepository.existsByRutMecanico(request.getRutMecanico())) {
             log.warn("Intento de registro duplicado para el RUT: {}", request.getRutMecanico());
-            // You could throw a custom exception here that your Handler catches
-            throw new EntityExistsException("El cliente con este RUT ya existe.");
+            throw new RutDuplicadoException("El rut ya se encuentra registrado por otro mecánico");
         }
         Mecanico mecanico = new Mecanico();
         mecanico.setRutMecanico(request.getRutMecanico());
@@ -51,8 +51,11 @@ public class MecanicoService {
     }
 
     public Mecanico actualizar(Integer idMecanico, MecanicoRequest request){
-        log.info("Actualizando Mecanico con id: {}", idMecanico);
+        log.info("Actualizando Mecánico con id: {}", idMecanico);
         Mecanico mecanico = buscarPorId(idMecanico);
+        if (mecanicoRepository.existsByRutMecanicoAndIdMecanicoNot(request.getRutMecanico(),idMecanico)) {
+            throw new RutDuplicadoException("El rut ya se encuentra registrado por otro mecánico");
+        }
         mecanico.setRutMecanico(request.getRutMecanico());
         mecanico.setNombreMecanico(request.getNombreMecanico());
         mecanico.setApellidoMecanico(request.getApellidoMecanico());
@@ -61,7 +64,7 @@ public class MecanicoService {
     }
 
     public void eliminar(Integer idMecanico){
-        log.info("Eliminando Mecanico con id: {}", idMecanico);
+        log.info("Eliminando Mecánico con id: {}", idMecanico);
         Mecanico mecanico = buscarPorId(idMecanico);
         mecanicoRepository.delete(mecanico);
     }
