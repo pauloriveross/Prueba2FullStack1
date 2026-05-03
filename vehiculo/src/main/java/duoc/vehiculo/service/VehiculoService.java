@@ -54,7 +54,7 @@ public class VehiculoService {
     public Vehiculo actualizar(Integer idVehiculo, VehiculoRequest vehiculoRequest){
         log.info("Actualizando Vehiculo con id: {}",idVehiculo);
         Vehiculo vehiculo = buscarPorId(idVehiculo);
-        boolean existe = vehiculoRepository.existsByPatenteAndIdNot(vehiculoRequest.getPatenteVehiculo(),idVehiculo);
+        boolean existe = vehiculoRepository.existsByPatenteVehiculoAndIdVehiculoNot(vehiculoRequest.getPatenteVehiculo(),idVehiculo);
         if(existe){
             throw new PatenteDuplicadaException("Ya existe un auto con esa patente");
         }

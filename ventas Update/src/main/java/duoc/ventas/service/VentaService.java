@@ -46,7 +46,6 @@ public class VentaService {
 
 
     public Venta guardarVenta(VentaRequest request,String token){
-
         Integer precioOficial=0;
         //Cliente
         try {
@@ -56,7 +55,6 @@ public class VentaService {
 
             throw new IdClienteNoEncontrado("No existe el cliente con el id " + request.getIdCliente());
         }
-
         //Vehiculo
         try {
             Map<String, Object> datosVehiculo = vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(),token);
@@ -66,7 +64,6 @@ public class VentaService {
 
             throw new IdVehiculoNoEncontrado("No existe vehiculo con el id " + request.getIdVehiculo());
         }
-
         //Vendedor
         try {
             vendedorClient.obtenerVendedorId(request.getIdVendedor(),token);

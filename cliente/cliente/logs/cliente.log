@@ -23,3 +23,72 @@
 2026-05-03T01:31:39.159-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-05-03T01:31:39.161-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-05-03T01:31:39.163-04:00  INFO 6363 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-03T17:03:59.388-04:00  INFO 11085 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 11085 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente)
+2026-05-03T17:03:59.389-04:00  INFO 11085 --- [cliente] [main] duoc.cliente.ClienteApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-03T17:03:59.605-04:00  INFO 11085 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-03T17:03:59.623-04:00  INFO 11085 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-05-03T17:03:59.781-04:00  INFO 11085 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-05-03T17:03:59.786-04:00  INFO 11085 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-03T17:03:59.786-04:00  INFO 11085 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-03T17:03:59.799-04:00  INFO 11085 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 396 ms
+2026-05-03T17:03:59.944-04:00  INFO 11085 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-03T17:04:00.053-04:00  INFO 11085 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e2c6fd6
+2026-05-03T17:04:00.053-04:00  INFO 11085 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-03T17:04:00.070-04:00  INFO 11085 --- [cliente] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_cliente (MySQL 8.0)
+2026-05-03T17:04:00.093-04:00  INFO 11085 --- [cliente] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.012s)
+2026-05-03T17:04:00.100-04:00  INFO 11085 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_cliente`: 5
+2026-05-03T17:04:00.102-04:00  INFO 11085 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Schema `db_cliente` is up to date. No migration necessary.
+2026-05-03T17:04:00.133-04:00  INFO 11085 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-03T17:04:00.153-04:00  INFO 11085 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-03T17:04:00.283-04:00  INFO 11085 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-03T17:04:00.318-04:00  INFO 11085 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_cliente]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_cliente/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-03T17:04:00.583-04:00  INFO 11085 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-03T17:04:00.602-04:00  INFO 11085 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03T17:04:00.628-04:00  INFO 11085 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-03T17:04:00.699-04:00  WARN 11085 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-03T17:04:00.719-04:00  WARN 11085 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e4e1bc78-d8d0-4054-ab44-604f38984856
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-03T17:04:00.721-04:00  INFO 11085 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-03T17:04:00.869-04:00  INFO 11085 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-05-03T17:04:00.871-04:00  INFO 11085 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 1.705 seconds (process running for 1.97)
+2026-05-03T17:57:51.357-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-03T17:57:51.357-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-03T17:57:51.360-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-03T17:57:51.413-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T17:58:02.462-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T17:58:59.076-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 100
+2026-05-03T17:58:59.085-04:00  WARN 11085 --- [cliente] [http-nio-8082-exec-3] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 100 en la ruta /api/v1/clientes/100
+2026-05-03T17:59:05.442-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 7
+2026-05-03T17:59:57.096-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
+2026-05-03T18:01:18.588-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 100
+2026-05-03T18:01:18.591-04:00  WARN 11085 --- [cliente] [http-nio-8082-exec-6] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 100 en la ruta /api/v1/clientes/100
+2026-05-03T18:01:24.085-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
+2026-05-03T18:02:52.654-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
+2026-05-03T18:02:52.660-04:00  WARN 11085 --- [cliente] [http-nio-8082-exec-10] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
+2026-05-03T18:03:04.201-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:10.119-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:20.229-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:41.959-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:47.062-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:51.135-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:03:55.430-04:00  INFO 11085 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
+2026-05-03T18:04:45.622-04:00  INFO 11085 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03T18:04:45.626-04:00  INFO 11085 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-03T18:04:45.630-04:00  INFO 11085 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03T18:04:45.632-04:00  INFO 11085 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-03T18:04:45.634-04:00  INFO 11085 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
