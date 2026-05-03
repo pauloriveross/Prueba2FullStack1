@@ -24,32 +24,42 @@ public class MecanicoService {
     @Autowired
     private MecanicoRepository mecanicoRepository;
 
+    //Listar
     public List<Mecanico> listarTodos(){
         log.info("Listando todos los clientes");
         return mecanicoRepository.findAll();
     }
 
+    //Buscar
     public Mecanico buscarPorId(Integer idMecanico){
         log.info("Buscando cliente con id: {}", idMecanico);
         return mecanicoRepository.findById(idMecanico)
                 .orElseThrow(() -> new MecanicoNoEncontradoException("No se encontro el mecanico con id: " + idMecanico));
     }
 
-    public Mecanico crearDesdeRequest(MecanicoRequest request){
-        log.info("Creando cliente con rut: {}", request.getRutMecanico());
-
-        if (mecanicoRepository.existsByRutMecanico(request.getRutMecanico())) {
-            log.warn("Intento de registro duplicado para el RUT: {}", request.getRutMecanico());
-            throw new RutDuplicadoException("El rut ya se encuentra registrado por otro mecánico");
+    //Guardar
+    public Mecanico guardarMecanico(MecanicoRequest request){
+        if(mecanicoRepository.existsByRutMecanico(request.getRutMecanico())){
+            throw new RutDuplicadoException("No se puede registrar el rut : " + request.getRutMecanico() +
+                    " porque esta duplicado.");
         }
+        Mecanico mecanico = crearxRequest(request);
+        return mecanicoRepository.save(mecanico);
+    }
+
+
+    //Request
+    public Mecanico crearxRequest(MecanicoRequest request){
+        log.info("Creando Mecanico Con Run :{}",request.getRutMecanico());
         Mecanico mecanico = new Mecanico();
         mecanico.setRutMecanico(request.getRutMecanico());
         mecanico.setNombreMecanico(request.getNombreMecanico());
         mecanico.setApellidoMecanico(request.getApellidoMecanico());
-
-        return mecanicoRepository.save(mecanico);
+        return mecanico;
     }
 
+
+    //Actualizar
     public Mecanico actualizar(Integer idMecanico, MecanicoRequest request){
         log.info("Actualizando Mecánico con id: {}", idMecanico);
         Mecanico mecanico = buscarPorId(idMecanico);
@@ -63,12 +73,14 @@ public class MecanicoService {
         return mecanicoRepository.save(mecanico);
     }
 
+    //Eliminar
     public void eliminar(Integer idMecanico){
         log.info("Eliminando Mecánico con id: {}", idMecanico);
         Mecanico mecanico = buscarPorId(idMecanico);
         mecanicoRepository.delete(mecanico);
     }
 
+    //Error simulado
     public void simularError(){
         log.error("Se ejecuto el metodo para simular un error interno");
         throw new RuntimeException("Error simulando para pruebas");

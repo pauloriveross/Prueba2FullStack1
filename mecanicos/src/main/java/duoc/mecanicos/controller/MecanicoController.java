@@ -42,7 +42,7 @@ public class MecanicoController {
     //Agregar Nuevo Mecanico
     @PostMapping
     public ResponseEntity<Mecanico> guardar(@Valid @RequestBody MecanicoRequest request) {
-        Mecanico mecanicoGuardado = mecanicoService.crearDesdeRequest(request);
+        Mecanico mecanicoGuardado = mecanicoService.guardarMecanico(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(mecanicoGuardado);
     }
 
