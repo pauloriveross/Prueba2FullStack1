@@ -193,3 +193,207 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2026-05-04T11:23:51.960-04:00  INFO 8240 --- [vehiculo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-05-04T11:23:51.963-04:00  INFO 8240 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-05-04T11:23:51.968-04:00  INFO 8240 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-04T16:45:17.788-04:00  INFO 15954 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Starting VehiculoApplication using Java 21.0.1 with PID 15954 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo)
+2026-05-04T16:45:17.789-04:00  INFO 15954 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-05-04T16:45:17.991-04:00  INFO 15954 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04T16:45:18.007-04:00  INFO 15954 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-05-04T16:45:18.170-04:00  INFO 15954 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-04T16:45:18.175-04:00  INFO 15954 --- [vehiculo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-04T16:45:18.175-04:00  INFO 15954 --- [vehiculo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-04T16:45:18.187-04:00  INFO 15954 --- [vehiculo] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 386 ms
+2026-05-04T16:45:18.258-04:00  INFO 15954 --- [vehiculo] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-04T16:45:18.277-04:00  INFO 15954 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-04T16:45:18.401-04:00  INFO 15954 --- [vehiculo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04T16:45:18.413-04:00  INFO 15954 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-04T16:45:18.525-04:00  INFO 15954 --- [vehiculo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6159fb3c
+2026-05-04T16:45:18.525-04:00  INFO 15954 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-04T16:45:18.553-04:00  INFO 15954 --- [vehiculo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_vehiculo]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_vehiculo/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04T16:45:18.870-04:00  INFO 15954 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04T16:45:18.890-04:00  INFO 15954 --- [vehiculo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04T16:45:18.916-04:00  INFO 15954 --- [vehiculo] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-04T16:45:18.990-04:00  WARN 15954 --- [vehiculo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04T16:45:19.013-04:00  WARN 15954 --- [vehiculo] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5c825a85-f5a1-4609-9ad5-8733ac06d1e8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-04T16:45:19.015-04:00  INFO 15954 --- [vehiculo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-04T16:45:19.163-04:00  INFO 15954 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-04T16:45:19.165-04:00  INFO 15954 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Started VehiculoApplication in 1.519 seconds (process running for 1.79)
+2026-05-04T16:56:10.658-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-04T16:56:10.658-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-04T16:56:10.660-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-04T16:56:10.706-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
+2026-05-04T16:57:17.924-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 5
+2026-05-04T16:57:17.940-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-4] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 5 en la ruta /api/v1/vehiculos/5
+2026-05-04T16:57:21.678-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-04T16:57:28.033-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: XERT21
+2026-05-04T16:57:35.753-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: XERT21
+2026-05-04T16:57:35.759-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-8] d.vehiculo.dto.GlobalExceptionHandler    : Ya existe un auto con esa patente en la ruta /api/v1/vehiculos
+2026-05-04T16:57:41.737-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
+2026-05-04T16:58:16.104-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Actualizando Vehiculo con id: 3
+2026-05-04T16:58:16.105-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T16:58:16.126-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-10] d.vehiculo.dto.GlobalExceptionHandler    : Ya existe un auto con esa patente en la ruta /api/v1/vehiculos/3
+2026-05-04T16:58:29.624-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-2] d.vehiculo.dto.GlobalExceptionHandler    : Error de validación en la ruta /api/v1/vehiculos/3
+2026-05-04T16:58:40.180-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Actualizando Vehiculo con id: 3
+2026-05-04T16:58:40.180-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T16:58:40.198-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-3] d.vehiculo.dto.GlobalExceptionHandler    : Ya existe un auto con esa patente en la ruta /api/v1/vehiculos/3
+2026-05-04T16:58:49.946-04:00 ERROR 15954 --- [vehiculo] [http-nio-8080-exec-5] d.vehiculo.dto.GlobalExceptionHandler    : Error inesperado en la ruta /api/v1/vehiculos/3
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:434) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:116) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1157) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at duoc.vehiculo.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:49) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-05-04T16:59:22.388-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: VDXW32
+2026-05-04T16:59:22.391-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-6] d.vehiculo.dto.GlobalExceptionHandler    : Ya existe un auto con esa patente en la ruta /api/v1/vehiculos
+2026-05-04T16:59:39.946-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-7] d.vehiculo.dto.GlobalExceptionHandler    : Error de validación en la ruta /api/v1/vehiculos
+2026-05-04T16:59:51.600-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Eliminando Vehiculo con id: 20
+2026-05-04T16:59:51.600-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T16:59:51.605-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-9] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T16:59:55.833-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Eliminando Vehiculo con id: 1
+2026-05-04T16:59:55.834-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-04T17:08:48.126-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T17:08:48.131-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-1] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T17:09:23.439-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:09:30.252-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:09:48.584-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:10:28.620-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:10:45.703-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 10
+2026-05-04T17:10:45.708-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-7] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 10 en la ruta /api/v1/vehiculos/10
+2026-05-04T17:12:18.405-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:12:47.695-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
+2026-05-04T17:13:17.665-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Actualizando Vehiculo con id: 3
+2026-05-04T17:13:17.666-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:15:53.862-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:16:36.002-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T17:16:36.006-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-6] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T17:16:50.019-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T17:16:50.023-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-7] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T17:16:54.372-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T17:16:54.376-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-8] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T17:18:01.870-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 4
+2026-05-04T17:18:01.873-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-10] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 4 en la ruta /api/v1/vehiculos/4
+2026-05-04T17:18:19.372-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:18:25.505-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:18:28.239-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:18:31.985-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 4
+2026-05-04T17:18:31.989-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-5] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 4 en la ruta /api/v1/vehiculos/4
+2026-05-04T17:18:36.907-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:26:38.875-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 1
+2026-05-04T17:26:38.877-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-7] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 1 en la ruta /api/v1/vehiculos/1
+2026-05-04T17:26:46.845-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:27:18.195-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:27:30.084-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 20
+2026-05-04T17:27:30.088-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-10] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 20 en la ruta /api/v1/vehiculos/20
+2026-05-04T17:27:38.065-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:29:33.575-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 3
+2026-05-04T17:29:41.895-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 4
+2026-05-04T17:29:41.899-04:00  WARN 15954 --- [vehiculo] [http-nio-8080-exec-5] d.vehiculo.dto.GlobalExceptionHandler    : No se encontro vehiculo con id: 4 en la ruta /api/v1/vehiculos/4
+2026-05-04T17:29:45.666-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:33:36.340-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:35:12.950-04:00  INFO 15954 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 2
+2026-05-04T17:35:48.161-04:00  INFO 15954 --- [vehiculo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-04T17:35:48.166-04:00  INFO 15954 --- [vehiculo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-04T17:35:48.169-04:00  INFO 15954 --- [vehiculo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04T17:35:48.171-04:00  INFO 15954 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-04T17:35:48.172-04:00  INFO 15954 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
