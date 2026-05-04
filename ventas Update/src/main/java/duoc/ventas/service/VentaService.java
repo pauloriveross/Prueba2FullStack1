@@ -40,7 +40,7 @@ public class VentaService {
     public Venta buscarVentaPorId (Integer id){
         log.info("Buscando Venta con id {}",id);
         return ventaRepository.findById(id).orElseThrow(()->
-                new VentaNoEncontrada("No se encontró la venta con el id " + id));
+                new VentaNoEncontradaException("No se encontró la venta con el id " + id));
     }
 
 
@@ -53,7 +53,7 @@ public class VentaService {
         } catch (Exception e) {
             log.warn("Validacion fallida: Cliente {} no existe ",request.getIdCliente());
 
-            throw new IdClienteNoEncontrado("No existe el cliente con el id " + request.getIdCliente());
+            throw new IdClienteNoEncontradoException("No existe el cliente con el id " + request.getIdCliente());
         }
         //Vehiculo
         try {
@@ -62,19 +62,19 @@ public class VentaService {
         } catch (Exception e) {
             log.warn("Error al recuperar vehiculo {}: ID no encontrado o fallo de red", request.getIdVehiculo());
 
-            throw new IdVehiculoNoEncontrado("No existe vehiculo con el id " + request.getIdVehiculo());
+            throw new IdVehiculoNoEncontradoException("No existe vehiculo con el id " + request.getIdVehiculo());
         }
         //Vendedor
         try {
             vendedorClient.obtenerVendedorId(request.getIdVendedor(),token);
         } catch (Exception e) {
             log.warn("Validación fallida: Vendedor {} no existe", request.getIdVendedor());
-            throw new IdVendedorNoEncontrado("El vendedor con ID " + request.getIdVendedor() + " no existe.");
+            throw new IdVendedorNoEncontradoException("El vendedor con ID " + request.getIdVendedor() + " no existe.");
         }
 
     //Vehiculo duplicado
         if(ventaRepository.existsByIdVehiculo(request.getIdVehiculo())){
-            throw new IdVehiculoDuplicado("No se puede crear la venta con id  : " + request.getIdVehiculo() +
+            throw new IdVehiculoDuplicadoException("No se puede crear la venta con id  : " + request.getIdVehiculo() +
                     " porque ya esta asignado a otra venta ");
         }
         Venta venta = crearDesdeRequest(request);
@@ -103,7 +103,7 @@ public class VentaService {
         log.info ("Actualizando Venta con id {}",idVenta);
         Venta venta = buscarVentaPorId(idVenta);
         if(ventaRepository.existsByIdVehiculoAndIdVenta(request.getIdVehiculo(),idVenta)){
-            throw new IdVehiculoDuplicado("El ID Del Vehiculo se encuentra asignado a otra venta ");
+            throw new IdVehiculoDuplicadoException("El ID Del Vehiculo se encuentra asignado a otra venta ");
         }
         validarCliente(request.getIdCliente(),token);
         Integer precioNuevo = getPrecioVehiculo(request.getIdVehiculo(), token);
@@ -129,7 +129,7 @@ public class VentaService {
         try {
             clienteClient.obtenerClienteId(idCLiente,token);
         } catch (Exception e) {
-            throw new IdClienteNoEncontrado("No existe un cliente con el ID "+ idCLiente);
+            throw new IdClienteNoEncontradoException("No existe un cliente con el ID "+ idCLiente);
         }
     }
 
@@ -137,7 +137,7 @@ public class VentaService {
         try {
             vendedorClient.obtenerVendedorId(idVendedor,token);
         } catch (Exception e) {
-            throw new IdVendedorNoEncontrado("No existe un vendedor con el ID " + idVendedor);
+            throw new IdVendedorNoEncontradoException("No existe un vendedor con el ID " + idVendedor);
         }
     }
 
@@ -148,7 +148,7 @@ public class VentaService {
 
 
         } catch (Exception e) {
-            throw new IdVehiculoNoEncontrado("Vehiculo con el ID " + idVehiculo + " no encontrado");
+            throw new IdVehiculoNoEncontradoException("Vehiculo con el ID " + idVehiculo + " no encontrado");
         }
     }
 

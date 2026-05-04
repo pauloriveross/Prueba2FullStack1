@@ -1,9 +1,9 @@
 package duoc.mantenciones.repository;
 
-import duoc.mantenciones.model.Mantenciones;
+import duoc.mantenciones.model.Mantencion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MantencionesRepository  extends JpaRepository<Mantenciones,Integer> {
+public interface MantencionRepository extends JpaRepository<Mantencion,Integer> {
     boolean existsByIdVehiculo(Integer idMantencion);
     boolean existsByIdVehiculoAndIdMantencion(Integer idVehiculo,Integer idMantencion);
 

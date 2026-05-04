@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>duoc</groupId>
-	<artifactId>mantenciones</artifactId>
+	<artifactId>mantencion</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

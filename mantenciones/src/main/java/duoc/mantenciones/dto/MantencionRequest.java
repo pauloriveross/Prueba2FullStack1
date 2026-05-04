@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.util.Date;
 
-public class MantencionesRequest {
+public class MantencionRequest {
 
     @NotNull(message = "La fecha es obligatoria para registrar una mantencion")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -26,7 +26,7 @@ public class MantencionesRequest {
     @NotNull(message = "El id del cliente es obligatorio")
     private Integer idCliente;
 
-    public MantencionesRequest(){}
+    public MantencionRequest(){}
 
     public Date getFechaMantencion() {
         return fechaMantencion;

@@ -42,23 +42,8 @@ public class GlobalExceptionHandler  {
     }
 
 
-    @ExceptionHandler(IdVehiculoNoEncontrado.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVehiculoNoEncontrado(IdVehiculoNoEncontrado ex,
-                                                                     HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-    @ExceptionHandler(IdClienteNoEncontrado.class)
-    public ResponseEntity<ErrorResponse> ManejarIdClienteNoEncontrado(IdClienteNoEncontrado ex,
+    @ExceptionHandler(IdVehiculoNoEncontradoException.class)
+    public ResponseEntity<ErrorResponse> ManejarIdVehiculoNoEncontrado(IdVehiculoNoEncontradoException ex,
                                                                        HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
@@ -72,10 +57,9 @@ public class GlobalExceptionHandler  {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
-
-    @ExceptionHandler(VentaNoEncontrada.class)
-    public ResponseEntity<ErrorResponse> ManejarVentaNoEncontrada(VentaNoEncontrada ex,
-                                                                       HttpServletRequest request) {
+    @ExceptionHandler(IdClienteNoEncontradoException.class)
+    public ResponseEntity<ErrorResponse> ManejarIdClienteNoEncontrado(IdClienteNoEncontradoException ex,
+                                                                      HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
                 HttpStatus.NOT_FOUND.value(),
@@ -88,9 +72,25 @@ public class GlobalExceptionHandler  {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
-    @ExceptionHandler(IdVendedorNoEncontrado.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVendedorNoEncontrado(IdVendedorNoEncontrado ex,
+
+    @ExceptionHandler(VentaNoEncontradaException.class)
+    public ResponseEntity<ErrorResponse> ManejarVentaNoEncontrada(VentaNoEncontradaException ex,
                                                                   HttpServletRequest request) {
+        ErrorResponse error = new ErrorResponse(
+                LocalDateTime.now(),
+                HttpStatus.NOT_FOUND.value(),
+                HttpStatus.NOT_FOUND.getReasonPhrase(),
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+
+        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
+    }
+
+    @ExceptionHandler(IdVendedorNoEncontradoException.class)
+    public ResponseEntity<ErrorResponse> ManejarIdVendedorNoEncontrado(IdVendedorNoEncontradoException ex,
+                                                                       HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
                 HttpStatus.NOT_FOUND.value(),
@@ -120,8 +120,8 @@ public class GlobalExceptionHandler  {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
 
-    @ExceptionHandler(IdVehiculoDuplicado.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVehiculoDuplicado( IdVehiculoDuplicado ex,
+    @ExceptionHandler(IdVehiculoDuplicadoException.class)
+    public ResponseEntity<ErrorResponse> ManejarIdVehiculoDuplicado( IdVehiculoDuplicadoException ex,
                                                                      HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
