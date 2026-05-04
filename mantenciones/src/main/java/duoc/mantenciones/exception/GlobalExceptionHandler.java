@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -42,8 +43,12 @@ public class GlobalExceptionHandler  {
     }
 
 
-    @ExceptionHandler(IdVehiculoNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVehiculoNoEncontrado(IdVehiculoNoEncontradoException ex,
+    @ExceptionHandler({IdVehiculoNoEncontradoException.class,
+            IdClienteNoEncontradoException.class,
+            IdMantencionNoEncontradaException.class,
+            IdMecanicoNoEncontradoException.class,
+    })
+    public ResponseEntity<ErrorResponse> ManejarNoEncontrado(RuntimeException ex,
                                                                        HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
@@ -56,54 +61,6 @@ public class GlobalExceptionHandler  {
         log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
-
-    @ExceptionHandler(IdClienteNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdClienteNoEncontrado(IdClienteNoEncontradoException ex,
-                                                                      HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-
-    @ExceptionHandler(IdMantencionNoEncontradaException.class)
-    public ResponseEntity<ErrorResponse> ManejarMantencionNoEncontrada(IdMantencionNoEncontradaException ex,
-                                                                  HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-    @ExceptionHandler(IdMecanicoNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdMecanicoNoEncontrado(IdMecanicoNoEncontradoException ex,
-                                                                       HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-
 
 
     @ExceptionHandler(Exception.class)
@@ -131,8 +88,24 @@ public class GlobalExceptionHandler  {
                 request.getRequestURI()
         );
 
-        log.warn("Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo {}: {}", request.getRequestURI(), ex.getMessage());
+        log.warn("Intento de mantención fallido , ya que no se puede efectuar dos mantenciones al mismo vehiculo {}: {}", request.getRequestURI(), ex.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(error);
+    }
+
+
+    @ExceptionHandler(HttpClientErrorException.class)
+    public ResponseEntity<ErrorResponse> manejarErroresExternos(HttpClientErrorException ex ,
+                                                                HttpServletRequest request){
+        ErrorResponse error = new ErrorResponse(
+                LocalDateTime.now(),
+                ex.getStatusCode().value(),
+                "Error en comunicación externa",
+                "El microservicio respondió : " + ex.getStatusText(),
+                request.getRequestURI()
+        );
+
+        log.error("Error en la comunicación con los demás microservicios en {}: {}",request.getRequestURI(),ex.getMessage());
+        return ResponseEntity.status(ex.getStatusCode()).body(error);
     }
 
 

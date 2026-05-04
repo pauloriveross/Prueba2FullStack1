@@ -7,20 +7,20 @@ import java.util.Date;
 
 public class MantencionRequest {
 
-    @NotNull(message = "La fecha es obligatoria para registrar una mantencion")
+    @NotNull(message = "La fecha es obligatoria para registrar una mantención")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date fechaMantencion;
 
-    @NotNull(message = "El precio de la mantencion es obligatorio")
+    @NotNull(message = "El precio de la mantención es obligatorio")
     private Integer precioMantencion;
 
-    @NotBlank(message = "El tipo de mantencion es obligatorio")
+    @NotBlank(message = "El tipo de mantención es obligatorio")
     private String tipoMantencion;
 
     @NotNull(message = "El id del vehiculo es obligatorio")
     private Integer idVehiculo;
 
-    @NotNull(message = "El id del mecanico es obligatorio")
+    @NotNull(message = "El id del mecánico es obligatorio")
     private Integer idMecanico;
 
     @NotNull(message = "El id del cliente es obligatorio")

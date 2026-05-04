@@ -1,9 +1,12 @@
 package duoc.mantenciones.client;
 import java.util.Map;
 
+import duoc.mantenciones.exception.IdMecanicoNoEncontradoException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 @Component
 public class MecanicoClient {
@@ -19,10 +22,11 @@ public class MecanicoClient {
                 .uri("/{id}", id)
                 .header("Authorization", token)
                 .retrieve()
-                .onStatus(status -> status.is4xxClientError(),
-                        response -> response.bodyToMono(String.class)
-                                .map(body -> new RuntimeException("Mecanico no encontrado no se puede realizar mantencion")))
-                .bodyToMono(Map.class)
+                .onStatus(status -> status.is4xxClientError(), response ->
+                        Mono.error(new IdMecanicoNoEncontradoException("Mecánico con ID " + id + " no existe")))
+                .onStatus(status -> status.is5xxServerError(), response ->
+                        Mono.error(new RuntimeException("Error de comunicación con el servicio de Mecánicos")))
+                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
                 .block();
     }
 }

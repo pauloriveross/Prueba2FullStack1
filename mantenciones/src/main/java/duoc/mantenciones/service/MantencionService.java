@@ -39,35 +39,13 @@ public class MantencionService {
     }
 
     public Mantencion guardarMantencion(MantencionRequest request, String token){
-        //Cliente
-        try {
-            clienteClient.obtenerClienteId(request.getIdCliente(),token);
-        } catch (Exception e) {
-            log.warn("Validacion fallida: Cliente {} no existe ",request.getIdCliente());
+       vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(), token);
+       mecanicoClient.obtenerMecanicoId(request.getIdMecanico(), token);
+       clienteClient.obtenerClienteId(request.getIdCliente(),token);
+       if(mantencionRepository.existsByIdVehiculo(request.getIdVehiculo())){
+           throw new IdVehiculoDuplicadoException("El vehiculo ya se encuentra registrado en otra mantención");
+       }
 
-            throw new IdClienteNoEncontradoException("No existe el cliente con el id " + request.getIdCliente());
-        }
-        //Vehiculo
-        try {
-            Map<String, Object> datosVehiculo = vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(),token);
-        } catch (Exception e) {
-            log.warn("Error al recuperar vehiculo {}: ID no encontrado o fallo de red", request.getIdVehiculo());
-
-            throw new IdVehiculoNoEncontradoException("No existe vehiculo con el id " + request.getIdVehiculo());
-        }
-        //Mecanico
-        try {
-            mecanicoClient.obtenerMecanicoId(request.getIdMecanico(),token);
-        } catch (Exception e) {
-            log.warn("Validación fallida: Vendedor {} no existe", request.getIdMecanico());
-            throw new IdMecanicoNoEncontradoException("El Mecanico con ID " + request.getIdMecanico() + " no existe.");
-        }
-
-        //Vehiculo duplicado
-        if(mantencionRepository.existsByIdVehiculo(request.getIdVehiculo())){
-            throw new IdVehiculoDuplicadoException("No se puede crear la mantención  con id  : " + request.getIdVehiculo() +
-                    " porque ya esta asignado a otra mantención ");
-        }
         Mantencion mantencion = crearDesdeRequest(request);
         return mantencionRepository.save(mantencion);
     }
@@ -92,14 +70,17 @@ public class MantencionService {
 
 
     public Mantencion actualizarMantencion(Integer idMantencion, MantencionRequest request, String token) {
-        log.info("Actualizando Mantencion con id {}",idMantencion);
+        log.info("Actualizando Mantención con id {}",idMantencion);
         Mantencion mantencion = buscarPorId(idMantencion);
-        if (mantencionRepository.existsByIdVehiculoAndIdMantencion(request.getIdVehiculo(),idMantencion)
-        ) {
-            throw new IdVehiculoDuplicadoException("El vehiculo ya tiene una mantencion vigente");
+
+        if(mantencionRepository.existsByIdVehiculoAndIdMantencion(request.getIdVehiculo(), idMantencion)){
+
+            throw new IdVehiculoDuplicadoException("El vehiculo ya se encuentra registrado en otra mantención");
         }
-        validarCliente(request.getIdCliente(),token);
-        validarMecanico(request.getIdMecanico(), token);
+        vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(), token);
+        mecanicoClient.obtenerMecanicoId(request.getIdMecanico(), token);
+        clienteClient.obtenerClienteId(request.getIdCliente(), token);
+
         mantencion.setFechaMantencion(request.getFechaMantencion());
         mantencion.setPrecioMantencion(request.getPrecioMantencion());
         mantencion.setTipoMantencion(request.getTipoMantencion());
@@ -111,26 +92,11 @@ public class MantencionService {
     }
 
     public void eliminarMantencion(Integer idMantencion){
-        log.info("Eliminando mantencion con id {}",idMantencion);
+        log.info("Eliminando mantención con id {}",idMantencion);
         Mantencion mantencion = buscarPorId(idMantencion);
         mantencionRepository.delete(mantencion);
     }
 
 
-    private void validarMecanico(Integer idMecanico,String token){
-        try {
-            mecanicoClient.obtenerMecanicoId(idMecanico,token);
-        } catch (Exception e) {
-            throw new IdMecanicoNoEncontradoException("No existe un mecánico con el ID " + idMecanico);
-        }
-    }
-
-
-    private void validarCliente(Integer idCLiente,String token){
-        try {
-            clienteClient.obtenerClienteId(idCLiente,token);
-        } catch (Exception e) {
-            throw new IdClienteNoEncontradoException("No existe un cliente con el ID "+ idCLiente);
-        }
-    }
+    
 }

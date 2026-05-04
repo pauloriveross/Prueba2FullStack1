@@ -1,11 +1,14 @@
 package duoc.mantenciones.client;
 
 
+import java.util.Map;
+
+import duoc.mantenciones.exception.IdVehiculoNoEncontradoException;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-
-import java.util.Map;
+import reactor.core.publisher.Mono;
 
 @Component
 public class VehiculoClient {
@@ -21,10 +24,13 @@ public class VehiculoClient {
                 .uri("/{id}", id)
                 .header("Authorization", token)
                 .retrieve()
-                .onStatus(status -> status.is4xxClientError(),
-                        response -> response.bodyToMono(String.class)
-                                .map(body -> new RuntimeException("Vehiculo no encontrado no se puede generar venta")))
-                .bodyToMono(Map.class)
+                .onStatus(status -> status.is4xxClientError(), response ->
+                        Mono.error(new IdVehiculoNoEncontradoException("Vehículo con ID " + id + " no existe")))
+                .onStatus(status -> status.is5xxServerError(), response ->
+                        Mono.error(new RuntimeException("Error de comunicación con el servicio de Vehículos")))
+                .bodyToMono(new ParameterizedTypeReference<Map<String, Object>>() {})
                 .block();
     }
+
+
 }
