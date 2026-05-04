@@ -68,7 +68,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(RutDuplicadoException.class)
-    public ResponseEntity<ErrorResponse> ManejarRutDuplicadoVendedor(RutDuplicadoException ex,
+    public ResponseEntity<ErrorResponse> ManejarRutDuplicadoMecanico(RutDuplicadoException ex,
                                                                      HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
