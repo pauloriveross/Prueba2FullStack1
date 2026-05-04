@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -18,7 +19,6 @@ public class GlobalExceptionHandler  {
 
     private static final Logger log =
             LoggerFactory.getLogger(GlobalExceptionHandler.class);
-
 
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -42,23 +42,12 @@ public class GlobalExceptionHandler  {
     }
 
 
-    @ExceptionHandler(IdVehiculoNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVehiculoNoEncontrado(IdVehiculoNoEncontradoException ex,
-                                                                       HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
 
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-    @ExceptionHandler(IdClienteNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdClienteNoEncontrado(IdClienteNoEncontradoException ex,
+    @ExceptionHandler({IdVehiculoNoEncontradoException.class,
+            IdClienteNoEncontradoException.class,
+            IdVendedorNoEncontradoException.class,
+            VentaNoEncontradaException.class  })
+    public ResponseEntity<ErrorResponse> ManejarRecursosNoEncontrados(RuntimeException ex,
                                                                       HttpServletRequest request) {
         ErrorResponse error = new ErrorResponse(
                 LocalDateTime.now(),
@@ -68,38 +57,7 @@ public class GlobalExceptionHandler  {
                 request.getRequestURI()
         );
 
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-
-    @ExceptionHandler(VentaNoEncontradaException.class)
-    public ResponseEntity<ErrorResponse> ManejarVentaNoEncontrada(VentaNoEncontradaException ex,
-                                                                  HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
-    }
-
-    @ExceptionHandler(IdVendedorNoEncontradoException.class)
-    public ResponseEntity<ErrorResponse> ManejarIdVendedorNoEncontrado(IdVendedorNoEncontradoException ex,
-                                                                       HttpServletRequest request) {
-        ErrorResponse error = new ErrorResponse(
-                LocalDateTime.now(),
-                HttpStatus.NOT_FOUND.value(),
-                HttpStatus.NOT_FOUND.getReasonPhrase(),
-                ex.getMessage(),
-                request.getRequestURI()
-        );
-
-        log.warn("{} en la ruta {}", ex.getMessage(), request.getRequestURI());
+        log.warn("Recurso no hallado: {} en la ruta {}", ex.getMessage(), request.getRequestURI());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
@@ -120,6 +78,8 @@ public class GlobalExceptionHandler  {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
 
+
+
     @ExceptionHandler(IdVehiculoDuplicadoException.class)
     public ResponseEntity<ErrorResponse> ManejarIdVehiculoDuplicado( IdVehiculoDuplicadoException ex,
                                                                      HttpServletRequest request) {
@@ -134,6 +94,27 @@ public class GlobalExceptionHandler  {
         log.warn("Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo {}: {}", request.getRequestURI(), ex.getMessage());
         return ResponseEntity.status(HttpStatus.CONFLICT).body(error);
     }
+
+
+
+
+    @ExceptionHandler(HttpClientErrorException.class)
+    public ResponseEntity<ErrorResponse> manejarErroresExternos(HttpClientErrorException ex ,
+                                                                HttpServletRequest request){
+        ErrorResponse error = new ErrorResponse(
+                LocalDateTime.now(),
+                ex.getStatusCode().value(),
+                "Error en comunicación externa",
+                "El microservicio respondió : " + ex.getStatusText(),
+                request.getRequestURI()
+        );
+
+        log.error("Error en la comunicación con los demás microservicios en {}: {}",request.getRequestURI(),ex.getMessage());
+        return ResponseEntity.status(ex.getStatusCode()).body(error);
+    }
+
+
+
 
 
 
