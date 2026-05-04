@@ -60,26 +60,26 @@ public class MantencionService {
             mecanicoClient.obtenerMecanicoId(request.getIdMecanico(),token);
         } catch (Exception e) {
             log.warn("Validación fallida: Vendedor {} no existe", request.getIdMecanico());
-            throw new IdMecanicoNoEncontradoException("El vendedor con ID " + request.getIdMecanico() + " no existe.");
+            throw new IdMecanicoNoEncontradoException("El Mecanico con ID " + request.getIdMecanico() + " no existe.");
         }
 
         //Vehiculo duplicado
         if(mantencionRepository.existsByIdVehiculo(request.getIdVehiculo())){
-            throw new IdVehiculoDuplicadoException("No se puede crear la venta con id  : " + request.getIdVehiculo() +
-                    " porque ya esta asignado a otra venta ");
+            throw new IdVehiculoDuplicadoException("No se puede crear la mantención  con id  : " + request.getIdVehiculo() +
+                    " porque ya esta asignado a otra mantención ");
         }
         Mantencion mantencion = crearDesdeRequest(request);
         return mantencionRepository.save(mantencion);
     }
 
     public Mantencion buscarPorId(Integer idMantencion){
-        log.info("Buscando mantencion con id: {}", idMantencion);
+        log.info("Buscando mantención con id: {}", idMantencion);
         return mantencionRepository.findById(idMantencion)
-                .orElseThrow(() -> new IdMantencionNoEncontradaException("No se ha encontrado la mantencion con id: "+ idMantencion));
+                .orElseThrow(() -> new IdMantencionNoEncontradaException("No se ha encontrado la mantención con id: "+ idMantencion));
     }
 
     public Mantencion crearDesdeRequest(MantencionRequest mantencionRequest){
-        log.info("Creando mantencion con idVehiculo: {}", mantencionRequest.getIdVehiculo());
+        log.info("Creando mantención con idVehiculo: {}", mantencionRequest.getIdVehiculo());
         Mantencion mantencion = new Mantencion();
         mantencion.setFechaMantencion(mantencionRequest.getFechaMantencion());
         mantencion.setPrecioMantencion(mantencionRequest.getPrecioMantencion());
@@ -115,11 +115,13 @@ public class MantencionService {
         Mantencion mantencion = buscarPorId(idMantencion);
         mantencionRepository.delete(mantencion);
     }
+
+
     private void validarMecanico(Integer idMecanico,String token){
         try {
             mecanicoClient.obtenerMecanicoId(idMecanico,token);
         } catch (Exception e) {
-            throw new IdMecanicoNoEncontradoException("No existe un mecanico con el ID " + idMecanico);
+            throw new IdMecanicoNoEncontradoException("No existe un mecánico con el ID " + idMecanico);
         }
     }
 
