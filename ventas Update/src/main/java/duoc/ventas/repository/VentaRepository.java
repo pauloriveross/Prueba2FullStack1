@@ -10,5 +10,5 @@ public interface VentaRepository  extends JpaRepository<Venta,Integer> {
 
     boolean existsByIdVehiculo(Integer idVehiculo);
 
-    boolean existsByIdVehiculoAndIdVenta(Integer idVehiculo,Integer idVenta);
+    boolean existsByIdVehiculoAndIdVentaNot(Integer idVehiculo,Integer idVenta);
 }

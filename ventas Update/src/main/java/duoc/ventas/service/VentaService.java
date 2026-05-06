@@ -81,7 +81,7 @@ public class VentaService {
     public Venta actualizarVenta(Integer idVenta, VentaRequest request,String token) {
         log.info("Actualizando Venta con id {}", idVenta);
         Venta venta = buscarVentaPorId(idVenta);
-        if (ventaRepository.existsByIdVehiculoAndIdVenta(request.getIdVehiculo(), idVenta)) {
+        if (ventaRepository.existsByIdVehiculoAndIdVentaNot(request.getIdVehiculo(), idVenta)) {
             throw new IdVehiculoDuplicadoException("El ID Del Vehiculo se encuentra asignado a otra venta ");
         }
         clienteClient.obtenerClienteId(request.getIdCliente(), token);

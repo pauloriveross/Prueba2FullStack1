@@ -73,7 +73,7 @@ public class MantencionService {
         log.info("Actualizando Mantención con id {}",idMantencion);
         Mantencion mantencion = buscarPorId(idMantencion);
 
-        if(mantencionRepository.existsByIdVehiculoAndIdMantencion(request.getIdVehiculo(), idMantencion)){
+        if(mantencionRepository.existsByIdVehiculoAndIdMantencionNot(request.getIdVehiculo(), idMantencion)){
 
             throw new IdVehiculoDuplicadoException("El vehiculo ya se encuentra registrado en otra mantención");
         }
@@ -98,5 +98,5 @@ public class MantencionService {
     }
 
 
-    
+
 }
