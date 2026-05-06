@@ -1,54 +1,18 @@
-2026-05-04T11:54:54.563-04:00  INFO 16344 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Starting MantencionesApplication using Java 25.0.2 with PID 16344 (C:\Users\paulo\OneDrive\Desktop\FULLES\Prueba2FullStack1\mantenciones\target\classes started by paulo in C:\Users\paulo\OneDrive\Desktop\FULLES\Prueba2FullStack1\mantenciones)
-2026-05-04T11:54:54.566-04:00  INFO 16344 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-05-04T11:54:55.140-04:00  INFO 16344 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-04T11:54:55.244-04:00  INFO 16344 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
-2026-05-04T11:54:55.584-04:00  INFO 16344 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
-2026-05-04T11:54:55.596-04:00  INFO 16344 --- [mantencion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-04T11:54:55.596-04:00  INFO 16344 --- [mantencion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-04T11:54:55.640-04:00  INFO 16344 --- [mantencion] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1029 ms
-2026-05-04T11:54:55.764-04:00  INFO 16344 --- [mantencion] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-04T11:54:55.809-04:00  INFO 16344 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-04T11:54:56.149-04:00  INFO 16344 --- [mantencion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-04T11:54:56.173-04:00  INFO 16344 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-04T11:54:56.423-04:00  INFO 16344 --- [mantencion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bb6869a
-2026-05-04T11:54:56.425-04:00  INFO 16344 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-04T11:54:56.484-04:00  INFO 16344 --- [mantencion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/db_mantencion]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 8.4.3
-	Default catalog/schema: db_mantencion/undefined
-	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-05-04T11:54:57.137-04:00  INFO 16344 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-04T11:54:57.187-04:00  INFO 16344 --- [mantencion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T11:54:57.409-04:00  INFO 16344 --- [mantencion] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-04T11:54:57.837-04:00  INFO 16344 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
-2026-05-04T11:54:57.841-04:00  INFO 16344 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Started MantencionesApplication in 3.741 seconds (process running for 4.209)
-2026-05-04T11:55:14.159-04:00  INFO 16344 --- [mantencion] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-04T11:55:14.165-04:00  INFO 16344 --- [mantencion] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-04T11:55:14.168-04:00  INFO 16344 --- [mantencion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T11:55:14.169-04:00  INFO 16344 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-04T11:55:14.174-04:00  INFO 16344 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-05-04T17:20:37.510-04:00  INFO 16511 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Starting MantencionesApplication using Java 21.0.1 with PID 16511 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones)
-2026-05-04T17:20:37.511-04:00  INFO 16511 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-05-04T17:20:37.714-04:00  INFO 16511 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-04T17:20:37.772-04:00  INFO 16511 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface.
-2026-05-04T17:20:37.902-04:00  INFO 16511 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
-2026-05-04T17:20:37.907-04:00  INFO 16511 --- [mantencion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-04T17:20:37.907-04:00  INFO 16511 --- [mantencion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-04T17:20:37.921-04:00  INFO 16511 --- [mantencion] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 394 ms
-2026-05-04T17:20:37.984-04:00  INFO 16511 --- [mantencion] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-04T17:20:38.004-04:00  INFO 16511 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-04T17:20:38.142-04:00  INFO 16511 --- [mantencion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-04T17:20:38.153-04:00  INFO 16511 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-04T17:20:38.266-04:00  INFO 16511 --- [mantencion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3580134d
-2026-05-04T17:20:38.267-04:00  INFO 16511 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-04T17:20:38.296-04:00  INFO 16511 --- [mantencion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-05-06T10:21:35.443-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Starting MantencionesApplication using Java 21.0.1 with PID 37590 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones)
+2026-05-06T10:21:35.445-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-06T10:21:35.657-04:00  INFO 37590 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-06T10:21:35.719-04:00  INFO 37590 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2026-05-06T10:21:35.841-04:00  INFO 37590 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
+2026-05-06T10:21:35.845-04:00  INFO 37590 --- [mantencion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-06T10:21:35.846-04:00  INFO 37590 --- [mantencion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-06T10:21:35.859-04:00  INFO 37590 --- [mantencion] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 400 ms
+2026-05-06T10:21:35.920-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-06T10:21:35.940-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-06T10:21:36.072-04:00  INFO 37590 --- [mantencion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-06T10:21:36.084-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-06T10:21:36.198-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519b0f00
+2026-05-06T10:21:36.198-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-06T10:21:36.227-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_mantencion]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -60,247 +24,45 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-04T17:20:38.575-04:00  INFO 16511 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-04T17:20:38.596-04:00  INFO 16511 --- [mantencion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T17:20:38.690-04:00  INFO 16511 --- [mantencion] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-04T17:20:38.885-04:00  INFO 16511 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
-2026-05-04T17:20:38.888-04:00  INFO 16511 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Started MantencionesApplication in 1.609 seconds (process running for 2.014)
-2026-05-04T17:25:32.062-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-04T17:25:32.063-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-04T17:25:32.065-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-05-04T17:25:32.084-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:25:38.888-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 20
-2026-05-04T17:25:38.907-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 20 en la ruta /api/v1/mantenciones/20
-2026-05-04T17:25:44.534-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-4] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:25:48.565-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-5] d.m.service.MantencionService            : Buscando mantención con id: 1
-2026-05-04T17:26:38.761-04:00 ERROR 16511 --- [mantencion] [http-nio-8085-exec-6] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2026-05-04T17:26:38.882-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Error al recuperar vehiculo 1: ID no encontrado o fallo de red
-2026-05-04T17:26:38.883-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.exception.GlobalExceptionHandler     : No existe vehiculo con el id 1 en la ruta /api/v1/mantenciones
-2026-05-04T17:26:47.007-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-7] d.m.service.MantencionService            : Creando mantención con idVehiculo: 3
-2026-05-04T17:27:18.214-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-8] d.m.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/mantenciones: No se puede crear la mantención  con id  : 3 porque ya esta asignado a otra mantención 
-2026-05-04T17:27:30.093-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-9] d.m.service.MantencionService            : Error al recuperar vehiculo 20: ID no encontrado o fallo de red
-2026-05-04T17:27:30.096-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : No existe vehiculo con el id 20 en la ruta /api/v1/mantenciones
-2026-05-04T17:27:38.084-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-10] d.m.service.MantencionService            : Validación fallida: Vendedor 90 no existe
-2026-05-04T17:27:38.085-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-10] d.m.exception.GlobalExceptionHandler     : El Mecanico con ID 90 no existe. en la ruta /api/v1/mantenciones
-2026-05-04T17:27:44.779-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Validacion fallida: Cliente 90 no existe 
-2026-05-04T17:27:44.781-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-1] d.m.exception.GlobalExceptionHandler     : No existe el cliente con el id 90 en la ruta /api/v1/mantenciones
-2026-05-04T17:27:48.765-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Validacion fallida: Cliente 90 no existe 
-2026-05-04T17:27:48.767-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.exception.GlobalExceptionHandler     : No existe el cliente con el id 90 en la ruta /api/v1/mantenciones
-2026-05-04T17:27:57.432-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mantenciones
-2026-05-04T17:28:04.762-04:00 ERROR 16511 --- [mantencion] [http-nio-8085-exec-4] d.m.exception.GlobalExceptionHandler     : Error inesperado /api/v1/mantenciones/listar
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'idMantencion': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "listar"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "listar"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Integer.parseInt(Integer.java:661) ~[na:na]
-	at java.base/java.lang.Integer.valueOf(Integer.java:988) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:201) ~[spring-core-7.0.7.jar:7.0.7]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:843) ~[spring-context-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287) ~[spring-web-7.0.7.jar:7.0.7]
-	... 43 common frames omitted
-
-2026-05-04T17:28:14.402-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-7] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:28:27.947-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Eliminando mantencion con id 3
-2026-05-04T17:28:27.947-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Buscando mantención con id: 3
-2026-05-04T17:28:34.177-04:00 ERROR 16511 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : Error inesperado /api/v1/mantenciones/listar
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'idMantencion': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "listar"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "listar"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Integer.parseInt(Integer.java:661) ~[na:na]
-	at java.base/java.lang.Integer.valueOf(Integer.java:988) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:201) ~[spring-core-7.0.7.jar:7.0.7]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:843) ~[spring-context-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287) ~[spring-web-7.0.7.jar:7.0.7]
-	... 43 common frames omitted
-
-2026-05-04T17:28:42.845-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:28:52.852-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Eliminando mantencion con id 2
-2026-05-04T17:28:52.852-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Buscando mantención con id: 2
-2026-05-04T17:28:57.175-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:29:33.591-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/mantenciones: No se puede crear la mantención  con id  : 3 porque ya esta asignado a otra mantención 
-2026-05-04T17:29:41.903-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-4] d.m.service.MantencionService            : Error al recuperar vehiculo 4: ID no encontrado o fallo de red
-2026-05-04T17:29:41.906-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-4] d.m.exception.GlobalExceptionHandler     : No existe vehiculo con el id 4 en la ruta /api/v1/mantenciones
-2026-05-04T17:29:45.689-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Creando mantención con idVehiculo: 2
-2026-05-04T17:30:04.348-04:00 ERROR 16511 --- [mantencion] [http-nio-8085-exec-7] d.m.exception.GlobalExceptionHandler     : Error inesperado /api/v1/mantenciones/listar
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'idMantencion': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "listar"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "listar"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Integer.parseInt(Integer.java:661) ~[na:na]
-	at java.base/java.lang.Integer.valueOf(Integer.java:988) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:201) ~[spring-core-7.0.7.jar:7.0.7]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51) ~[spring-beans-7.0.7.jar:7.0.7]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:843) ~[spring-context-7.0.7.jar:7.0.7]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287) ~[spring-web-7.0.7.jar:7.0.7]
-	... 43 common frames omitted
-
-2026-05-04T17:30:08.527-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-9] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:31:29.546-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Actualizando Mantencion con id 1
-2026-05-04T17:31:29.547-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Buscando mantención con id: 1
-2026-05-04T17:33:04.650-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-4] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:33:22.493-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Eliminando mantencion con id 20
-2026-05-04T17:33:22.494-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Buscando mantención con id: 20
-2026-05-04T17:33:22.500-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-6] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 20 en la ruta /api/v1/mantenciones/20
-2026-05-04T17:33:36.359-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-7] d.m.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/mantenciones: No se puede crear la mantención  con id  : 2 porque ya esta asignado a otra mantención 
-2026-05-04T17:35:12.968-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-10] d.m.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/mantenciones: No se puede crear la mantención  con id  : 2 porque ya esta asignado a otra mantención 
-2026-05-04T17:35:17.760-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-04T17:35:25.831-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Eliminando mantencion con id 6
-2026-05-04T17:35:25.832-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Buscando mantención con id: 6
-2026-05-04T17:35:25.836-04:00  WARN 16511 --- [mantencion] [http-nio-8085-exec-2] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 6 en la ruta /api/v1/mantenciones/6
-2026-05-04T17:35:28.310-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Eliminando mantencion con id 5
-2026-05-04T17:35:28.311-04:00  INFO 16511 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 5
-2026-05-04T17:35:34.198-04:00  INFO 16511 --- [mantencion] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-04T17:35:34.200-04:00  INFO 16511 --- [mantencion] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-04T17:35:34.204-04:00  INFO 16511 --- [mantencion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T17:35:34.206-04:00  INFO 16511 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-04T17:35:34.209-04:00  INFO 16511 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-06T10:21:36.503-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-06T10:21:36.528-04:00  INFO 37590 --- [mantencion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-06T10:21:36.627-04:00  INFO 37590 --- [mantencion] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-06T10:21:36.830-04:00  INFO 37590 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
+2026-05-06T10:21:36.832-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Started MantencionesApplication in 1.529 seconds (process running for 1.796)
+2026-05-06T11:10:30.488-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06T11:10:30.488-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-06T11:10:30.491-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-06T11:10:30.513-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Listando todas las mantenciones
+2026-05-06T11:10:43.338-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 20
+2026-05-06T11:10:43.359-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 20 en la ruta /api/v1/mantenciones/20
+2026-05-06T11:12:20.753-04:00 ERROR 37590 --- [mantencion] [http-nio-8085-exec-5] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-05-06T11:12:20.872-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : Vehículo con ID 1 no existe en la ruta /api/v1/mantenciones
+2026-05-06T11:12:41.736-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-7] d.m.exception.GlobalExceptionHandler     : Mecánico con ID 5 no existe en la ruta /api/v1/mantenciones
+2026-05-06T11:13:11.572-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Creando mantención con idVehiculo: 2
+2026-05-06T11:13:45.582-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : Cliente con ID 20 no existe en la ruta /api/v1/mantenciones
+2026-05-06T11:14:09.650-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-10] d.m.service.MantencionService            : Creando mantención con idVehiculo: 3
+2026-05-06T11:14:31.055-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Creando mantención con idVehiculo: 4
+2026-05-06T11:14:37.006-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Listando todas las mantenciones
+2026-05-06T11:16:04.621-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Actualizando Mantención con id 1
+2026-05-06T11:16:04.624-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Buscando mantención con id: 1
+2026-05-06T11:16:04.652-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.exception.GlobalExceptionHandler     : Intento de mantención fallido , ya que no se puede efectuar dos mantenciones al mismo vehiculo /api/v1/mantenciones/1: El vehiculo ya se encuentra registrado en otra mantención
+2026-05-06T11:16:37.920-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mantenciones/1
+2026-05-06T11:17:04.117-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Listando todas las mantenciones
+2026-05-06T11:17:25.590-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mantenciones
+2026-05-06T11:17:44.107-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Listando todas las mantenciones
+2026-05-06T11:18:22.621-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Actualizando Mantención con id 2
+2026-05-06T11:18:22.622-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Buscando mantención con id: 2
+2026-05-06T11:18:45.299-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Eliminando mantención con id 5
+2026-05-06T11:18:45.301-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 5
+2026-05-06T11:18:45.306-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 5 en la ruta /api/v1/mantenciones/5
+2026-05-06T11:19:09.780-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-4] d.m.service.MantencionService            : Listando todas las mantenciones
+2026-05-06T11:19:17.856-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Eliminando mantención con id 3
+2026-05-06T11:19:17.856-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Buscando mantención con id: 3
+2026-05-06T11:19:40.773-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.service.MantencionService            : Eliminando mantención con id 3
+2026-05-06T11:19:40.774-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.service.MantencionService            : Buscando mantención con id: 3
+2026-05-06T11:19:40.779-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 3 en la ruta /api/v1/mantenciones/3
+2026-05-06T11:20:03.945-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06T11:20:03.947-04:00  INFO 37590 --- [mantencion] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-06T11:20:03.949-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-06T11:20:03.950-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-06T11:20:03.951-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,22 +1,43 @@
-2026-05-04T16:44:39.410-04:00  INFO 15875 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 15875 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente)
-2026-05-04T16:44:39.412-04:00  INFO 15875 --- [cliente] [main] duoc.cliente.ClienteApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-05-04T16:44:39.643-04:00  INFO 15875 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-04T16:44:39.663-04:00  INFO 15875 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
-2026-05-04T16:44:39.823-04:00  INFO 15875 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
-2026-05-04T16:44:39.828-04:00  INFO 15875 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-04T16:44:39.828-04:00  INFO 15875 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-04T16:44:39.839-04:00  INFO 15875 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 413 ms
-2026-05-04T16:44:39.986-04:00  INFO 15875 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-04T16:44:40.107-04:00  INFO 15875 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c030fe1
-2026-05-04T16:44:40.108-04:00  INFO 15875 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-04T16:44:40.129-04:00  INFO 15875 --- [cliente] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_cliente (MySQL 8.0)
-2026-05-04T16:44:40.156-04:00  INFO 15875 --- [cliente] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.013s)
-2026-05-04T16:44:40.164-04:00  INFO 15875 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_cliente`: 5
-2026-05-04T16:44:40.166-04:00  INFO 15875 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Schema `db_cliente` is up to date. No migration necessary.
-2026-05-04T16:44:40.201-04:00  INFO 15875 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-04T16:44:40.227-04:00  INFO 15875 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-04T16:44:40.371-04:00  INFO 15875 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-04T16:44:40.407-04:00  INFO 15875 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-05-06T10:20:55.609-04:00  INFO 37558 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 37558 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente)
+2026-05-06T10:20:55.611-04:00  INFO 37558 --- [cliente] [main] duoc.cliente.ClienteApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-06T10:20:55.823-04:00  INFO 37558 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-06T10:20:55.838-04:00  INFO 37558 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-05-06T10:20:55.997-04:00  INFO 37558 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-05-06T10:20:56.002-04:00  INFO 37558 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-06T10:20:56.002-04:00  INFO 37558 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-06T10:20:56.014-04:00  INFO 37558 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 387 ms
+2026-05-06T10:20:56.174-04:00  INFO 37558 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-06T10:20:56.279-04:00  INFO 37558 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2aac8ad7
+2026-05-06T10:20:56.279-04:00  INFO 37558 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-06T10:20:56.297-04:00  INFO 37558 --- [cliente] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_cliente (MySQL 8.0)
+2026-05-06T10:20:56.315-04:00  INFO 37558 --- [cliente] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `db_cliente`.`flyway_schema_history` does not exist yet
+2026-05-06T10:20:56.316-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.009s)
+2026-05-06T10:20:56.330-04:00  INFO 37558 --- [cliente] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `db_cliente`.`flyway_schema_history` ...
+2026-05-06T10:20:56.356-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_cliente`: << Empty Schema >>
+2026-05-06T10:20:56.358-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `db_cliente` to version "1 - crear tabla clientes"
+2026-05-06T10:20:56.378-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `db_cliente` to version "2 - ingresar datos clientes"
+2026-05-06T10:20:56.389-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `db_cliente` to version "3 - actualiza datos direccion"
+2026-05-06T10:20:56.400-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `db_cliente` to version "4 - eliminar cliente"
+2026-05-06T10:20:56.411-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Migrating schema `db_cliente` to version "5 - mostrar nombre cliente"
+2026-05-06T10:20:56.412-04:00  INFO 37558 --- [cliente] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : +---------------+
+| nombreCliente |
++---------------+
+| Juan          |
+| María         |
+| Pedro         |
+| Ana           |
+| Diego         |
+| Sofía         |
+| Carlos        |
+| Laura         |
+| Felipe        |
++---------------+
+
+2026-05-06T10:20:56.423-04:00  INFO 37558 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema `db_cliente`, now at version v5 (execution time 00:00.014s)
+2026-05-06T10:20:56.459-04:00  INFO 37558 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-06T10:20:56.479-04:00  INFO 37558 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-06T10:20:56.605-04:00  INFO 37558 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-06T10:20:56.643-04:00  INFO 37558 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_cliente]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -28,92 +49,61 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-04T16:44:40.681-04:00  INFO 15875 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-04T16:44:40.702-04:00  INFO 15875 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T16:44:40.730-04:00  INFO 15875 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-04T16:44:40.801-04:00  WARN 15875 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-04T16:44:40.824-04:00  WARN 15875 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-05-06T10:20:56.910-04:00  INFO 37558 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-06T10:20:56.933-04:00  INFO 37558 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-06T10:20:56.960-04:00  INFO 37558 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-06T10:20:57.030-04:00  WARN 37558 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-06T10:20:57.056-04:00  WARN 37558 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: bddace37-c225-4e39-95be-18f62f386b21
+Using generated security password: 4485aede-6b5e-4865-8ab7-9c7241317f29
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-04T16:44:40.827-04:00  INFO 15875 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-04T16:44:40.987-04:00  INFO 15875 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
-2026-05-04T16:44:40.990-04:00  INFO 15875 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 1.735 seconds (process running for 2.089)
-2026-05-04T16:51:09.977-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-04T16:51:09.978-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-04T16:51:09.981-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-05-04T16:51:10.007-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:51:27.986-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
-2026-05-04T16:51:31.337-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 2
-2026-05-04T16:51:31.352-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-5] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 2 en la ruta /api/v1/clientes/2
-2026-05-04T16:51:38.328-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:51:43.372-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T16:51:43.377-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-7] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T16:51:48.546-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
-2026-05-04T16:51:55.231-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Eliminando Vendedor con id 5
-2026-05-04T16:51:55.231-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
-2026-05-04T16:51:58.336-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Eliminando Vendedor con id 20
-2026-05-04T16:51:58.337-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T16:51:58.341-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-10] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T16:52:07.808-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:53:26.433-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Creando cliente con rut: 21.431.930-6
-2026-05-04T16:53:31.428-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:53:55.974-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-5] d.cliente.dto.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/clientes
-2026-05-04T16:54:09.035-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-7] d.cliente.dto.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/clientes
-2026-05-04T16:54:38.551-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:55:02.922-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Listando todos los clientes
-2026-05-04T16:55:36.269-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Actualizando cliente con id: 12
-2026-05-04T16:55:36.269-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 12
-2026-05-04T17:08:13.698-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T17:08:13.707-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-4] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T17:08:48.095-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:09:23.419-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:09:30.245-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:09:48.568-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:10:18.471-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T17:10:18.474-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-9] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T17:10:28.606-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:10:45.686-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:12:18.388-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:15:53.843-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:16:35.987-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:16:50.005-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:16:54.357-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:17:00.413-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T17:17:00.418-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-9] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T17:17:42.132-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T17:17:42.135-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-10] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T17:17:46.687-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
-2026-05-04T17:17:46.692-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-2] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
-2026-05-04T17:17:53.801-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 14
-2026-05-04T17:17:53.804-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-1] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 14 en la ruta /api/v1/clientes/14
-2026-05-04T17:17:57.671-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 5
-2026-05-04T17:17:57.675-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-3] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 5 en la ruta /api/v1/clientes/5
-2026-05-04T17:18:01.853-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:18:19.357-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:18:25.491-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:18:28.226-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:18:31.967-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:18:36.894-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:26:38.846-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:26:46.831-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:27:18.180-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:27:30.072-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:27:38.052-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 6
-2026-05-04T17:27:44.769-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
-2026-05-04T17:27:44.774-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-6] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
-2026-05-04T17:27:48.757-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 90
-2026-05-04T17:27:48.762-04:00  WARN 15875 --- [cliente] [http-nio-8082-exec-7] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 90 en la ruta /api/v1/clientes/90
-2026-05-04T17:29:33.555-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:29:41.879-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:29:45.650-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:31:29.577-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:33:36.323-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:35:12.928-04:00  INFO 15875 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 9
-2026-05-04T17:35:52.631-04:00  INFO 15875 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-04T17:35:52.636-04:00  INFO 15875 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-04T17:35:52.640-04:00  INFO 15875 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-04T17:35:52.642-04:00  INFO 15875 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-04T17:35:52.643-04:00  INFO 15875 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-06T10:20:57.059-04:00  INFO 37558 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-06T10:20:57.215-04:00  INFO 37558 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-05-06T10:20:57.218-04:00  INFO 37558 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 1.769 seconds (process running for 2.026)
+2026-05-06T10:23:29.642-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-06T10:23:29.643-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-06T10:23:29.645-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-06T10:23:29.669-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-05-06T10:26:03.920-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-05-06T10:26:25.427-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 10
+2026-05-06T10:26:25.445-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-7] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 10 en la ruta /api/v1/clientes/10
+2026-05-06T10:26:55.044-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T10:27:58.337-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-1] d.cliente.dto.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/clientes
+2026-05-06T10:29:22.061-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Creando cliente con rut: 20.162.535-1
+2026-05-06T10:29:36.852-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-05-06T10:30:21.182-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-05-06T10:30:42.933-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Actualizando cliente con id: 11
+2026-05-06T10:30:42.933-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 11
+2026-05-06T10:30:58.068-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-8] d.cliente.dto.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/clientes/11
+2026-05-06T10:31:22.455-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-05-06T10:31:48.415-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Actualizando cliente con id: 11
+2026-05-06T10:31:48.415-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 11
+2026-05-06T10:32:08.745-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Eliminando Vendedor con id 20
+2026-05-06T10:32:08.746-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
+2026-05-06T10:32:08.750-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-2] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
+2026-05-06T10:32:35.281-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Eliminando Vendedor con id 11
+2026-05-06T10:32:35.281-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 11
+2026-05-06T11:03:22.673-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 1
+2026-05-06T11:03:52.430-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
+2026-05-06T11:03:52.435-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-5] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
+2026-05-06T11:04:00.600-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 1
+2026-05-06T11:04:18.959-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 1
+2026-05-06T11:04:41.436-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 2
+2026-05-06T11:04:58.781-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 2
+2026-05-06T11:05:48.601-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-1] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T11:06:09.527-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T11:06:14.508-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T11:08:07.845-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-6] duoc.cliente.service.ClienteService      : Buscando cliente con id: 1
+2026-05-06T11:13:11.425-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 1
+2026-05-06T11:13:45.576-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 20
+2026-05-06T11:13:45.579-04:00  WARN 37558 --- [cliente] [http-nio-8082-exec-8] d.cliente.dto.GlobalExceptionHandler     : No se encontro el cliente con id: 20 en la ruta /api/v1/clientes/20
+2026-05-06T11:14:09.645-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T11:14:31.050-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-10] duoc.cliente.service.ClienteService      : Buscando cliente con id: 2
+2026-05-06T11:18:22.681-04:00  INFO 37558 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Buscando cliente con id: 3
+2026-05-06T11:20:55.944-04:00  INFO 37558 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-06T11:20:55.948-04:00  INFO 37558 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-06T11:20:55.952-04:00  INFO 37558 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-06T11:20:55.954-04:00  INFO 37558 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-06T11:20:55.955-04:00  INFO 37558 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
