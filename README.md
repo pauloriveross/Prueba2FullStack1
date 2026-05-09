@@ -1,7 +1,7 @@
 # 🚘Automotora
 El proyecto "Automotora" corresponde a la segunda evaluación de la asignatura de FullStack 1, nuestro proyecto esta enfocado automotoras que estan recien empezando o que estan pasando a un sistema digital. 
 
-## 🏗️Arqutectura del Proyecto
+## 🏗️Arquitectura del Proyecto
 El sistema es diseñado bajo un enfoque de **microservicios**.
 
 ## Entidades
@@ -33,7 +33,7 @@ CREATE DATABASE db_mecanicos;
 Este script inicializa la tabla de usuarios y los administradores por defecto:
 ```sql
 DROP TABLE IF EXISTS usuarios;
-
+USE auth_db;
 CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL UNIQUE,
