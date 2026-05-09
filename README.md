@@ -49,7 +49,7 @@ INSERT INTO usuarios (username, password, rol) VALUES
 ````
 
 ## 📋Tablas 
-Debido a que las tablas a la hora de ejecutar el proyecto no contienen datos, se deben insertar datos a su respectiva tabla. Pero en el caso de **Cliente** no es necesario hacer algo a su tabla dedo que ya contiene datos.
+Debido a que las tablas a la hora de ejecutar el proyecto no contienen datos, se deben insertar datos a su respectivas tablas. Pero en el caso de **Cliente** no es necesario  ya que contiene datos desde su ejecución.
 
 ## 🚙Vehiculo
 ```sql
