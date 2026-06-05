@@ -68,27 +68,32 @@ VALUES
 ## 🧑🏻‍💼Vendedor
 ```sql
 USE DB_VENDEDOR;
-INSERT INTO VENDEDORES (APELLIDO_VENDEDOR,EMAIL_VENDEDOR,NOMBRE_VENDEDOR,RUT_VENDEDOR,SECCION_VENDEDOR,TURNO_VENDEDOR)
+
+INSERT INTO VENDEDORES (APELLIDO_VENDEDOR,EMAIL_VENDEDOR,NOMBRE_VENDEDOR,RUT_VENDEDOR,SECCION_VENDEDOR,TURNO_VENDEDOR,SUELDO_BASE_VENDEDOR
+)
 VALUES
-("Morales","j.morales@automotora.cl","Juan","15.432.871-0","Ventas Vehiculos","Mañana"),
-("Tapia","m.tapia@automotora.cl","Marcela","18.225.104-K","Repuestos","Tarde"),
-("Castillo","r.castillo@automotora.cl","Ricardo","12.890.553-4","Ventas Vehiculos","Mañana"),
-("Valenzuela","s.valenzuela@automotora.cl","Sofía","20.114.938-2","Repuestos","Tarde"),
-("Herrera","p.herrera@automotora.cl","Patricio","16.772.301-9","Ventas Vehiculos","Rotativo"),
-("Espinoza","c.espinoza@automotora.cl","Camila","19.336.447-5","Repuestos","Mañana"),
-("Soto","f.soto@automotora.cl","Felipe","21.045.662-7","Ventas Vehiculos","Rotativo");
+("Alvarado", "c.alvarado@automotora.cl", "Carlos", "16.894.231-5", "Ventas Vehiculos", "Mañana", 650000),
+("Mendoza", "a.mendoza@automotora.cl", "Ana", "19.432.108-K", "Repuestos", "Tarde", 550000),
+("Guzmán", "j.guzman@automotora.cl", "Jaime", "14.553.890-2", "Ventas Vehiculos", "Mañana", 720000),
+("Paredes", "e.paredes@automotora.cl", "Elena", "21.004.637-4", "Repuestos", "Tarde", 530000),
+("Cárcamo", "f.carcamo@automotora.cl", "Fernando", "17.331.902-8", "Ventas Vehiculos", "Rotativo", 800000),
+("Vergara", "v.vergara@automotora.cl", "Valentina", "20.115.448-3", "Repuestos", "Mañana", 580000),
+("San Martín", "m.sanmartin@automotora.cl", "Matías", "18.772.309-1", "Ventas Vehiculos", "Rotativo", 950000);
 ````
 
 ## 🧑🏻‍🔧Mecanico
 ```sql
 USE DB_MECANICOS;
-INSERT INTO MECANICOS (APELLIDO_MECANICO,NOMBRE_MECANICO,RUT_MECANICO)
+
+INSERT INTO MECANICOS (
+    APELLIDO_MECANICO,NOMBRE_MECANICO,RUT_MECANICO,SUELDO_BASE_MECANICO
+)
 VALUES
-("González", "Pedro", "14.285.331-4"),
-("Sanhueza", "Mauricio", "17.992.405-2"),
-("Contreras", "Cristián", "12.664.118-7"),
-("Araya", "Javier", "19.003.552-6"),
-("Vásquez", "Roberto", "15.774.229-K"),
-("Pizarro", "Ignacio", "16.448.903-5"),
-("Lagos", "Andrés", "13.551.002-0");
+("González", "Pedro", "14.285.331-4", 750000),
+("Sanhueza", "Mauricio", "17.992.405-2", 680000),
+("Contreras", "Cristián", "12.664.118-7", 850000),
+("Araya", "Javier", "19.003.552-6", 620000),
+("Vásquez", "Roberto", "15.774.229-K", 900000),
+("Pizarro", "Ignacio", "16.448.903-5", 550000),
+("Lagos", "Andrés", "13.551.002-0", 1100000);
 ````
