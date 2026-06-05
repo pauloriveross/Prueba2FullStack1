@@ -1,18 +1,18 @@
-2026-05-06T10:16:02.977-04:00  INFO 37275 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Starting VendedorApplication using Java 21.0.1 with PID 37275 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor)
-2026-05-06T10:16:02.978-04:00  INFO 37275 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-05-06T10:16:03.200-04:00  INFO 37275 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-06T10:16:03.215-04:00  INFO 37275 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
-2026-05-06T10:16:03.392-04:00  INFO 37275 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
-2026-05-06T10:16:03.397-04:00  INFO 37275 --- [vendedor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-06T10:16:03.397-04:00  INFO 37275 --- [vendedor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-06T10:16:03.411-04:00  INFO 37275 --- [vendedor] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 417 ms
-2026-05-06T10:16:03.481-04:00  INFO 37275 --- [vendedor] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-06T10:16:03.504-04:00  INFO 37275 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-06T10:16:03.647-04:00  INFO 37275 --- [vendedor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-06T10:16:03.659-04:00  INFO 37275 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-06T10:16:03.769-04:00  INFO 37275 --- [vendedor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@611587f7
-2026-05-06T10:16:03.770-04:00  INFO 37275 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-06T10:16:03.799-04:00  INFO 37275 --- [vendedor] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-05T13:31:00.101-04:00  INFO 36480 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Starting VendedorApplication using Java 21.0.1 with PID 36480 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor)
+2026-06-05T13:31:00.102-04:00  INFO 36480 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-06-05T13:31:00.316-04:00  INFO 36480 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T13:31:00.331-04:00  INFO 36480 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-05T13:31:00.496-04:00  INFO 36480 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-06-05T13:31:00.501-04:00  INFO 36480 --- [vendedor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-05T13:31:00.501-04:00  INFO 36480 --- [vendedor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05T13:31:00.514-04:00  INFO 36480 --- [vendedor] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 398 ms
+2026-06-05T13:31:00.591-04:00  INFO 36480 --- [vendedor] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05T13:31:00.614-04:00  INFO 36480 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05T13:31:00.750-04:00  INFO 36480 --- [vendedor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T13:31:00.762-04:00  INFO 36480 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T13:31:00.883-04:00  INFO 36480 --- [vendedor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce2029b
+2026-06-05T13:31:00.884-04:00  INFO 36480 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T13:31:00.916-04:00  INFO 36480 --- [vendedor] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_vendedor]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -24,38 +24,258 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-06T10:16:04.126-04:00  INFO 37275 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-06T10:16:04.154-04:00  INFO 37275 --- [vendedor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T10:16:04.180-04:00  INFO 37275 --- [vendedor] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-06T10:16:04.273-04:00  WARN 37275 --- [vendedor] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-06-05T13:31:01.248-04:00  INFO 36480 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T13:31:01.298-04:00  INFO 36480 --- [vendedor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:31:01.326-04:00  INFO 36480 --- [vendedor] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T13:31:01.419-04:00  WARN 36480 --- [vendedor] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: cfdd6b26-d6e1-4150-97e6-179cb5080032
+Using generated security password: 9aa33873-dd0d-480d-b1ce-56395efe886b
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-06T10:16:04.275-04:00  INFO 37275 --- [vendedor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-06T10:16:04.422-04:00  INFO 37275 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
-2026-05-06T10:16:04.425-04:00  INFO 37275 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Started VendedorApplication in 1.616 seconds (process running for 1.901)
-2026-05-06T10:16:21.843-04:00  INFO 37275 --- [vendedor] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-06T10:16:21.847-04:00  INFO 37275 --- [vendedor] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-06T10:16:21.850-04:00  INFO 37275 --- [vendedor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T10:16:21.851-04:00  INFO 37275 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-06T10:16:21.853-04:00  INFO 37275 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-05-06T10:20:14.520-04:00  INFO 37467 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Starting VendedorApplication using Java 21.0.1 with PID 37467 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor)
-2026-05-06T10:20:14.521-04:00  INFO 37467 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-05-06T10:20:14.755-04:00  INFO 37467 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-06T10:20:14.769-04:00  INFO 37467 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
-2026-05-06T10:20:14.925-04:00  INFO 37467 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
-2026-05-06T10:20:14.930-04:00  INFO 37467 --- [vendedor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-06T10:20:14.930-04:00  INFO 37467 --- [vendedor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-06T10:20:14.942-04:00  INFO 37467 --- [vendedor] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 407 ms
-2026-05-06T10:20:15.019-04:00  INFO 37467 --- [vendedor] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-06T10:20:15.045-04:00  INFO 37467 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-06T10:20:15.181-04:00  INFO 37467 --- [vendedor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-06T10:20:15.193-04:00  INFO 37467 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-06T10:20:15.310-04:00  INFO 37467 --- [vendedor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4544ab46
-2026-05-06T10:20:15.311-04:00  INFO 37467 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-06T10:20:15.343-04:00  INFO 37467 --- [vendedor] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-05T13:31:01.422-04:00  INFO 36480 --- [vendedor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05T13:31:01.577-04:00  INFO 36480 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-06-05T13:31:01.579-04:00  INFO 36480 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Started VendedorApplication in 1.643 seconds (process running for 1.934)
+2026-06-05T13:35:50.150-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05T13:35:50.152-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-05T13:35:50.155-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-06-05T13:35:50.206-04:00 ERROR 36480 --- [vendedor] [http-nio-8081-exec-1] d.v.exception.GlobalExceptionHandler     : Error inesperado /api/vendedores/listar
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/vendedores/listar for request '/api/vendedores/listar'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:526) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at duoc.vendedor.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:50) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-06-05T13:37:50.159-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-7] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 20
+2026-06-05T13:37:50.176-04:00  WARN 36480 --- [vendedor] [http-nio-8081-exec-7] d.v.exception.GlobalExceptionHandler     : No se encontró vendedor con el id 20 en la ruta /api/v1/vendedores/20
+2026-06-05T13:37:54.875-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-8] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 7
+2026-06-05T13:38:30.298-04:00  WARN 36480 --- [vendedor] [http-nio-8081-exec-9] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
+2026-06-05T13:38:45.802-04:00  WARN 36480 --- [vendedor] [http-nio-8081-exec-2] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
+2026-06-05T13:38:53.047-04:00 ERROR 36480 --- [vendedor] [http-nio-8081-exec-3] d.v.exception.GlobalExceptionHandler     : Error inesperado /api/v1/vendedores
+
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Numeric value (50000000000) out of range of `int` (-2147483648 - 2147483647)
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:363) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.read(AbstractJacksonHttpMessageConverter.java:319) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:203) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:156) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.7.jar:7.0.7]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.21.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at duoc.vendedor.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:50) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.5.jar:7.0.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.7.jar:7.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: tools.jackson.core.exc.InputCoercionException: Numeric value (50000000000) out of range of `int` (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); byte offset: #203] (through reference chain: duoc.vendedor.dto.VendedorRequest["sueldoBaseVendedor"])
+	at tools.jackson.core.base.ParserMinimalBase._constructInputCoercion(ParserMinimalBase.java:1144) ~[jackson-core-3.1.2.jar:3.1.2]
+	at tools.jackson.core.base.ParserMinimalBase._reportOverflowInt(ParserMinimalBase.java:931) ~[jackson-core-3.1.2.jar:3.1.2]
+	at tools.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:736) ~[jackson-core-3.1.2.jar:3.1.2]
+	at tools.jackson.core.json.JsonParserBase._parseIntValue(JsonParserBase.java:263) ~[jackson-core-3.1.2.jar:3.1.2]
+	at tools.jackson.core.base.ParserBase.getIntValue(ParserBase.java:609) ~[jackson-core-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.jdk.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:567) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.jdk.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:539) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:120) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:652) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.bean.BeanDeserializer.deserialize(BeanDeserializer.java:200) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.deser.DeserializationContextExt.readRootValue(DeserializationContextExt.java:266) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:1888) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at tools.jackson.databind.ObjectReader.readValue(ObjectReader.java:1270) ~[jackson-databind-3.1.2.jar:3.1.2]
+	at org.springframework.http.converter.AbstractJacksonHttpMessageConverter.readJavaType(AbstractJacksonHttpMessageConverter.java:352) ~[spring-web-7.0.7.jar:7.0.7]
+	... 94 common frames omitted
+
+2026-06-05T13:41:32.436-04:00  WARN 36480 --- [vendedor] [http-nio-8081-exec-5] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
+2026-06-05T13:41:46.262-04:00  WARN 36480 --- [vendedor] [http-nio-8081-exec-7] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
+2026-06-05T13:41:56.372-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-9] duoc.vendedor.service.VendedorService    : Creando Vendedor Con Run:21.431.930-6
+2026-06-05T13:43:06.278-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-1] duoc.vendedor.service.VendedorService    : Actualizando Vendedor con id 8
+2026-06-05T13:43:06.279-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-1] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 8
+2026-06-05T13:43:15.561-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Actualizando Vendedor con id 8
+2026-06-05T13:43:15.562-04:00  INFO 36480 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 8
+2026-06-05T13:46:22.445-04:00  INFO 36480 --- [vendedor] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05T13:46:22.449-04:00  INFO 36480 --- [vendedor] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-05T13:46:22.453-04:00  INFO 36480 --- [vendedor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:46:22.454-04:00  INFO 36480 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-05T13:46:22.457-04:00  INFO 36480 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-05T13:46:27.591-04:00  INFO 36714 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Starting VendedorApplication using Java 21.0.1 with PID 36714 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor)
+2026-06-05T13:46:27.592-04:00  INFO 36714 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-06-05T13:46:27.786-04:00  INFO 36714 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T13:46:27.802-04:00  INFO 36714 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-05T13:46:27.960-04:00  INFO 36714 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-06-05T13:46:27.966-04:00  INFO 36714 --- [vendedor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-05T13:46:27.966-04:00  INFO 36714 --- [vendedor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05T13:46:27.978-04:00  INFO 36714 --- [vendedor] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 373 ms
+2026-06-05T13:46:28.042-04:00  INFO 36714 --- [vendedor] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05T13:46:28.068-04:00  INFO 36714 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05T13:46:28.190-04:00  INFO 36714 --- [vendedor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T13:46:28.200-04:00  INFO 36714 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T13:46:28.314-04:00  INFO 36714 --- [vendedor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@611587f7
+2026-06-05T13:46:28.315-04:00  INFO 36714 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T13:46:28.343-04:00  INFO 36714 --- [vendedor] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_vendedor]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -67,52 +287,69 @@ This generated password is for development use only. Your security configuration
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-06T10:20:15.670-04:00  INFO 37467 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-06T10:20:15.938-04:00  INFO 37467 --- [vendedor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T10:20:15.970-04:00  INFO 37467 --- [vendedor] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-06T10:20:16.068-04:00  WARN 37467 --- [vendedor] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-06-05T13:46:28.652-04:00  INFO 36714 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T13:46:28.674-04:00  INFO 36714 --- [vendedor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:46:28.700-04:00  INFO 36714 --- [vendedor] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T13:46:28.795-04:00  WARN 36714 --- [vendedor] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 6b989b4d-a513-493f-aa7e-f0c17e58c120
+Using generated security password: b2281a95-1e41-4bbb-94ad-b7bda3cd3443
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-06T10:20:16.071-04:00  INFO 37467 --- [vendedor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-06T10:20:16.226-04:00  INFO 37467 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
-2026-05-06T10:20:16.229-04:00  INFO 37467 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Started VendedorApplication in 1.856 seconds (process running for 2.214)
-2026-05-06T10:44:59.474-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-06T10:44:59.475-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-06T10:44:59.477-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-05-06T10:45:26.296-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 1
-2026-05-06T10:45:26.326-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-3] d.v.exception.GlobalExceptionHandler     : No se encontró vendedor con el id 1 en la ruta /api/v1/vendedores/1
-2026-05-06T10:46:55.101-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-6] duoc.vendedor.service.VendedorService    : Creando Vendedor Con Run:11.674.477-5
-2026-05-06T10:47:46.443-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-7] d.v.exception.GlobalExceptionHandler     : Intento de registro con RUT duplicado en la ruta /api/v1/vendedores: No se puede registrar el rut : 11.674.477-5 porque esta duplicado
-2026-05-06T10:48:42.785-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-8] duoc.vendedor.service.VendedorService    : Creando Vendedor Con Run:11.321.012-5
-2026-05-06T10:49:13.746-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-9] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
-2026-05-06T10:49:31.156-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-2] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
-2026-05-06T10:50:08.856-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-3] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/vendedores
-2026-05-06T10:50:14.192-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-5] duoc.vendedor.service.VendedorService    : Creando Vendedor Con Run:15.231.567-K
-2026-05-06T10:50:49.849-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-7] duoc.vendedor.service.VendedorService    : Actualizando Vendedor con id 3
-2026-05-06T10:50:49.850-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-7] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 3
-2026-05-06T10:51:18.600-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-8] duoc.vendedor.service.VendedorService    : Actualizando Vendedor con id 3
-2026-05-06T10:51:18.601-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-8] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 3
-2026-05-06T10:51:18.608-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-8] d.v.exception.GlobalExceptionHandler     : Intento de registro con RUT duplicado en la ruta /api/v1/vendedores/3: El Rut ya se encuentra registrado por otro vendedor
-2026-05-06T10:51:37.555-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-9] duoc.vendedor.service.VendedorService    : Eliminando Vendedor con id 20
-2026-05-06T10:51:37.555-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-9] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 20
-2026-05-06T10:51:37.561-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-9] d.v.exception.GlobalExceptionHandler     : No se encontró vendedor con el id 20 en la ruta /api/v1/vendedores/20
-2026-05-06T10:52:01.537-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-10] duoc.vendedor.service.VendedorService    : Eliminando Vendedor con id 3
-2026-05-06T10:52:01.538-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-10] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 3
-2026-05-06T11:04:00.640-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-1] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 20
-2026-05-06T11:04:00.645-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-1] d.v.exception.GlobalExceptionHandler     : No se encontró vendedor con el id 20 en la ruta /api/v1/vendedores/20
-2026-05-06T11:04:18.984-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 1
-2026-05-06T11:04:41.462-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-4] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 2
-2026-05-06T11:04:58.808-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-5] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 2
-2026-05-06T11:05:48.632-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-6] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 3
-2026-05-06T11:05:48.635-04:00  WARN 37467 --- [vendedor] [http-nio-8081-exec-6] d.v.exception.GlobalExceptionHandler     : No se encontró vendedor con el id 3 en la ruta /api/v1/vendedores/3
-2026-05-06T11:06:09.556-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-7] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 1
-2026-05-06T11:06:14.537-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-8] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 1
-2026-05-06T11:08:07.869-04:00  INFO 37467 --- [vendedor] [http-nio-8081-exec-10] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 1
-2026-05-06T11:21:04.893-04:00  INFO 37467 --- [vendedor] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-06T11:21:04.898-04:00  INFO 37467 --- [vendedor] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-06T11:21:04.901-04:00  INFO 37467 --- [vendedor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T11:21:04.902-04:00  INFO 37467 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-06T11:21:04.903-04:00  INFO 37467 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-05T13:46:28.797-04:00  INFO 36714 --- [vendedor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05T13:46:28.950-04:00  INFO 36714 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-06-05T13:46:28.952-04:00  INFO 36714 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Started VendedorApplication in 1.496 seconds (process running for 1.739)
+2026-06-05T13:46:33.557-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05T13:46:33.557-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-05T13:46:33.558-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-05T13:46:33.608-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-2] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 8
+2026-06-05T13:46:40.767-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Eliminando Vendedor con id 7
+2026-06-05T13:46:40.767-04:00  INFO 36714 --- [vendedor] [http-nio-8081-exec-3] duoc.vendedor.service.VendedorService    : Buscando Vendedor con id 7
+2026-06-05T13:51:37.864-04:00  INFO 36714 --- [vendedor] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05T13:51:37.870-04:00  INFO 36714 --- [vendedor] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-05T13:51:37.873-04:00  INFO 36714 --- [vendedor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:51:37.874-04:00  INFO 36714 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-05T13:51:37.876-04:00  INFO 36714 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-05T13:51:38.990-04:00  INFO 36746 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Starting VendedorApplication using Java 21.0.1 with PID 36746 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vendedor)
+2026-06-05T13:51:38.990-04:00  INFO 36746 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-06-05T13:51:39.208-04:00  INFO 36746 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T13:51:39.224-04:00  INFO 36746 --- [vendedor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-06-05T13:51:39.374-04:00  INFO 36746 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-06-05T13:51:39.379-04:00  INFO 36746 --- [vendedor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-05T13:51:39.379-04:00  INFO 36746 --- [vendedor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05T13:51:39.391-04:00  INFO 36746 --- [vendedor] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 386 ms
+2026-06-05T13:51:39.450-04:00  INFO 36746 --- [vendedor] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05T13:51:39.475-04:00  INFO 36746 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05T13:51:39.599-04:00  INFO 36746 --- [vendedor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T13:51:39.609-04:00  INFO 36746 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T13:51:39.719-04:00  INFO 36746 --- [vendedor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@611587f7
+2026-06-05T13:51:39.720-04:00  INFO 36746 --- [vendedor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T13:51:39.748-04:00  INFO 36746 --- [vendedor] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_vendedor]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_vendedor/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05T13:51:40.062-04:00  INFO 36746 --- [vendedor] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T13:51:40.324-04:00  INFO 36746 --- [vendedor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:51:40.353-04:00  INFO 36746 --- [vendedor] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T13:51:40.448-04:00  WARN 36746 --- [vendedor] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d8cc1b2a-03fd-4fcd-84e4-64d62e02e931
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05T13:51:40.451-04:00  INFO 36746 --- [vendedor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05T13:51:40.599-04:00  INFO 36746 --- [vendedor] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-06-05T13:51:40.602-04:00  INFO 36746 --- [vendedor] [main] duoc.vendedor.VendedorApplication        : Started VendedorApplication in 1.791 seconds (process running for 2.063)
+2026-06-05T14:10:01.141-04:00  INFO 36746 --- [vendedor] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05T14:10:01.151-04:00  INFO 36746 --- [vendedor] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-05T14:10:01.155-04:00  INFO 36746 --- [vendedor] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T14:10:01.157-04:00  INFO 36746 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-05T14:10:01.166-04:00  INFO 36746 --- [vendedor] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

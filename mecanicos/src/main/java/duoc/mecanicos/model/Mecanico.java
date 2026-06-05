@@ -26,4 +26,7 @@ public class Mecanico {
     @Column(nullable = false)
     private String apellidoMecanico;
 
+    @Column(nullable = false)
+    private Integer sueldoBaseMecanico;
+
 }

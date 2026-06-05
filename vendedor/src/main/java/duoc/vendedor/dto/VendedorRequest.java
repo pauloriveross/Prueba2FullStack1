@@ -1,8 +1,6 @@
 package duoc.vendedor.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 public class VendedorRequest {
 
@@ -25,6 +23,12 @@ public class VendedorRequest {
 
     @Size(max = 10, message = "El turno no puede superar los 10 caracteres")
     private String turnoVendedor;
+
+
+    @NotNull(message = "El sueldo es obligatorio ")
+    @Min(value = 520000 , message = "El sueldo no puede ser inferior al sueldo base legal ")
+    @Max(value = 1200000,message = "El sueldo excede el limite permitido ")
+    private Integer sueldoBaseVendedor;
 
     @NotBlank(message = "El correo es obligatorio")
     @Email(message = "El correo debe tener un formato valido")
@@ -72,6 +76,10 @@ public class VendedorRequest {
     public void setTurnoVendedor(String turnoVendedor) {
         this.turnoVendedor = turnoVendedor;
     }
+
+    public Integer getSueldoBaseVendedor(){return sueldoBaseVendedor;}
+
+    public void setSueldoBaseVendedor(Integer sueldoBaseVendedor){ this.sueldoBaseVendedor = sueldoBaseVendedor;}
 
     public String getEmailVendedor() {
         return emailVendedor;

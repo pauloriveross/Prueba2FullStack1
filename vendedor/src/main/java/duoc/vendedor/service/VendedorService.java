@@ -50,6 +50,7 @@ public class VendedorService {
         vendedor.setApellidoVendedor(request.getApellidoVendedor());
         vendedor.setSeccionVendedor(request.getSeccionVendedor());
         vendedor.setTurnoVendedor(request.getTurnoVendedor());
+        vendedor.setSueldoBaseVendedor(request.getSueldoBaseVendedor());
         vendedor.setEmailVendedor(request.getEmailVendedor());
         return vendedor;
     }
@@ -71,6 +72,7 @@ public class VendedorService {
        vendedor.setApellidoVendedor(request.getApellidoVendedor());
        vendedor.setSeccionVendedor(request.getSeccionVendedor());
        vendedor.setTurnoVendedor(request.getTurnoVendedor());
+       vendedor.setSueldoBaseVendedor(request.getSueldoBaseVendedor());
        vendedor.setEmailVendedor(request.getEmailVendedor());
        return vendedorRepository.save(vendedor);
     }
@@ -79,6 +81,8 @@ public class VendedorService {
         log.error("Se ejecuta el metodo para simular un error interno");
                 throw new RuntimeException("Error simulado para pruebas ");
     }
+
+
 
 
 

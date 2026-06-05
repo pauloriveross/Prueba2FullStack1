@@ -1,18 +1,18 @@
-2026-05-06T10:21:16.133-04:00  INFO 37587 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Starting MecanicosApplication using Java 21.0.1 with PID 37587 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos)
-2026-05-06T10:21:16.135-04:00  INFO 37587 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : No active profile set, falling back to 1 default profile: "default"
-2026-05-06T10:21:16.331-04:00  INFO 37587 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-06T10:21:16.347-04:00  INFO 37587 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
-2026-05-06T10:21:16.517-04:00  INFO 37587 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
-2026-05-06T10:21:16.523-04:00  INFO 37587 --- [mecanicos] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-06T10:21:16.523-04:00  INFO 37587 --- [mecanicos] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-06T10:21:16.536-04:00  INFO 37587 --- [mecanicos] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 387 ms
-2026-05-06T10:21:16.608-04:00  INFO 37587 --- [mecanicos] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-06T10:21:16.626-04:00  INFO 37587 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-06T10:21:16.751-04:00  INFO 37587 --- [mecanicos] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-06T10:21:16.762-04:00  INFO 37587 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-06T10:21:16.873-04:00  INFO 37587 --- [mecanicos] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68360fb9
-2026-05-06T10:21:16.874-04:00  INFO 37587 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-06T10:21:16.900-04:00  INFO 37587 --- [mecanicos] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-05T13:59:15.217-04:00  INFO 37005 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Starting MecanicosApplication using Java 21.0.1 with PID 37005 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos)
+2026-06-05T13:59:15.218-04:00  INFO 37005 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-05T13:59:15.443-04:00  INFO 37005 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T13:59:15.461-04:00  INFO 37005 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-06-05T13:59:15.620-04:00  INFO 37005 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-06-05T13:59:15.624-04:00  INFO 37005 --- [mecanicos] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-05T13:59:15.625-04:00  INFO 37005 --- [mecanicos] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05T13:59:15.637-04:00  INFO 37005 --- [mecanicos] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 405 ms
+2026-06-05T13:59:15.700-04:00  INFO 37005 --- [mecanicos] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05T13:59:15.719-04:00  INFO 37005 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05T13:59:15.846-04:00  INFO 37005 --- [mecanicos] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T13:59:15.856-04:00  INFO 37005 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T13:59:15.968-04:00  INFO 37005 --- [mecanicos] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36330be8
+2026-06-05T13:59:15.968-04:00  INFO 37005 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T13:59:15.998-04:00  INFO 37005 --- [mecanicos] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_mecanicos]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -24,55 +24,78 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-06T10:21:17.210-04:00  INFO 37587 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-06T10:21:17.470-04:00  INFO 37587 --- [mecanicos] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T10:21:17.500-04:00  INFO 37587 --- [mecanicos] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-06T10:21:17.577-04:00  WARN 37587 --- [mecanicos] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-06T10:21:17.597-04:00  WARN 37587 --- [mecanicos] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-06-05T13:59:16.306-04:00  INFO 37005 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T13:59:16.338-04:00  INFO 37005 --- [mecanicos] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T13:59:16.366-04:00  INFO 37005 --- [mecanicos] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T13:59:16.439-04:00  WARN 37005 --- [mecanicos] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05T13:59:16.460-04:00  WARN 37005 --- [mecanicos] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 92da1706-3ea2-4431-b417-304fe4bdd4fa
+Using generated security password: a478feea-cd08-4693-a107-e9035feeba18
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-06T10:21:17.600-04:00  INFO 37587 --- [mecanicos] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-06T10:21:17.746-04:00  INFO 37587 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
-2026-05-06T10:21:17.748-04:00  INFO 37587 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Started MecanicosApplication in 1.749 seconds (process running for 2.014)
-2026-05-06T10:53:08.594-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-06T10:53:08.595-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-06T10:53:08.600-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2026-05-06T10:53:08.649-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
-2026-05-06T10:53:25.608-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-3] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 2
-2026-05-06T10:53:25.618-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-3] d.m.exception.GlobalExceptionHandler     : No se encontro el mecanico con id: 2 en la ruta /api/v1/mecanicos/2
-2026-05-06T10:54:29.087-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-6] duoc.mecanicos.service.MecanicoService   : Creando Mecanico Con Run :12.023.125-9
-2026-05-06T10:55:03.674-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-7] duoc.mecanicos.service.MecanicoService   : Creando Mecanico Con Run :11.431.234-K
-2026-05-06T10:55:23.470-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-8] duoc.mecanicos.service.MecanicoService   : Creando Mecanico Con Run :18.953.678-1
-2026-05-06T10:56:08.742-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-9] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mecanicos
-2026-05-06T10:56:27.653-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-2] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
-2026-05-06T10:56:44.769-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-1] d.m.exception.GlobalExceptionHandler     : Intento de registro con RUT duplicado en la ruta /api/v1/mecanicos: No se puede registrar el rut : 12.023.125-9 porque esta duplicado.
-2026-05-06T10:57:01.320-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-3] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mecanicos
-2026-05-06T10:57:07.261-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-5] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mecanicos
-2026-05-06T10:57:15.206-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-7] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
-2026-05-06T10:57:46.697-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-8] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
-2026-05-06T10:58:07.257-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-9] duoc.mecanicos.service.MecanicoService   : Actualizando Mecánico con id: 3
-2026-05-06T10:58:07.258-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-9] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 3
-2026-05-06T10:58:35.716-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-10] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
-2026-05-06T10:58:57.177-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-2] duoc.mecanicos.service.MecanicoService   : Actualizando Mecánico con id: 3
-2026-05-06T10:58:57.178-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-2] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 3
-2026-05-06T10:58:57.187-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-2] d.m.exception.GlobalExceptionHandler     : Intento de registro con RUT duplicado en la ruta /api/v1/mecanicos/3: El rut ya se encuentra registrado por otro mecánico
-2026-05-06T10:59:16.881-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] duoc.mecanicos.service.MecanicoService   : Eliminando Mecánico con id: 20
-2026-05-06T10:59:16.882-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-1] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 20
-2026-05-06T10:59:16.886-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-1] d.m.exception.GlobalExceptionHandler     : No se encontro el mecanico con id: 20 en la ruta /api/v1/mecanicos/20
-2026-05-06T10:59:51.972-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-3] duoc.mecanicos.service.MecanicoService   : Eliminando Mecánico con id: 3
-2026-05-06T10:59:51.973-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-3] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 3
-2026-05-06T11:12:41.725-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-5] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 5
-2026-05-06T11:12:41.731-04:00  WARN 37587 --- [mecanicos] [http-nio-8084-exec-5] d.m.exception.GlobalExceptionHandler     : No se encontro el mecanico con id: 5 en la ruta /api/v1/mecanicos/5
-2026-05-06T11:13:11.405-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-6] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 1
-2026-05-06T11:13:45.569-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-7] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 2
-2026-05-06T11:14:09.633-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-8] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 2
-2026-05-06T11:14:31.042-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-9] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 1
-2026-05-06T11:18:22.666-04:00  INFO 37587 --- [mecanicos] [http-nio-8084-exec-2] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 2
-2026-05-06T11:20:13.732-04:00  INFO 37587 --- [mecanicos] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-06T11:20:13.737-04:00  INFO 37587 --- [mecanicos] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-06T11:20:13.741-04:00  INFO 37587 --- [mecanicos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T11:20:13.742-04:00  INFO 37587 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-06T11:20:13.744-04:00  INFO 37587 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-05T13:59:16.463-04:00  INFO 37005 --- [mecanicos] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05T13:59:16.607-04:00  INFO 37005 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-06-05T13:59:16.610-04:00  INFO 37005 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Started MecanicosApplication in 1.527 seconds (process running for 1.772)
+2026-06-05T14:00:58.682-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05T14:00:58.683-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-05T14:00:58.686-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-06-05T14:00:58.741-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-2] duoc.mecanicos.service.MecanicoService   : Listando todos los clientes
+2026-06-05T14:01:51.756-04:00  WARN 37005 --- [mecanicos] [http-nio-8084-exec-3] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mecanicos
+2026-06-05T14:02:02.453-04:00  WARN 37005 --- [mecanicos] [http-nio-8084-exec-5] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mecanicos
+2026-06-05T14:02:16.574-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-7] duoc.mecanicos.service.MecanicoService   : Creando Mecanico Con Run :21.431.930-6
+2026-06-05T14:02:42.720-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-8] duoc.mecanicos.service.MecanicoService   : Actualizando Mecánico con id: 8
+2026-06-05T14:02:42.721-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-8] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 8
+2026-06-05T14:02:50.835-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-9] duoc.mecanicos.service.MecanicoService   : Actualizando Mecánico con id: 8
+2026-06-05T14:02:50.836-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-9] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 8
+2026-06-05T14:03:07.366-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-10] duoc.mecanicos.service.MecanicoService   : Eliminando Mecánico con id: 8
+2026-06-05T14:03:07.367-04:00  INFO 37005 --- [mecanicos] [http-nio-8084-exec-10] duoc.mecanicos.service.MecanicoService   : Buscando cliente con id: 8
+2026-06-05T14:07:25.285-04:00  INFO 37005 --- [mecanicos] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05T14:07:25.289-04:00  INFO 37005 --- [mecanicos] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-05T14:07:25.292-04:00  INFO 37005 --- [mecanicos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T14:07:25.293-04:00  INFO 37005 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-05T14:07:25.296-04:00  INFO 37005 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-05T14:07:59.839-04:00  INFO 37183 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Starting MecanicosApplication using Java 21.0.1 with PID 37183 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mecanicos)
+2026-06-05T14:07:59.840-04:00  INFO 37183 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-05T14:08:00.059-04:00  INFO 37183 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05T14:08:00.074-04:00  INFO 37183 --- [mecanicos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-05T14:08:00.230-04:00  INFO 37183 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-06-05T14:08:00.235-04:00  INFO 37183 --- [mecanicos] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-05T14:08:00.235-04:00  INFO 37183 --- [mecanicos] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05T14:08:00.246-04:00  INFO 37183 --- [mecanicos] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 388 ms
+2026-06-05T14:08:00.307-04:00  INFO 37183 --- [mecanicos] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05T14:08:00.330-04:00  INFO 37183 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05T14:08:00.471-04:00  INFO 37183 --- [mecanicos] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05T14:08:00.481-04:00  INFO 37183 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-05T14:08:00.596-04:00  INFO 37183 --- [mecanicos] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47c5cbf2
+2026-06-05T14:08:00.596-04:00  INFO 37183 --- [mecanicos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-05T14:08:00.624-04:00  INFO 37183 --- [mecanicos] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_mecanicos]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_mecanicos/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05T14:08:00.928-04:00  INFO 37183 --- [mecanicos] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05T14:08:01.190-04:00  INFO 37183 --- [mecanicos] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T14:08:01.220-04:00  INFO 37183 --- [mecanicos] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05T14:08:01.293-04:00  WARN 37183 --- [mecanicos] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05T14:08:01.313-04:00  WARN 37183 --- [mecanicos] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fe4bc6b7-5719-415a-b38d-1dc20631da29
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05T14:08:01.316-04:00  INFO 37183 --- [mecanicos] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05T14:08:01.457-04:00  INFO 37183 --- [mecanicos] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-06-05T14:08:01.460-04:00  INFO 37183 --- [mecanicos] [main] duoc.mecanicos.MecanicosApplication      : Started MecanicosApplication in 1.767 seconds (process running for 1.993)
+2026-06-05T14:09:53.596-04:00  INFO 37183 --- [mecanicos] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05T14:09:53.602-04:00  INFO 37183 --- [mecanicos] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-05T14:09:53.605-04:00  INFO 37183 --- [mecanicos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05T14:09:53.606-04:00  INFO 37183 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-05T14:09:53.608-04:00  INFO 37183 --- [mecanicos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

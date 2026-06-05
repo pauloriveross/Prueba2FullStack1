@@ -55,6 +55,7 @@ public class MecanicoService {
         mecanico.setRutMecanico(request.getRutMecanico());
         mecanico.setNombreMecanico(request.getNombreMecanico());
         mecanico.setApellidoMecanico(request.getApellidoMecanico());
+        mecanico.setSueldoBaseMecanico(request.getSueldoBaseMecanico());
         return mecanico;
     }
 
@@ -69,6 +70,7 @@ public class MecanicoService {
         mecanico.setRutMecanico(request.getRutMecanico());
         mecanico.setNombreMecanico(request.getNombreMecanico());
         mecanico.setApellidoMecanico(request.getApellidoMecanico());
+        mecanico.setSueldoBaseMecanico(request.getSueldoBaseMecanico());
 
         return mecanicoRepository.save(mecanico);
     }

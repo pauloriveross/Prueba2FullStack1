@@ -36,6 +36,10 @@ public class Vendedor {
 
     private String turnoVendedor;
 
+
+    @Column(nullable = false)
+    private Integer sueldoBaseVendedor;
+
     @Column(nullable = false)
 
     private String emailVendedor;
