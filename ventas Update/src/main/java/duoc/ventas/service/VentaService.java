@@ -55,10 +55,14 @@ public class VentaService {
 
         }
 
+        // Operacion para obtener la comision de la venta
+        double porcentajeComision= 0.03;
+        Integer comisionCalculada =  (int) (precioOficial * porcentajeComision);
+
         Venta venta = crearDesdeRequest(request);
         venta.setPrecioVehiculo(precioOficial);
+        venta.setComisionVenta(comisionCalculada);
         return ventaRepository.save(venta);
-
     }
 
     public Venta crearDesdeRequest(VentaRequest request){
@@ -89,12 +93,17 @@ public class VentaService {
         Integer precioUpdate = Integer.parseInt(datos.get("precioVehiculo").toString());
         vendedorClient.obtenerVendedorId(request.getIdVendedor(), token);
 
+
+        double porcentajeComision= 0.03;
+        Integer comisionUpdate =  (int) (precioUpdate * porcentajeComision);
+
         venta.setFechaVenta(request.getFechaVenta());
         venta.setPrecioVehiculo(precioUpdate);
         venta.setTipoPago(request.getTipoPago());
         venta.setIdCliente(request.getIdCliente());
         venta.setIdVehiculo(request.getIdVehiculo());
         venta.setIdVendedor(request.getIdVendedor());
+        venta.setComisionVenta(comisionUpdate);
         return ventaRepository.save(venta);
 
     }

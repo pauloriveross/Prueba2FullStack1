@@ -37,4 +37,10 @@ public class Venta {
     private Integer idVendedor;
 
 
+    @Column(nullable = false)
+    private Integer comisionVenta;
+
+
+
+
 }
