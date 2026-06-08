@@ -5,46 +5,41 @@ import duoc.vendedor.dto.VendedorRequest;
 import duoc.vendedor.model.Vendedor;
 import duoc.vendedor.service.VendedorService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.hateoas.CollectionModel;
 
 import java.util.List;
-
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 @RestController
 @RequestMapping("api/v1/vendedores")
+@RequiredArgsConstructor
 public class VendedorController {
 
-    @Autowired
-    private VendedorService vendedorService;
+    private final VendedorService vendedorService;
 
     //Listar Todos Los Vendedores
     @GetMapping("/listar")
-    public ResponseEntity<List<Vendedor>> listarVendedorres() {
-        List<Vendedor> vendedores = vendedorService.listarTodos();
-
-        if (vendedores.isEmpty()) {
-            return ResponseEntity.noContent().build();
-
-        }
-
-        return ResponseEntity.ok(vendedores);
+    public CollectionModel<EntityModel<Vendedor>>listarVendedores(){
+        List<EntityModel<Vendedor>> vendedores = vendedorService.listarTodos().stream().map(this::toModel).toList();
+        return CollectionModel.of(vendedores,linkTo(methodOn(VendedorController.class).listarVendedores()).withSelfRel());
     }
 
     //Buscar Vendedor por ID
     @GetMapping("/{id}")
-    public ResponseEntity<Vendedor> buscarPorId(@PathVariable Integer id) {
-        Vendedor vendedor = vendedorService.buscarporId(id);
-        return ResponseEntity.ok(vendedor);
+    public EntityModel<Vendedor> buscarPorId(@PathVariable Integer id){
+        return toModel(vendedorService.buscarporId(id));
     }
 
-    
+
     //Agregar Nuevo Vendedor
     @PostMapping
-    public ResponseEntity<Vendedor> guardar(@Valid @RequestBody VendedorRequest request) {
-        Vendedor vendedorGuardado = vendedorService.guardarVendedor(request);
-        return ResponseEntity.status(HttpStatus.CREATED).body(vendedorGuardado);
+    public ResponseEntity<EntityModel<Vendedor>> agregarVendedor(@Valid @RequestBody VendedorRequest vendedorRequest){
+        Vendedor vendedorNuevo= vendedorService.guardarVendedor(vendedorRequest);
+        return ResponseEntity.status(HttpStatus.CREATED).body(toModel(vendedorNuevo));
     }
 
 
@@ -66,17 +61,16 @@ public class VendedorController {
 
     // Actualizar Vendedor
     @PutMapping("/{id}")
-    public ResponseEntity<Vendedor>actualizarVendedor(@PathVariable Integer id, @Valid @RequestBody VendedorRequest request){
-        Vendedor vendedorUpdate= vendedorService.actualizarVendedor(id,request);
-        return ResponseEntity.ok(vendedorUpdate);
+    public EntityModel<Vendedor> actualizar (@PathVariable Integer id , @Valid @RequestBody VendedorRequest vendedorRequest){
+        return toModel(vendedorService.actualizarVendedor(id,vendedorRequest));
     }
 
 
 
-
-
-
-
-
+    private EntityModel<Vendedor> toModel(Vendedor vendedor){
+        return EntityModel.of(vendedor,
+                linkTo(methodOn(VendedorController.class).buscarPorId(vendedor.getIdVendedor())).withSelfRel(),
+                linkTo(methodOn(VendedorController.class).listarVendedores()).withRel("todos"));
+    }
 
 }
