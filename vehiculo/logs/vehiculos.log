@@ -1,18 +1,18 @@
-2026-06-06T18:00:15.664-04:00  INFO 49293 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Starting VehiculoApplication using Java 21.0.1 with PID 49293 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo)
-2026-06-06T18:00:15.666-04:00  INFO 49293 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-06-06T18:00:15.874-04:00  INFO 49293 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-06T18:00:15.891-04:00  INFO 49293 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
-2026-06-06T18:00:16.046-04:00  INFO 49293 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-06-06T18:00:16.051-04:00  INFO 49293 --- [vehiculo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-06T18:00:16.051-04:00  INFO 49293 --- [vehiculo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-06T18:00:16.063-04:00  INFO 49293 --- [vehiculo] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 383 ms
-2026-06-06T18:00:16.133-04:00  INFO 49293 --- [vehiculo] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-06T18:00:16.154-04:00  INFO 49293 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-06T18:00:16.275-04:00  INFO 49293 --- [vehiculo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-06T18:00:16.285-04:00  INFO 49293 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-06T18:00:16.395-04:00  INFO 49293 --- [vehiculo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4888d1ea
-2026-06-06T18:00:16.396-04:00  INFO 49293 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-06T18:00:16.424-04:00  INFO 49293 --- [vehiculo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-11T01:48:09.532-04:00  INFO 63102 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Starting VehiculoApplication using Java 21.0.1 with PID 63102 (/Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/vehiculo)
+2026-06-11T01:48:09.536-04:00  INFO 63102 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T01:48:09.852-04:00  INFO 63102 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T01:48:09.868-04:00  INFO 63102 --- [vehiculo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2026-06-11T01:48:10.033-04:00  INFO 63102 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-11T01:48:10.038-04:00  INFO 63102 --- [vehiculo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T01:48:10.038-04:00  INFO 63102 --- [vehiculo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T01:48:10.052-04:00  INFO 63102 --- [vehiculo] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 489 ms
+2026-06-11T01:48:10.121-04:00  INFO 63102 --- [vehiculo] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T01:48:10.142-04:00  INFO 63102 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T01:48:10.281-04:00  INFO 63102 --- [vehiculo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T01:48:10.292-04:00  INFO 63102 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T01:48:10.410-04:00  INFO 63102 --- [vehiculo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23933031
+2026-06-11T01:48:10.411-04:00  INFO 63102 --- [vehiculo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T01:48:10.442-04:00  INFO 63102 --- [vehiculo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_vehiculo]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -24,33 +24,24 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-06T18:00:16.733-04:00  INFO 49293 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-06T18:00:16.753-04:00  INFO 49293 --- [vehiculo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-06T18:00:16.780-04:00  INFO 49293 --- [vehiculo] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-06T18:00:16.854-04:00  WARN 49293 --- [vehiculo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-06T18:00:16.874-04:00  WARN 49293 --- [vehiculo] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-06-11T01:48:10.784-04:00  INFO 63102 --- [vehiculo] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T01:48:10.807-04:00  INFO 63102 --- [vehiculo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T01:48:10.837-04:00  INFO 63102 --- [vehiculo] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T01:48:10.915-04:00  WARN 63102 --- [vehiculo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T01:48:10.938-04:00  WARN 63102 --- [vehiculo] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: e4ba9cf3-9a4a-45e3-9181-5cbee8c9209d
+Using generated security password: 4fb1559f-cd07-4902-a999-2334f4682ade
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-06-06T18:00:16.876-04:00  INFO 49293 --- [vehiculo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-06-06T18:00:17.026-04:00  INFO 49293 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-06-06T18:00:17.029-04:00  INFO 49293 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Started VehiculoApplication in 1.501 seconds (process running for 1.753)
-2026-06-06T18:05:12.423-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-06T18:05:12.423-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-06-06T18:05:12.425-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-06-06T18:05:12.482-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
-2026-06-06T18:06:00.301-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
-2026-06-06T18:06:09.926-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 6
-2026-06-06T18:07:49.327-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Listando todos los vehiculos
-2026-06-06T18:09:15.667-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Creando Vehiculo con patente: TYOP24
-2026-06-06T18:09:55.698-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-10] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 8
-2026-06-06T18:10:39.911-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Actualizando Vehiculo con id: 8
-2026-06-06T18:10:39.912-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 8
-2026-06-06T18:11:17.636-04:00  INFO 49293 --- [vehiculo] [http-nio-8080-exec-6] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 8
-2026-06-06T18:14:45.601-04:00  INFO 49293 --- [vehiculo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-06T18:14:45.607-04:00  INFO 49293 --- [vehiculo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-06T18:14:45.611-04:00  INFO 49293 --- [vehiculo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-06T18:14:45.616-04:00  INFO 49293 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-06T18:14:45.623-04:00  INFO 49293 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-11T01:48:10.940-04:00  INFO 63102 --- [vehiculo] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T01:48:11.147-04:00  INFO 63102 --- [vehiculo] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-11T01:48:11.150-04:00  INFO 63102 --- [vehiculo] [main] duoc.vehiculo.VehiculoApplication        : Started VehiculoApplication in 1.846 seconds (process running for 2.236)
+2026-06-11T01:50:07.933-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T01:50:07.936-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T01:50:07.943-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-06-11T01:50:07.998-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-1] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:50:45.029-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-2] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:51:21.482-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:51:42.462-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:52:10.366-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7

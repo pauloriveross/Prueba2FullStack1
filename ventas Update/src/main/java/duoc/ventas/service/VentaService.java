@@ -54,14 +54,21 @@ public class VentaService {
             throw new IdVehiculoDuplicadoException("El vehiculo ya esta registrado en otra venta");
 
         }
-
         // Operacion para obtener la comision de la venta
         double porcentajeComision= 0.03;
         Integer comisionCalculada =  (int) (precioOficial * porcentajeComision);
-
         Venta venta = crearDesdeRequest(request);
         venta.setPrecioVehiculo(precioOficial);
         venta.setComisionVenta(comisionCalculada);
+
+
+        String pagoIngresado = venta.getTipoPago().toUpperCase().replace("É","E");
+        if(pagoIngresado.equals("CREDITO")){
+            venta.setEstadoVenta("Pendiente de Aprobación");
+        }else {
+            venta.setEstadoVenta("Completada");
+        }
+
         return ventaRepository.save(venta);
     }
 
@@ -85,6 +92,7 @@ public class VentaService {
     public Venta actualizarVenta(Integer idVenta, VentaRequest request,String token) {
         log.info("Actualizando Venta con id {}", idVenta);
         Venta venta = buscarVentaPorId(idVenta);
+        String tipoPagoActual= venta.getTipoPago().toUpperCase().replace("É","E");
         if (ventaRepository.existsByIdVehiculoAndIdVentaNot(request.getIdVehiculo(), idVenta)) {
             throw new IdVehiculoDuplicadoException("El ID Del Vehiculo se encuentra asignado a otra venta ");
         }
@@ -104,6 +112,15 @@ public class VentaService {
         venta.setIdVehiculo(request.getIdVehiculo());
         venta.setIdVendedor(request.getIdVendedor());
         venta.setComisionVenta(comisionUpdate);
+
+        String tipoPagoNuevo= request.getTipoPago().toUpperCase().replace("É","E");
+        if (!tipoPagoActual.equals(tipoPagoNuevo)) {
+            if (tipoPagoNuevo.equals("CREDITO")) {
+                venta.setEstadoVenta("Pendiente de Aprobación");
+            } else{
+                venta.setEstadoVenta("Completada");
+            }
+        }
         return ventaRepository.save(venta);
 
     }

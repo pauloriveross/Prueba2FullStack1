@@ -41,6 +41,10 @@ public class Venta {
     private Integer comisionVenta;
 
 
+    @Column(nullable = false)
+    private String estadoVenta;
+
+
 
 
 }
