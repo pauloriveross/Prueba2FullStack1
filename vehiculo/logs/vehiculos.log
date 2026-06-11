@@ -45,3 +45,11 @@ This generated password is for development use only. Your security configuration
 2026-06-11T01:51:21.482-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-3] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
 2026-06-11T01:51:42.462-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-4] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
 2026-06-11T01:52:10.366-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-5] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:55:34.824-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-7] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:56:13.181-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-8] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:56:33.015-04:00  INFO 63102 --- [vehiculo] [http-nio-8080-exec-9] duoc.vehiculo.service.VehiculoService    : Buscando Vehiculo con id: 7
+2026-06-11T01:57:15.785-04:00  INFO 63102 --- [vehiculo] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T01:57:15.791-04:00  INFO 63102 --- [vehiculo] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T01:57:15.795-04:00  INFO 63102 --- [vehiculo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T01:57:15.798-04:00  INFO 63102 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T01:57:15.801-04:00  INFO 63102 --- [vehiculo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

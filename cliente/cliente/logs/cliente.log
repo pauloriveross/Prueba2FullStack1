@@ -49,3 +49,11 @@ This generated password is for development use only. Your security configuration
 2026-06-11T01:51:21.467-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-3] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
 2026-06-11T01:51:42.450-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-4] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
 2026-06-11T01:52:10.352-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-5] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
+2026-06-11T01:55:34.794-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-7] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
+2026-06-11T01:56:13.170-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-8] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
+2026-06-11T01:56:33.001-04:00  INFO 62967 --- [cliente] [http-nio-8082-exec-9] duoc.cliente.service.ClienteService      : Buscando cliente con id: 4
+2026-06-11T01:56:49.490-04:00  INFO 62967 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T01:56:49.495-04:00  INFO 62967 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T01:56:49.499-04:00  INFO 62967 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T01:56:49.502-04:00  INFO 62967 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T01:56:49.508-04:00  INFO 62967 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
