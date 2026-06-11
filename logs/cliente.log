@@ -1,0 +1,48 @@
+2026-06-11T11:05:59.547-04:00  INFO 68176 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 68176 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
+2026-06-11T11:05:59.548-04:00  INFO 68176 --- [cliente] [main] duoc.cliente.ClienteApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:05:59.774-04:00  INFO 68176 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:05:59.789-04:00  INFO 68176 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-11T11:05:59.948-04:00  INFO 68176 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-06-11T11:05:59.953-04:00  INFO 68176 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:05:59.954-04:00  INFO 68176 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:05:59.966-04:00  INFO 68176 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 403 ms
+2026-06-11T11:06:00.113-04:00  INFO 68176 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T11:06:00.224-04:00  INFO 68176 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ac756b
+2026-06-11T11:06:00.225-04:00  INFO 68176 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T11:06:00.247-04:00  INFO 68176 --- [cliente] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_cliente (MySQL 8.0)
+2026-06-11T11:06:00.275-04:00  INFO 68176 --- [cliente] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.012s)
+2026-06-11T11:06:00.284-04:00  INFO 68176 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_cliente`: 5
+2026-06-11T11:06:00.286-04:00  INFO 68176 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Schema `db_cliente` is up to date. No migration necessary.
+2026-06-11T11:06:00.318-04:00  INFO 68176 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:06:00.346-04:00  INFO 68176 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T11:06:00.488-04:00  INFO 68176 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:06:00.521-04:00  INFO 68176 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_cliente]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_cliente/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:06:00.801-04:00  INFO 68176 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:06:00.819-04:00  INFO 68176 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:06:00.844-04:00  INFO 68176 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T11:06:00.915-04:00  WARN 68176 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11T11:06:00.937-04:00  WARN 68176 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 871b3847-476b-4648-8482-757747352176
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-11T11:06:00.939-04:00  INFO 68176 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-11T11:06:01.110-04:00  INFO 68176 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-06-11T11:06:01.113-04:00  INFO 68176 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 1.764 seconds (process running for 2.111)
+2026-06-11T11:09:49.918-04:00  INFO 68176 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:09:49.923-04:00  INFO 68176 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:09:49.928-04:00  INFO 68176 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:09:49.931-04:00  INFO 68176 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T11:09:49.934-04:00  INFO 68176 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

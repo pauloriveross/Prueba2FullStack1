@@ -1,0 +1,40 @@
+2026-06-11T11:06:52.190-04:00  INFO 68260 --- [ventas] [main] duoc.ventas.VentasApplication            : Starting VentasApplication using Java 21.0.1 with PID 68260 (/Users/moka/Documents/GitHub/Prueba2FullStack1/ventas-Update/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
+2026-06-11T11:06:52.191-04:00  INFO 68260 --- [ventas] [main] duoc.ventas.VentasApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-11T11:06:52.432-04:00  INFO 68260 --- [ventas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11T11:06:52.479-04:00  INFO 68260 --- [ventas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2026-06-11T11:06:52.631-04:00  INFO 68260 --- [ventas] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-06-11T11:06:52.636-04:00  INFO 68260 --- [ventas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-11T11:06:52.637-04:00  INFO 68260 --- [ventas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-11T11:06:52.651-04:00  INFO 68260 --- [ventas] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 447 ms
+2026-06-11T11:06:52.736-04:00  INFO 68260 --- [ventas] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-11T11:06:52.751-04:00  INFO 68260 --- [ventas] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-11T11:06:52.882-04:00  INFO 68260 --- [ventas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11T11:06:52.894-04:00  INFO 68260 --- [ventas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-11T11:06:53.006-04:00  INFO 68260 --- [ventas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3980b44f
+2026-06-11T11:06:53.007-04:00  INFO 68260 --- [ventas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-11T11:06:53.036-04:00  INFO 68260 --- [ventas] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_venta]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: db_venta/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-11T11:06:53.321-04:00  INFO 68260 --- [ventas] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11T11:06:53.343-04:00  INFO 68260 --- [ventas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:06:53.434-04:00  INFO 68260 --- [ventas] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-11T11:06:53.680-04:00  INFO 68260 --- [ventas] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-11T11:06:53.713-04:00  INFO 68260 --- [ventas] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-06-11T11:06:53.716-04:00  INFO 68260 --- [ventas] [main] duoc.ventas.VentasApplication            : Started VentasApplication in 1.715 seconds (process running for 2.033)
+2026-06-11T11:06:53.893-04:00  INFO 68260 --- [ventas] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11T11:06:53.893-04:00  INFO 68260 --- [ventas] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-11T11:06:53.894-04:00  INFO 68260 --- [ventas] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-11T11:09:53.223-04:00  INFO 68260 --- [ventas] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-11T11:09:53.232-04:00  INFO 68260 --- [ventas] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-11T11:09:53.241-04:00  INFO 68260 --- [ventas] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11T11:09:53.245-04:00  INFO 68260 --- [ventas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-11T11:09:53.250-04:00  INFO 68260 --- [ventas] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
