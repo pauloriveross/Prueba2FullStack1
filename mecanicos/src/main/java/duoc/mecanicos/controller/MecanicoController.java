@@ -4,46 +4,43 @@ import duoc.mecanicos.dto.MecanicoRequest;
 import duoc.mecanicos.model.Mecanico;
 import duoc.mecanicos.service.MecanicoService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.hateoas.CollectionModel;
 import java.util.List;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("api/v1/mecanicos")
-
+@RequiredArgsConstructor
 public class MecanicoController {
 
-    @Autowired
-    private MecanicoService mecanicoService;
+
+    private  final MecanicoService mecanicoService;
 
     //Listar Todos Los Mecánicos
     @GetMapping("/listar")
-    public ResponseEntity<List<Mecanico>> listarMecanicos() {
-        List<Mecanico> mecanicos = mecanicoService.listarTodos();
-
-        if (mecanicos.isEmpty()) {
-            return ResponseEntity.noContent().build();
-
-        }
-
-        return ResponseEntity.ok(mecanicos);
+    public CollectionModel<EntityModel<Mecanico>>listarMecanicos(){
+        List<EntityModel<Mecanico>> mecanicos = mecanicoService.listarTodos().stream().map(this::toModel).toList();
+        return CollectionModel.of(mecanicos,linkTo(methodOn(MecanicoController.class).listarMecanicos()).withSelfRel());
     }
 
     //Buscar Mecanico por ID
     @GetMapping("/{id}")
-    public ResponseEntity<Mecanico> buscarPorId(@PathVariable Integer id) {
-        Mecanico mecanico = mecanicoService.buscarPorId(id);
-        return ResponseEntity.ok(mecanico);
+    public EntityModel<Mecanico>buscarPorId(@PathVariable Integer id){
+        return toModel(mecanicoService.buscarPorId(id));
     }
+
 
 
     //Agregar Nuevo Mecanico
     @PostMapping
-    public ResponseEntity<Mecanico> guardar(@Valid @RequestBody MecanicoRequest request) {
-        Mecanico mecanicoGuardado = mecanicoService.guardarMecanico(request);
-        return ResponseEntity.status(HttpStatus.CREATED).body(mecanicoGuardado);
+   public ResponseEntity<EntityModel<Mecanico>> agregarMecanico(@Valid @RequestBody MecanicoRequest mecanicoRequest){
+        Mecanico mecanicoNuevo = mecanicoService.guardarMecanico(mecanicoRequest);
+        return ResponseEntity.status(HttpStatus.CREATED).body(toModel(mecanicoNuevo));
     }
 
 
@@ -65,9 +62,17 @@ public class MecanicoController {
 
     // Actualizar Mecanico
     @PutMapping("/{id}")
-    public ResponseEntity<Mecanico>actualizarMecanico(@PathVariable Integer id, @Valid @RequestBody MecanicoRequest request){
-        Mecanico mecanicoUpdate = mecanicoService.actualizar(id,request);
-        return ResponseEntity.ok(mecanicoUpdate);
+    public EntityModel<Mecanico>actualizarMecanico (@PathVariable Integer id , @Valid @RequestBody MecanicoRequest mecanicoRequest){
+        return toModel(mecanicoService.actualizar(id, mecanicoRequest));
+    }
+
+
+    private EntityModel<Mecanico>toModel(Mecanico mecanico){
+        return EntityModel.of(mecanico,
+                linkTo(methodOn(MecanicoController.class).buscarPorId(mecanico.getIdMecanico())).withSelfRel(),
+                linkTo(methodOn(MecanicoController.class).listarMecanicos()).withRel("todos"));
+
+
     }
 
 

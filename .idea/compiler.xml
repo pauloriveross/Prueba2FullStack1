@@ -20,8 +20,8 @@
         </processorPath>
         <module name="cliente" />
         <module name="vendedor" />
-        <module name="ventas-Update" />
         <module name="mantenciones" />
+        <module name="ventas-Update" />
         <module name="gateway-service" />
         <module name="mecanicos" />
       </profile>
