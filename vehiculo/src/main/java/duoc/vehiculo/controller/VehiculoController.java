@@ -54,7 +54,6 @@ public class VehiculoController {
 
     private EntityModel<Vehiculo> toModel(Vehiculo vehiculo) {
         return EntityModel.of(vehiculo,
-                // Asumiendo que tu entidad Vehiculo usa getId() para su clave primaria
                 linkTo(methodOn(VehiculoController.class).buscarPorId(vehiculo.getIdVehiculo())).withSelfRel(),
                 linkTo(methodOn(VehiculoController.class).listarVehiculos()).withRel("todos"));
     }
