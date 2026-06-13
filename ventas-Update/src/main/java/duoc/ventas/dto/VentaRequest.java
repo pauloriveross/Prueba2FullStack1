@@ -15,9 +15,6 @@ public class VentaRequest {
     private Date fechaVenta;
 
     @NotBlank(message = "El tipo de pago es obligatorio")
-    @Pattern(regexp = "^(CREDITO|EFECTIVO|Credito|Efectivo)$",
-    message = "El metodo de pago ingresado es invalido , solo se permite " +
-            ": CREDITO,EFECTIVO,Credito o Efectivo .")
     private String tipoPago;
 
     @NotNull(message = "El id del cliente es obligatorio")
