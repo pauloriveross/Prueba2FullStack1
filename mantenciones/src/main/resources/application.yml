@@ -1,0 +1,56 @@
+server:
+  port: ${PORT:8085}
+
+spring:
+  application:
+    name: mantencion
+  datasource:
+    url: jdbc:h2:mem:db_mantencion;DB_CLOSE_DELAY=-1;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  enable-hateoas: false
+
+logging:
+  level:
+    duoc.mantenciones: INFO
+    org.springframework.web: WARN
+  file:
+    name: logs/mantencion.log
+
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8869/eureka/}
+  instance:
+    prefer-ip-address: true
+app:
+  discovery:
+    enabled: ${APP_DISCOVERY_ENABLED:true}
+
+services:
+  cliente:
+    url: ${CLIENTE_URL:http://CLIENTE}
+  mecanico:
+    url: ${MECANICO_URL:http://MECANICO}
+  vehiculo:
+    url: ${VEHICULO_URL:htpp://VEHICULO}
+
+jwt:
+  secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot0"
+  expiration-ms: 3600000
+
+
