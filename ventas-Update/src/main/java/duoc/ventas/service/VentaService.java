@@ -37,20 +37,21 @@ public class VentaService {
 
     ///////////////////////////////////////////////////////////////////////////
     /// Métodos
+
     //Listar
     public List<Venta>listarVentas(){
         return ventaRepository.findAll();
     }
 
 
-
+    //Buscar Venta por id
     public Venta buscarVentaPorId (Integer id){
         log.info("Buscando Venta con id {}",id);
         return ventaRepository.findById(id).orElseThrow(()->
                 new VentaNoEncontradaException("No se encontró la venta con el id " + id));
     }
 
-
+    //Registrar Venta
     public Venta guardarVenta(VentaRequest request,String token){
 
         ClienteResponse cliente = webClientBuilder.build().get()
@@ -64,10 +65,10 @@ public class VentaService {
         VendedorResponse vendedor = webClientBuilder.build().get()
                         .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}",request.getIdVendedor())
                          .header("Authorization",token)
-                                 .retrieve().bodyToMono(VendedorResponse.class).block();
+                          .retrieve().bodyToMono(VendedorResponse.class).block();
 
 
-        // Validar que no sea nula la comunicacion
+        // Validar que no sea nula la comunicación
         if(cliente == null){
             throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente()+ " no existe");
         }
@@ -83,10 +84,12 @@ public class VentaService {
 
         Integer precio =  vehiculo.precioVehiculo();
 
+
         if(ventaRepository.existsByIdVehiculo(request.getIdVehiculo())){
             throw new IdVehiculoDuplicadoException("El vehiculo ya esta registrado en otra venta");
 
         }
+
         // Operación para obtener la comision de la venta
         double porcentajeComision= 0.03;
         Integer comisionCalculada =  (int) (precio * porcentajeComision);
@@ -104,23 +107,17 @@ public class VentaService {
         return ventaRepository.save(venta);
     }
 
-   // public Venta crearDesdeRequest(VentaRequest request){
-        //log.info("Creando Venta con idVehiculo{}",request.getIdVehiculo());
-       // Venta venta = new Venta();
-        //venta.setFechaVenta(request.getFechaVenta());
-        //venta.setTipoPago(request.getTipoPago());
-       // venta.setIdCliente(request.getIdCliente());
-        //venta.setIdVehiculo(request.getIdVehiculo());
-        //venta.setIdVendedor(request.getIdVendedor());
-        //return venta;
-    //}
 
+
+    //Eliminar Venta
     public void eliminarVenta(Integer id){
         log.info("Eliminando Venta con Id {}",id);
         Venta venta = buscarVentaPorId(id);
         ventaRepository.delete(venta);
     }
 
+
+    //Actualizar Venta
     public Venta actualizarVenta(Integer idVenta, VentaRequest request,String token) {
         log.info("Actualizando Venta con id {}", idVenta);
         Venta venta = buscarVentaPorId(idVenta);
@@ -128,21 +125,55 @@ public class VentaService {
             throw new IdVehiculoDuplicadoException("El ID Del Vehiculo se encuentra asignado a otra venta ");
         }
 
+        ClienteResponse cliente = webClientBuilder.build().get()
+                .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(ClienteResponse.class).block();
 
 
-        double porcentajeComision= 0.03;
+        VehiculoResponse vehiculo = webClientBuilder.build().get()
+                .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}",request.getIdVehiculo())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VehiculoResponse.class).block();
+        VendedorResponse vendedor = webClientBuilder.build().get()
+                .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}",request.getIdVendedor())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VendedorResponse.class).block();
+
+        if(cliente == null){
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");
+
+        }
+
+        if(vehiculo == null ){
+            throw new IdVehiculoNoEncontradoException("El vehiculo con el id " + request.getIdVehiculo() + " no existe");
+        }
+
+        if(vendedor == null){
+            throw new IdVendedorNoEncontradoException("El vendedor con el id " + request.getIdVendedor() + " no existe");
+        }
+
+        Integer precioNuevo = vehiculo.precioVehiculo();
 
 
-        venta.setFechaVenta(request.getFechaVenta());
+        double porcentajeComisionNueva = 0.03;
+        Integer comisionNuevaCalculada = (int) (precioNuevo * porcentajeComisionNueva);
 
-        venta.setTipoPago(request.getTipoPago());
-        venta.setIdCliente(request.getIdCliente());
-        venta.setIdVehiculo(request.getIdVehiculo());
-        venta.setIdVendedor(request.getIdVendedor());
-
-        return ventaRepository.save(venta);
-
+        Venta ventaActualizada = Venta.builder()
+                .idVenta(venta.getIdVenta())
+                .fechaVenta(request.getFechaVenta())
+                .tipoPago(request.getTipoPago())
+                .idCliente(cliente.idCliente())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idVendedor(vendedor.idVendedor())
+                .precioVehiculo(precioNuevo)
+                .comisionVenta(comisionNuevaCalculada)
+                .build();
+        return ventaRepository.save(ventaActualizada);
     }
+
+
+
 
     public void simularError(){
         log.error("Se ejecuta el metodo para simular un error interno");
