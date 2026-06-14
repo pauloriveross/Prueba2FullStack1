@@ -1,18 +1,14 @@
-2026-05-06T10:21:35.443-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Starting MantencionesApplication using Java 21.0.1 with PID 37590 (/Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones)
-2026-05-06T10:21:35.445-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-05-06T10:21:35.657-04:00  INFO 37590 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-06T10:21:35.719-04:00  INFO 37590 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
-2026-05-06T10:21:35.841-04:00  INFO 37590 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8085 (http)
-2026-05-06T10:21:35.845-04:00  INFO 37590 --- [mantencion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-06T10:21:35.846-04:00  INFO 37590 --- [mantencion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-05-06T10:21:35.859-04:00  INFO 37590 --- [mantencion] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 400 ms
-2026-05-06T10:21:35.920-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-05-06T10:21:35.940-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-05-06T10:21:36.072-04:00  INFO 37590 --- [mantencion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-06T10:21:36.084-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-06T10:21:36.198-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@519b0f00
-2026-05-06T10:21:36.198-04:00  INFO 37590 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-06T10:21:36.227-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-06-14T00:38:03.271-04:00  INFO 85578 --- [mantencion] [main] d.m.MantencionApplicationTests           : Starting MantencionApplicationTests using Java 25.0.2 with PID 85578 (started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/mantenciones)
+2026-06-14T00:38:03.273-04:00  INFO 85578 --- [mantencion] [main] d.m.MantencionApplicationTests           : No active profile set, falling back to 1 default profile: "default"
+2026-06-14T00:38:03.477-04:00  INFO 85578 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-14T00:38:03.519-04:00  INFO 85578 --- [mantencion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-06-14T00:38:03.630-04:00  INFO 85578 --- [mantencion] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-14T00:38:03.647-04:00  INFO 85578 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-14T00:38:03.774-04:00  INFO 85578 --- [mantencion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-14T00:38:03.784-04:00  INFO 85578 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-14T00:38:03.930-04:00  INFO 85578 --- [mantencion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@323eecf8
+2026-06-14T00:38:03.930-04:00  INFO 85578 --- [mantencion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-14T00:38:03.956-04:00  INFO 85578 --- [mantencion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/db_mantencion]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -24,45 +20,10 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-05-06T10:21:36.503-04:00  INFO 37590 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-06T10:21:36.528-04:00  INFO 37590 --- [mantencion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T10:21:36.627-04:00  INFO 37590 --- [mantencion] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-05-06T10:21:36.830-04:00  INFO 37590 --- [mantencion] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8085 (http) with context path '/'
-2026-05-06T10:21:36.832-04:00  INFO 37590 --- [mantencion] [main] d.mantenciones.MantencionesApplication   : Started MantencionesApplication in 1.529 seconds (process running for 1.796)
-2026-05-06T11:10:30.488-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-06T11:10:30.488-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-06T11:10:30.491-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-05-06T11:10:30.513-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-06T11:10:43.338-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 20
-2026-05-06T11:10:43.359-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 20 en la ruta /api/v1/mantenciones/20
-2026-05-06T11:12:20.753-04:00 ERROR 37590 --- [mantencion] [http-nio-8085-exec-5] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2026-05-06T11:12:20.872-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : Vehículo con ID 1 no existe en la ruta /api/v1/mantenciones
-2026-05-06T11:12:41.736-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-7] d.m.exception.GlobalExceptionHandler     : Mecánico con ID 5 no existe en la ruta /api/v1/mantenciones
-2026-05-06T11:13:11.572-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Creando mantención con idVehiculo: 2
-2026-05-06T11:13:45.582-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : Cliente con ID 20 no existe en la ruta /api/v1/mantenciones
-2026-05-06T11:14:09.650-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-10] d.m.service.MantencionService            : Creando mantención con idVehiculo: 3
-2026-05-06T11:14:31.055-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Creando mantención con idVehiculo: 4
-2026-05-06T11:14:37.006-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-06T11:16:04.621-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Actualizando Mantención con id 1
-2026-05-06T11:16:04.624-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Buscando mantención con id: 1
-2026-05-06T11:16:04.652-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.exception.GlobalExceptionHandler     : Intento de mantención fallido , ya que no se puede efectuar dos mantenciones al mismo vehiculo /api/v1/mantenciones/1: El vehiculo ya se encuentra registrado en otra mantención
-2026-05-06T11:16:37.920-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mantenciones/1
-2026-05-06T11:17:04.117-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-8] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-06T11:17:25.590-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-9] d.m.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/mantenciones
-2026-05-06T11:17:44.107-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-1] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-06T11:18:22.621-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Actualizando Mantención con id 2
-2026-05-06T11:18:22.622-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-2] d.m.service.MantencionService            : Buscando mantención con id: 2
-2026-05-06T11:18:45.299-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Eliminando mantención con id 5
-2026-05-06T11:18:45.301-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.service.MantencionService            : Buscando mantención con id: 5
-2026-05-06T11:18:45.306-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-3] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 5 en la ruta /api/v1/mantenciones/5
-2026-05-06T11:19:09.780-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-4] d.m.service.MantencionService            : Listando todas las mantenciones
-2026-05-06T11:19:17.856-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Eliminando mantención con id 3
-2026-05-06T11:19:17.856-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-6] d.m.service.MantencionService            : Buscando mantención con id: 3
-2026-05-06T11:19:40.773-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.service.MantencionService            : Eliminando mantención con id 3
-2026-05-06T11:19:40.774-04:00  INFO 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.service.MantencionService            : Buscando mantención con id: 3
-2026-05-06T11:19:40.779-04:00  WARN 37590 --- [mantencion] [http-nio-8085-exec-5] d.m.exception.GlobalExceptionHandler     : No se ha encontrado la mantención con id: 3 en la ruta /api/v1/mantenciones/3
-2026-05-06T11:20:03.945-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-05-06T11:20:03.947-04:00  INFO 37590 --- [mantencion] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-05-06T11:20:03.949-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-05-06T11:20:03.950-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-05-06T11:20:03.951-04:00  INFO 37590 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-14T00:38:04.207-04:00  INFO 85578 --- [mantencion] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14T00:38:04.228-04:00  INFO 85578 --- [mantencion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T00:38:04.307-04:00  INFO 85578 --- [mantencion] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-14T00:38:04.525-04:00  INFO 85578 --- [mantencion] [main] d.m.MantencionApplicationTests           : Started MantencionApplicationTests in 1.349 seconds (process running for 1.737)
+2026-06-14T00:38:04.756-04:00  INFO 85578 --- [mantencion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T00:38:04.757-04:00  INFO 85578 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-14T00:38:04.760-04:00  INFO 85578 --- [mantencion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

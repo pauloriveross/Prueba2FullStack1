@@ -5,7 +5,7 @@ spring:
     application:
         name: mecanicos
     datasource:
-        url: jdbc:h2:mem:db_mecanico;DB_CLOSE_DELAY=-1;MODE=MySQL
+        url: jdbc:h2:mem:db_mecanicos;DB_CLOSE_DELAY=-1;MODE=MySQL
         driver-class-name: org.h2.Driver
         username: sa
         password:
@@ -21,10 +21,11 @@ spring:
 springdoc:
     swagger-ui:
         path: /swagger-ui.html
+    enable-hateoas: false
 
 logging:
     level:
-        duoc.mecanicos: INFO
+        duoc.vendedor: INFO
         org.springframework.web: WARN
     file:
         name: logs/mecanico.log
@@ -37,6 +38,8 @@ eureka:
     instance:
         prefer-ip-address: true
 
+
 jwt:
     secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot"
     expiration-ms: 3600000
+

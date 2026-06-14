@@ -23,8 +23,8 @@
         <module name="vendedor" />
         <module name="mecanicos (1)" />
         <module name="cliente (1)" />
-        <module name="vehiculo" />
         <module name="vendedor (1)" />
+        <module name="vehiculo" />
         <module name="cliente" />
         <module name="gateway-service (1)" />
         <module name="ventas-Update (1)" />
