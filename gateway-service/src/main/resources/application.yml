@@ -1,0 +1,54 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: cliente
+          uri: ${CLIENTE_URL:lb://CLIENTE}
+          predicates:
+            - Path=/api/clientes/**
+        - id: mantenciones
+          uri: ${MANTENCIONES_URL:lb://MANTENCIONES}
+          predicates:
+            - Path=/api/mantenciones/**
+        - id: mecanicos
+          uri: ${MECANICOS_URL:lb://MECANICOS}
+          predicates:
+            - Path=/api/mecanicos/**
+        - id: vehiculo
+          uri: ${VEHICULO_URL:lb://VEHICULO}
+          predicates:
+            - Path=/api/vehiculos/**
+        - id: vendedor
+          uri: ${VENDEDOR_URL:lb://VENDEDOR}
+          predicates:
+            - Path=/api/vendedores/**
+        - id: ventas-Update
+          uri: ${VENTAS_UPDATE_URL:lb://VENTAS-UPDATE}
+          predicates:
+            - Path=/api/ventas/**
+        - id: auth-service
+          uri: ${AUTH_SERVICE_URL:lb://AUTH-SERVICE}
+          predicates:
+            - Path=/api/auth/**
+
+management:
+  endpoint:
+    gateway:
+      access: read-only
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8869/eureka/}
+  instance:
+    prefer-ip-address: true

@@ -1,41 +1,48 @@
 package duoc.ventas.service;
 
 
-import duoc.ventas.client.ClienteClient;
-import duoc.ventas.client.VehiculoClient;
-import duoc.ventas.client.VendedorClient;
+import duoc.ventas.dto.ClienteResponse;
+import duoc.ventas.dto.VehiculoResponse;
+import duoc.ventas.dto.VendedorResponse;
 import duoc.ventas.dto.VentaRequest;
 import duoc.ventas.exception.*;
 import duoc.ventas.model.Venta;
 import duoc.ventas.repository.VentaRepository;
-import jakarta.transaction.Transactional;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
-import java.util.Map;
 
 @Service
-@Transactional
+@Slf4j
+@RequiredArgsConstructor
 public class VentaService {
 
-    private static final Logger log= LoggerFactory.getLogger(VentaService.class);
 
-    @Autowired
-    private VentaRepository ventaRepository;
-    @Autowired
-    private VendedorClient vendedorClient;
-    @Autowired
-    private ClienteClient clienteClient;
-    @Autowired
-    private VehiculoClient vehiculoClient;
+    private final VentaRepository ventaRepository;
+    private final WebClient.Builder webClientBuilder;
 
+    @Value("${services.cliente.url:http://CLIENTE}")
+    private String clienteServiceUrl;
+    @Value("${services.vehiculo.url:http://VEHICULO}")
+    private String vehiculoServiceUrl;
+
+    @Value("${services.vendedor.url:http://VENDEDOR}")
+    private String vendedorServiceUrl;
+
+
+
+    ///////////////////////////////////////////////////////////////////////////
+    /// Métodos
     //Listar
     public List<Venta>listarVentas(){
         return ventaRepository.findAll();
     }
+
+
 
     public Venta buscarVentaPorId (Integer id){
         log.info("Buscando Venta con id {}",id);
@@ -43,36 +50,70 @@ public class VentaService {
                 new VentaNoEncontradaException("No se encontró la venta con el id " + id));
     }
 
+
     public Venta guardarVenta(VentaRequest request,String token){
 
-        clienteClient.obtenerClienteId(request.getIdCliente(),token);
-        Map<String, Object> datosVehiculo = vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(), token);
-        Integer precioOficial = (Integer) datosVehiculo.get("precioVehiculo");
-        vendedorClient.obtenerVendedorId(request.getIdVendedor(),token);
+        ClienteResponse cliente = webClientBuilder.build().get()
+                        .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
+                         .header("Authorization",token)
+                         .retrieve().bodyToMono(ClienteResponse.class).block();
+        VehiculoResponse vehiculo = webClientBuilder.build().get()
+                .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}",request.getIdVehiculo())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VehiculoResponse.class).block();
+        VendedorResponse vendedor = webClientBuilder.build().get()
+                        .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}",request.getIdVendedor())
+                         .header("Authorization",token)
+                                 .retrieve().bodyToMono(VendedorResponse.class).block();
+
+
+        // Validar que no sea nula la comunicacion
+        if(cliente == null){
+            throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente()+ " no existe");
+        }
+
+        if (vehiculo == null) {
+            throw new IdVehiculoNoEncontradoException("El vehiculo con el id " + request.getIdVehiculo() + "no existe");
+        }
+
+        if(vendedor == null ){
+            throw new IdVendedorNoEncontradoException("El vendedor con el id " + request.getIdVendedor() + " no existe");
+        }
+
+
+        Integer precio =  vehiculo.precioVehiculo();
 
         if(ventaRepository.existsByIdVehiculo(request.getIdVehiculo())){
             throw new IdVehiculoDuplicadoException("El vehiculo ya esta registrado en otra venta");
 
         }
-        // Operacion para obtener la comision de la venta
+        // Operación para obtener la comision de la venta
         double porcentajeComision= 0.03;
-        Integer comisionCalculada =  (int) (precioOficial * porcentajeComision);
-        Venta venta = crearDesdeRequest(request);
-        venta.setPrecioVehiculo(precioOficial);
-        venta.setComisionVenta(comisionCalculada);
+        Integer comisionCalculada =  (int) (precio * porcentajeComision);
+
+        Venta venta = Venta.builder()
+                .fechaVenta(request.getFechaVenta())
+                .tipoPago(request.getTipoPago())
+                .idCliente(cliente.idCliente())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idVendedor(vendedor.idVendedor())
+                .precioVehiculo(precio)
+                .comisionVenta(comisionCalculada)
+                .build();
+        log.info("Registrando Venta ....");
         return ventaRepository.save(venta);
     }
 
-    public Venta crearDesdeRequest(VentaRequest request){
-        log.info("Creando Venta con idVehiculo{}",request.getIdVehiculo());
-        Venta venta = new Venta();
-        venta.setFechaVenta(request.getFechaVenta());
-        venta.setTipoPago(request.getTipoPago());
-        venta.setIdCliente(request.getIdCliente());
-        venta.setIdVehiculo(request.getIdVehiculo());
-        venta.setIdVendedor(request.getIdVendedor());
-        return venta;
-    }
+   // public Venta crearDesdeRequest(VentaRequest request){
+        //log.info("Creando Venta con idVehiculo{}",request.getIdVehiculo());
+       // Venta venta = new Venta();
+        //venta.setFechaVenta(request.getFechaVenta());
+        //venta.setTipoPago(request.getTipoPago());
+       // venta.setIdCliente(request.getIdCliente());
+        //venta.setIdVehiculo(request.getIdVehiculo());
+        //venta.setIdVendedor(request.getIdVendedor());
+        //return venta;
+    //}
 
     public void eliminarVenta(Integer id){
         log.info("Eliminando Venta con Id {}",id);
@@ -86,22 +127,19 @@ public class VentaService {
         if (ventaRepository.existsByIdVehiculoAndIdVentaNot(request.getIdVehiculo(), idVenta)) {
             throw new IdVehiculoDuplicadoException("El ID Del Vehiculo se encuentra asignado a otra venta ");
         }
-        clienteClient.obtenerClienteId(request.getIdCliente(), token);
-        Map<String, Object> datos = vehiculoClient.obtenerVehiculoId(request.getIdVehiculo(), token);
-        Integer precioUpdate = Integer.parseInt(datos.get("precioVehiculo").toString());
-        vendedorClient.obtenerVendedorId(request.getIdVendedor(), token);
+
 
 
         double porcentajeComision= 0.03;
-        Integer comisionUpdate =  (int) (precioUpdate * porcentajeComision);
+
 
         venta.setFechaVenta(request.getFechaVenta());
-        venta.setPrecioVehiculo(precioUpdate);
+
         venta.setTipoPago(request.getTipoPago());
         venta.setIdCliente(request.getIdCliente());
         venta.setIdVehiculo(request.getIdVehiculo());
         venta.setIdVendedor(request.getIdVendedor());
-        venta.setComisionVenta(comisionUpdate);
+
         return ventaRepository.save(venta);
 
     }
