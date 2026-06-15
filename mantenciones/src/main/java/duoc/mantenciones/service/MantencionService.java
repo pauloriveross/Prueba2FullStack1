@@ -77,10 +77,12 @@ public class MantencionService {
 
         Mantencion nuevaMantencion = new Mantencion();
 
-        nuevaMantencion.setIdCliente(request.getIdCliente());
+        nuevaMantencion.setFechaMantencion(request.getFechaMantencion());
+        nuevaMantencion.setPrecioMantencion(request.getPrecioMantencion());
+        nuevaMantencion.setTipoMantencion(request.getTipoMantencion());
         nuevaMantencion.setIdVehiculo(request.getIdVehiculo());
         nuevaMantencion.setIdMecanico(request.getIdMecanico());
-
+        nuevaMantencion.setIdCliente(request.getIdCliente());
 
         return mantencionRepository.save(nuevaMantencion);
     }
