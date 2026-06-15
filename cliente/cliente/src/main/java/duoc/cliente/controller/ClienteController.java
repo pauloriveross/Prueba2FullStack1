@@ -5,11 +5,16 @@ import duoc.cliente.model.Clientes;
 import duoc.cliente.service.ClienteService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping("/api/v1/clientes")
@@ -18,32 +23,28 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @GetMapping
-    public ResponseEntity<List<Clientes>> listar(){
-        List<Clientes> clientes = clienteService.listarTodos();
-        if (clientes.isEmpty()){
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.ok(clientes);
+    public CollectionModel<EntityModel<Clientes>> listar(){
+        List<EntityModel<Clientes>> clientes = clienteService.listarTodos().stream().map(this::toModel).toList();
+        return CollectionModel.of(clientes,linkTo(methodOn(ClienteController.class).listar()).withSelfRel());
     }
 
     @GetMapping("/{idCliente}")
-    public ResponseEntity<Clientes> buscarPorId(@PathVariable Integer idCliente){
-        Clientes clientes = clienteService.buscarPorId(idCliente);
-        return ResponseEntity.ok(clientes);
+    public EntityModel<Clientes> buscarPorId(@PathVariable Integer idCliente){
+        return toModel(clienteService.buscarPorId(idCliente));
     }
 
     @PostMapping
-    public ResponseEntity<Clientes> guardar(@Valid @RequestBody ClienteRequest
+    public ResponseEntity<EntityModel<Clientes>>  guardar(@Valid @RequestBody ClienteRequest
                                             request){
         Clientes clienteGuardado = clienteService.guardarCliente(request);
-        return ResponseEntity.status(HttpStatus.CREATED).body(clienteGuardado);
+        return ResponseEntity.status(HttpStatus.CREATED).body(toModel(clienteGuardado));
     }
 
     @PutMapping("/{idCliente}")
-    public ResponseEntity<Clientes> actualizar(@PathVariable Integer idCliente, @Valid
+    public ResponseEntity<EntityModel<Clientes>> actualizar(@PathVariable Integer idCliente, @Valid
                                                @RequestBody ClienteRequest request){
         Clientes clienteActualizado = clienteService.actualizar(idCliente, request);
-        return ResponseEntity.ok(clienteActualizado);
+        return ResponseEntity.ok(toModel(clienteActualizado));
     }
     
     @DeleteMapping("/{idCliente}")
@@ -57,5 +58,10 @@ public class ClienteController {
         clienteService.simularError();
         return ResponseEntity.ok().build();
     }
+    private EntityModel<Clientes> toModel(Clientes clientes){
+        return EntityModel.of(clientes,
+                linkTo(methodOn(ClienteController.class).buscarPorId(clientes.getIdCliente())).withSelfRel(),
+                linkTo(methodOn(ClienteController.class).listar()).withRel("todos"));
 
+    }
 }

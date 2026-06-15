@@ -1,8 +1,12 @@
 package duoc.cliente.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+import lombok.Data;
 
+@Data
 @Entity
+@Builder
 @Table(name = "clientes")
 public class Clientes {
 
