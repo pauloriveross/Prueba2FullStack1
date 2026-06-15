@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth-service" />
         <module name="eureka-server" />
+        <module name="auth-service" />
       </profile>
       <profile name="Annotation profile for Plataforma Automotora Microservicios - Ruta Incremental" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -17,22 +17,16 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="vendedor (1)" />
-        <module name="vehiculo (1)" />
+        <module name="cliente" />
+        <module name="vendedor" />
         <module name="ventas-Update (1)" />
+        <module name="ventas-Update" />
         <module name="gateway-service" />
+        <module name="vendedor (1)" />
+        <module name="vehiculo" />
+        <module name="vehiculo (1)" />
         <module name="mantenciones" />
         <module name="mecanicos" />
-      </profile>
-      <profile name="Annotation profile for cliente" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
-        </processorPath>
-        <module name="cliente" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,9 +37,6 @@
       <module name="mantenciones (1)" target="21" />
       <module name="mecanicos (1)" target="21" />
       <module name="plataforma-automotora-microservicio (1)" target="1.5" />
-      <module name="vehiculo" target="21" />
-      <module name="vendedor" target="21" />
-      <module name="ventas-Update" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
