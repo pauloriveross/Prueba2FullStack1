@@ -6,13 +6,14 @@ import net.datafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import jakarta.persistence.EntityManager;
 
 
 //@Profile("Dev")
 @Configuration
 public class DataLoader {
     @Bean
-    CommandLineRunner cargarDatos (ClientesRepository clientesRepository){
+    CommandLineRunner cargarDatos (ClientesRepository clientesRepository, EntityManager entityManager){
         return args ->{
             if (clientesRepository.count() == 0){
                 clientesRepository.save(Clientes.builder()

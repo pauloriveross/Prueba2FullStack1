@@ -2,6 +2,7 @@ package duoc.cliente;
 
 import duoc.cliente.dto.ClienteRequest;
 import duoc.cliente.model.Clientes;
+import duoc.cliente.repository.ClientesRepository;
 import duoc.cliente.service.ClienteService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +12,18 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-@SpringBootTest
+@SpringBootTest(properties = {
+        "spring.cloud.discovery.enabled=false",
+        "eureka.client.enabled=false"
+})
 @ActiveProfiles("test")
 public class ClienteServiceTest {
 
     @Autowired
     private ClienteService clienteService;
+
+    @Autowired
+    private ClientesRepository clientesRepository;
 
     @Test
     void cuandoGuardarCliente_entoncesRetornaClienteConId() {
