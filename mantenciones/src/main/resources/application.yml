@@ -47,7 +47,7 @@ services:
   mecanico:
     url: ${MECANICO_URL:http://MECANICO}
   vehiculo:
-    url: ${VEHICULO_URL:htpp://VEHICULO}
+    url: ${VEHICULO_URL:http://VEHICULO}
 
 jwt:
   secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot0"

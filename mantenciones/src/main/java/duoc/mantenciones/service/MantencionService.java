@@ -1,8 +1,6 @@
 package duoc.mantenciones.service;
 
-import duoc.mantenciones.client.ClienteClient;
-import duoc.mantenciones.client.MecanicoClient;
-import duoc.mantenciones.client.VehiculoClient;
+
 import duoc.mantenciones.dto.ClienteResponse;
 import duoc.mantenciones.dto.MantencionRequest;
 import duoc.mantenciones.dto.MecanicoResponse;
@@ -10,18 +8,13 @@ import duoc.mantenciones.dto.VehiculoResponse;
 import duoc.mantenciones.exception.*;
 import duoc.mantenciones.model.Mantencion;
 import duoc.mantenciones.repository.MantencionRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.slf4j.Logger;
 import org.springframework.web.reactive.function.client.WebClient;
-
 import java.util.List;
-import java.util.Map;
+
 
 @Service
 @Slf4j
@@ -72,7 +65,7 @@ public class MantencionService {
         }
 
         if (mecanico == null){
-            throw new IdMantencionNoEncontradaException("El mecanico con el id " + request.getIdMecanico() + " no existe")
+            throw new IdMantencionNoEncontradaException("El mecanico con el id " + request.getIdMecanico() + " no existe");
         }
 
         Mantencion nuevaMantencion = new Mantencion();
