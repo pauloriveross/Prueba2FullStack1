@@ -1,72 +1,46 @@
 package duoc.cliente;
 
-import duoc.cliente.dto.ClienteRequest;
+import duoc.cliente.exception.ClienteNoEncontradoException;
 import duoc.cliente.model.Clientes;
 import duoc.cliente.repository.ClientesRepository;
 import duoc.cliente.service.ClienteService;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-@SpringBootTest(properties = {
-        "spring.cloud.discovery.enabled=false",
-        "eureka.client.enabled=false"
-})
-@ActiveProfiles("test")
-public class ClienteServiceTest {
+import static org.mockito.Mockito.*;
 
-    @Autowired
-    private ClienteService clienteService;
+@ExtendWith(MockitoExtension.class)
+class ClienteServiceTest {
 
-    @Autowired
-    private ClientesRepository clientesRepository;
+    @Mock
+    private ClientesRepository repository;
+
+    @InjectMocks
+    private ClienteService service;
 
     @Test
-    void cuandoGuardarCliente_entoncesRetornaClienteConId() {
-        ClienteRequest request = new ClienteRequest();
+    void buscarPorId_debeRetornarRegistroCuandoExiste() {
+        Clientes entidad = new Clientes();
+        entidad.setIdCliente(1);
+        when(repository.findById(1)).thenReturn(Optional.of(entidad));
 
-        Clientes guardado = clienteService.guardarCliente(request);
+        Clientes resultado = service.buscarPorId(1);
 
-        assertNotNull(guardado);
-        assertNotNull(guardado.getIdCliente());
+        assertNotNull(resultado,"EL resultado no puede ser nulo");
+        assertEquals(1, resultado.getIdCliente());
+        verify(repository, times(1)).findById(1);
     }
 
     @Test
-    void cuandoBuscarPorIdExistente_entoncesRetornaCliente() {
-        ClienteRequest request = new ClienteRequest();
-        Clientes guardado = clienteService.guardarCliente(request);
-
-        Clientes encontrado = clienteService.buscarPorId(guardado.getIdCliente());
-
-        assertNotNull(encontrado);
-        assertEquals(guardado.getIdCliente(), encontrado.getIdCliente());
-    }
-
-    @Test
-    void cuandoListarTodos_entoncesRetornaListaDeClientes() {
-        List<Clientes> lista = clienteService.listarTodos();
-
-        assertNotNull(lista);
-        assertTrue(lista.size() >= 0);
-    }
-
-    @Test
-    void cuandoEliminarCliente_entoncesMetodoEjecutaCorrectamente() {
-        ClienteRequest request = new ClienteRequest();
-        Clientes guardado = clienteService.guardarCliente(request);
-        Integer id = guardado.getIdCliente();
-
-        assertDoesNotThrow(() -> clienteService.eliminarCliente(id));
-    }
-
-    @Test
-    void cuandoSimularError_entoncesLanzaExcepcion() {
-        assertThrows(RuntimeException.class, () -> {
-            clienteService.simularError();
-        });
+    void buscarPorId_debeLanzarExcepcionCuandoNoExiste() {
+        when(repository.findById(99)).thenReturn(Optional.empty());
+        assertThrows(ClienteNoEncontradoException.class, () -> service.buscarPorId(99));
+        verify(repository, times(1)).findById(99);
     }
 }

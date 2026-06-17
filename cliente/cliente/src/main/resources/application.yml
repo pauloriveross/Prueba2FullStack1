@@ -6,9 +6,6 @@ spring:
     name: cliente
   profiles:
     active: default
-  data:
-    rest:
-      base-path: /api/v1
   datasource:
     url: jdbc:h2:mem:db_cliente;DB_CLOSE_DELAY=-1;MODE=MySQL
     driver-class-name: org.h2.Driver
