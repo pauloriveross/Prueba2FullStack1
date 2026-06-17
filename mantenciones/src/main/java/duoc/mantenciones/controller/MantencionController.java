@@ -38,8 +38,9 @@ public class MantencionController {
     }
 
     @PostMapping
-    public ResponseEntity<EntityModel<Mantencion>> guardar(@Valid@RequestBody MantencionRequest mantencionRequest){
-        Mantencion mantencionPost = mantencionService.crearDesdeRequest(mantencionRequest);
+    public ResponseEntity<EntityModel<Mantencion>> guardar(@Valid@RequestBody MantencionRequest mantencionRequest,
+                                                           @RequestHeader ("Authorization")String token){
+        Mantencion mantencionPost = mantencionService.guardarMantencion(mantencionRequest,token);
         return ResponseEntity.status(HttpStatus.CREATED).body(toModel(mantencionPost));
     }
 

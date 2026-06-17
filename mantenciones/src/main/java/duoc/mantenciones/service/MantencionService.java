@@ -41,11 +41,6 @@ public class MantencionService {
     }
 
     public Mantencion guardarMantencion(MantencionRequest request, String token){
-        ClienteResponse cliente = webClientBuilder.build().get()
-                .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
-                .header("Authorization",token)
-                .retrieve().bodyToMono(ClienteResponse.class).block();
-
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}", request.getIdVehiculo())
                 .header("Authorization",token)
@@ -56,8 +51,13 @@ public class MantencionService {
                 .header("Authorization",token)
                 .retrieve().bodyToMono(MecanicoResponse.class).block();
 
+        ClienteResponse cliente = webClientBuilder.build().get()
+                .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(ClienteResponse.class).block();
+
         if(cliente == null){
-            throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente() + " no existe");
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");
         }
 
         if (vehiculo == null){
@@ -65,19 +65,24 @@ public class MantencionService {
         }
 
         if (mecanico == null){
-            throw new IdMantencionNoEncontradaException("El mecanico con el id " + request.getIdMecanico() + " no existe");
+            throw new IdMecanicoNoEncontradoException("El mecanico con el id " + request.getIdMecanico() + " no existe");
         }
 
-        Mantencion nuevaMantencion = new Mantencion();
+        if(mantencionRepository.existsByIdVehiculo(request.getIdVehiculo())){
+            throw new IdVehiculoDuplicadoException("El vehiculo ya se encuentra en otra mantención");
 
-        nuevaMantencion.setFechaMantencion(request.getFechaMantencion());
-        nuevaMantencion.setPrecioMantencion(request.getPrecioMantencion());
-        nuevaMantencion.setTipoMantencion(request.getTipoMantencion());
-        nuevaMantencion.setIdVehiculo(request.getIdVehiculo());
-        nuevaMantencion.setIdMecanico(request.getIdMecanico());
-        nuevaMantencion.setIdCliente(request.getIdCliente());
+        }
+        Mantencion mantencion = Mantencion.builder()
+                .fechaMantencion(request.getFechaMantencion())
+                .precioMantencion(request.getPrecioMantencion())
+                .tipoMantencion(request.getTipoMantencion())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idMecanico(mecanico.idMecanico())
+                .idCliente(cliente.idCliente())
+                .build();
+        log.info("Registrando Mantención");
+        return mantencionRepository.save(mantencion);
 
-        return mantencionRepository.save(nuevaMantencion);
     }
 
     public void eliminarMantencion(Integer idMantencion){
@@ -95,38 +100,44 @@ public class MantencionService {
             throw new IdVehiculoDuplicadoException("El vehiculo ya se encuentra registrado en otra mantención");
         }
 
-        ClienteResponse cliente = webClientBuilder.build().get()
-                .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
-                .header("Authorization",token)
-                .retrieve().bodyToMono(ClienteResponse.class).block();
-
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}",request.getIdVehiculo())
                 .header("Authorization",token)
                 .retrieve().bodyToMono(VehiculoResponse.class).block();
-
         MecanicoResponse mecanico = webClientBuilder.build().get()
                 .uri(mecanicoServiceUrl + "/api/v1/mecanicos/{idMecanico}",request.getIdMecanico())
                 .header("Authorization",token)
                 .retrieve().bodyToMono(MecanicoResponse.class).block();
 
-        mantencion.setIdCliente(request.getIdCliente());
-        mantencion.setIdVehiculo(request.getIdVehiculo());
-        mantencion.setIdMantencion(request.getIdMecanico());
+        ClienteResponse cliente = webClientBuilder.build().get()
+                .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
+                .header("Authorization",token)
+                .retrieve().bodyToMono(ClienteResponse.class).block();
 
-        return  mantencionRepository.save(mantencion);
+        if(cliente == null){
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");
+        }
+
+        if (vehiculo == null){
+            throw new IdVehiculoNoEncontradoException("El vehiculo con el id " + request.getIdVehiculo() + " no existe");
+        }
+
+        if (mecanico == null){
+            throw new IdMecanicoNoEncontradoException("El mecanico con el id " + request.getIdMecanico() + " no existe");
+        }
+
+        Mantencion mantencionUpdate = Mantencion.builder()
+                .idMantencion(mantencion.getIdMantencion())
+                .fechaMantencion(request.getFechaMantencion())
+                .precioMantencion(request.getPrecioMantencion())
+                .tipoMantencion(request.getTipoMantencion())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idMecanico(mecanico.idMecanico())
+                .idCliente(cliente.idCliente())
+                .build();
+        return  mantencionRepository.save(mantencionUpdate);
     }
 
-    public Mantencion crearDesdeRequest(MantencionRequest mantencionRequest){
-        log.info("Creando mantención con idVehiculo: {}", mantencionRequest.getIdVehiculo());
-        Mantencion mantencion = new Mantencion();
-        mantencion.setFechaMantencion(mantencionRequest.getFechaMantencion());
-        mantencion.setPrecioMantencion(mantencionRequest.getPrecioMantencion());
-        mantencion.setTipoMantencion(mantencionRequest.getTipoMantencion());
-        mantencion.setIdVehiculo(mantencionRequest.getIdVehiculo());
-        mantencion.setIdMecanico(mantencionRequest.getIdMecanico());
-        mantencion.setIdCliente(mantencionRequest.getIdCliente());
-        return mantencion;
-    }
+
 
 }
