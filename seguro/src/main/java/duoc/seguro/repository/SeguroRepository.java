@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface SeguroRepository extends JpaRepository<Seguro, Integer> {
     boolean existsByIdVehiculo(Integer idVehiculo);
-    boolean existsByIdVehiculoAndIdSeguro(Integer idVehiculo,Integer idVenta);
+    boolean existsByIdVehiculoAndIdSeguroNot(Integer idVehiculo,Integer idVenta);
 }

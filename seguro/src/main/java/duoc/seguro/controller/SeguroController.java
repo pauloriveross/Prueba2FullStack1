@@ -32,7 +32,7 @@ public class SeguroController {
     }
 
     //Get por ID
-    @GetMapping("/{id}")
+    @GetMapping("/{idSeguro}")
     public EntityModel<Seguro> buscarSeguro(@PathVariable Integer idSeguro ){
         return toModel(seguroService.buscarSeguroPorId(idSeguro));
     }

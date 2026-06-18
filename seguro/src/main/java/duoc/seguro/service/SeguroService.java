@@ -32,7 +32,7 @@ public class SeguroService {
     @Value("${services.vehiculo.url:http://VEHICULO}")
     private String vehiculoServiceUrl;
 
-    @Value("${services.corredorSeguro.url:http://CORREDOR-SEGURO}")
+    @Value("${services.corredor-seguro.url:http://CORREDOR-SEGURO}")
     private String corredorSeguroServiceUrl;
 
     //Get todos
@@ -50,15 +50,12 @@ public class SeguroService {
 
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
-                .header("Authorization")
                 .retrieve().bodyToMono(ClienteResponse.class).block();
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}", request.getIdVehiculo())
-                .header("Authorization")
                 .retrieve().bodyToMono(VehiculoResponse.class).block();
         CorredorSeguroResponse corredorSeguro = webClientBuilder.build().get()
                 .uri(corredorSeguroServiceUrl + "/api/v1/corredorSeguro/{id}", request.getIdCorredorSeguro())
-                .header("Authorization")
                 .retrieve().bodyToMono(CorredorSeguroResponse.class).block();
 
 
@@ -96,20 +93,17 @@ public class SeguroService {
     public Seguro actualizarSeguro(Integer idSeguro, SeguroRequest request) {
         log.info("Actualizando seguro con id {}", idSeguro);
         Seguro seguro = buscarSeguroPorId(idSeguro);
-        if (seguroRepository.existsByIdVehiculoAndIdSeguro(request.getIdVehiculo(), idSeguro)) {
+        if (seguroRepository.existsByIdVehiculoAndIdSeguroNot(request.getIdVehiculo(), idSeguro)) {
             throw new IdVehiculoDuplicadoException("El ID del seguro se encuentra asignado a otra venta ");
         }
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
-                .header("Authorization")
                 .retrieve().bodyToMono(ClienteResponse.class).block();
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}", request.getIdVehiculo())
-                .header("Authorization")
                 .retrieve().bodyToMono(VehiculoResponse.class).block();
         CorredorSeguroResponse corredorSeguro = webClientBuilder.build().get()
                 .uri(corredorSeguroServiceUrl + "/api/v1/corredorSeguro/{id}", request.getIdCorredorSeguro())
-                .header("Authorization")
                 .retrieve().bodyToMono(CorredorSeguroResponse.class).block();
 
 
@@ -126,11 +120,7 @@ public class SeguroService {
             throw new IdCorredorSeguroNoEncontradoException("El corredor con el id " + request.getIdCorredorSeguro() + " no existe");
         }
 
-        if (seguroRepository.existsByIdVehiculo(request.getIdVehiculo())) {
-            throw new IdVehiculoDuplicadoException("El vehiculo ya esta registrado en otra venta");
-
-        }
-        Seguro seguroActualizado = Seguro.builder().
+        Seguro seguroActualizado = Seguro.builder().idSeguro(idSeguro).
                 precioSeguro(request.getPrecioSeguro()).
                 tipoSeguro(request.getTipoSeguro())
                 .idCliente(request.getIdCliente())
