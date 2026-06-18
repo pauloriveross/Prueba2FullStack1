@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -44,7 +45,7 @@ public class VentaService {
     }
 
 
-    //Buscar Venta por id
+    //Buscar Venta por ID
     public Venta buscarVentaPorId (Integer id){
         log.info("Buscando Venta con id {}",id);
         return ventaRepository.findById(id).orElseThrow(()->
@@ -57,20 +58,26 @@ public class VentaService {
         ClienteResponse cliente = webClientBuilder.build().get()
                         .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
                          .header("Authorization",token)
-                         .retrieve().bodyToMono(ClienteResponse.class).block();
+                         .retrieve().bodyToMono(ClienteResponse.class)
+                          .onErrorResume(e -> Mono.empty())
+                          .block();
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}",request.getIdVehiculo())
                 .header("Authorization",token)
-                .retrieve().bodyToMono(VehiculoResponse.class).block();
+                .retrieve().bodyToMono(VehiculoResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VendedorResponse vendedor = webClientBuilder.build().get()
                         .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}",request.getIdVendedor())
                          .header("Authorization",token)
-                          .retrieve().bodyToMono(VendedorResponse.class).block();
+                          .retrieve().bodyToMono(VendedorResponse.class)
+                           .onErrorResume(e -> Mono.empty())
+                            .block();
 
 
         // Validar que no sea nula la comunicación
         if(cliente == null){
-            throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente()+ " no existe");
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente()+ " no existe");
         }
 
         if (vehiculo == null) {
@@ -128,17 +135,23 @@ public class VentaService {
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}",request.getIdCliente())
                 .header("Authorization",token)
-                .retrieve().bodyToMono(ClienteResponse.class).block();
+                .retrieve().bodyToMono(ClienteResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
 
 
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}",request.getIdVehiculo())
                 .header("Authorization",token)
-                .retrieve().bodyToMono(VehiculoResponse.class).block();
+                .retrieve().bodyToMono(VehiculoResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VendedorResponse vendedor = webClientBuilder.build().get()
                 .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}",request.getIdVendedor())
                 .header("Authorization",token)
-                .retrieve().bodyToMono(VendedorResponse.class).block();
+                .retrieve().bodyToMono(VendedorResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
 
         if(cliente == null){
             throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");

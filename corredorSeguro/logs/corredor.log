@@ -660,3 +660,8 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2026-06-17T22:48:42.124-04:00  WARN 5676 --- [corredorSeguro] [http-nio-8091-exec-10] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores/12
 2026-06-17T22:48:55.488-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.service.CorredorSeguroService        : Actualizando Corredor con id 12
 2026-06-17T22:48:55.488-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.service.CorredorSeguroService        : Buscando Corredor con id 12
+2026-06-17T22:52:26.497-04:00  INFO 5676 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T22:52:26.502-04:00  INFO 5676 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T22:52:26.504-04:00  INFO 5676 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:52:26.506-04:00  INFO 5676 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T22:52:26.507-04:00  INFO 5676 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
