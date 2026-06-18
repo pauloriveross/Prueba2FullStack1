@@ -4,7 +4,6 @@ package duoc.corredorSeguro.controller;
 import duoc.corredorSeguro.dto.CorredorSeguroRequest;
 import duoc.corredorSeguro.model.CorredorSeguro;
 import duoc.corredorSeguro.service.CorredorSeguroService;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.hateoas.CollectionModel;
@@ -71,23 +70,6 @@ public class CorredorSeguroController {
     public EntityModel<CorredorSeguro> actualizar (@PathVariable Integer id , @Valid @RequestBody CorredorSeguroRequest corredorRequest){
         return toModel(service.actualizarCorredor(id,corredorRequest));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     private EntityModel<CorredorSeguro>toModel(CorredorSeguro corredorSeguro){

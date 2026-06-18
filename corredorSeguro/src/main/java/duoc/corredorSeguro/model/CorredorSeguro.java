@@ -20,7 +20,7 @@ public class CorredorSeguro {
     private Integer idCorredor;
 
 
-    @Column(nullable = false)
+    @Column(unique = true, nullable = false)
     private String rutCorredor;
 
     @Column(nullable = false)

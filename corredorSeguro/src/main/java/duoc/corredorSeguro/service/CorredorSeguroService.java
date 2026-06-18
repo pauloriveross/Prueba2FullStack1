@@ -36,7 +36,7 @@ public class CorredorSeguroService {
 
     public CorredorSeguro guardarCorredor(CorredorSeguroRequest request){
         if(corredorSeguroRepository.existsByRutCorredor(request.getRutCorredor())){
-            throw new RutDuplicadoCorredor("No se puede registar el rut : " + request.getRutCorredor() +
+            throw new RutDuplicadoCorredor("No se puede registrar el rut : " + request.getRutCorredor() +
                     "porque esta duplicado");
         }
 
@@ -52,7 +52,7 @@ public class CorredorSeguroService {
         corredorSeguro.setNombreCorredor(request.getNombreCorredor());
         corredorSeguro.setApellidoCorredor(request.getApellidoCorredor());
         corredorSeguro.setEmailCorredor(request.getEmailCorredor());
-        corredorSeguro.setSueldoBaseCorredor(request.getSueldoCorredor());
+        corredorSeguro.setSueldoBaseCorredor(request.getSueldoBaseCorredor());
         return corredorSeguro;
     }
 
@@ -76,10 +76,11 @@ public class CorredorSeguroService {
         corredorUpdate.setNombreCorredor(request.getNombreCorredor());
         corredorUpdate.setApellidoCorredor(request.getApellidoCorredor());
         corredorUpdate.setEmailCorredor(request.getEmailCorredor());
-        corredorUpdate.setSueldoBaseCorredor(request.getSueldoCorredor());
+        corredorUpdate.setSueldoBaseCorredor(request.getSueldoBaseCorredor());
         return corredorSeguroRepository.save(corredorUpdate);
-
     }
+
+
 
 
 

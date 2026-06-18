@@ -321,3 +321,342 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2026-06-17T12:16:24.651-04:00  INFO 99009 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-17T12:16:24.654-04:00  INFO 99009 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-17T12:16:24.654-04:00  INFO 99009 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T12:22:29.293-04:00  INFO 99516 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 99516 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T12:22:29.294-04:00  INFO 99516 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T12:22:29.539-04:00  INFO 99516 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T12:22:29.553-04:00  INFO 99516 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-06-17T12:22:29.712-04:00  INFO 99516 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T12:22:29.716-04:00  INFO 99516 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T12:22:29.716-04:00  INFO 99516 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T12:22:29.729-04:00  INFO 99516 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 423 ms
+2026-06-17T12:22:29.791-04:00  INFO 99516 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T12:22:29.817-04:00  INFO 99516 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T12:22:29.975-04:00  INFO 99516 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T12:22:29.989-04:00  INFO 99516 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T12:22:30.061-04:00  INFO 99516 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T12:22:30.061-04:00  INFO 99516 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T12:22:30.083-04:00  INFO 99516 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T12:22:30.382-04:00  INFO 99516 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T12:22:30.395-04:00  INFO 99516 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:22:30.424-04:00  INFO 99516 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T12:22:30.516-04:00  WARN 99516 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T12:22:30.659-04:00  INFO 99516 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T12:22:30.684-04:00  INFO 99516 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T12:22:30.687-04:00  INFO 99516 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.549 seconds (process running for 1.79)
+2026-06-17T12:22:42.092-04:00  INFO 99516 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T12:22:42.343-04:00  INFO 99516 --- [corredorSeguro] [http-nio-8091-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 107 ms
+2026-06-17T12:22:50.011-04:00  INFO 99516 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.service.CorredorSeguroService        : Buscando Corredor con id 3
+2026-06-17T12:23:54.417-04:00  WARN 99516 --- [corredorSeguro] [http-nio-8091-exec-7] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores
+2026-06-17T12:24:18.801-04:00  WARN 99516 --- [corredorSeguro] [http-nio-8091-exec-9] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores
+2026-06-17T12:25:46.184-04:00  WARN 99516 --- [corredorSeguro] [http-nio-8091-exec-5] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores
+2026-06-17T12:28:58.744-04:00  INFO 99516 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T12:28:58.749-04:00  INFO 99516 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T12:28:58.751-04:00  INFO 99516 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:28:58.754-04:00  INFO 99516 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T12:28:58.755-04:00  INFO 99516 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T12:29:00.201-04:00  INFO 99754 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 99754 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T12:29:00.202-04:00  INFO 99754 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T12:29:00.436-04:00  INFO 99754 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T12:29:00.453-04:00  INFO 99754 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2026-06-17T12:29:00.604-04:00  INFO 99754 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T12:29:00.608-04:00  INFO 99754 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T12:29:00.608-04:00  INFO 99754 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T12:29:00.622-04:00  INFO 99754 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 408 ms
+2026-06-17T12:29:00.679-04:00  INFO 99754 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T12:29:00.701-04:00  INFO 99754 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T12:29:00.843-04:00  INFO 99754 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T12:29:00.855-04:00  INFO 99754 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T12:29:00.923-04:00  INFO 99754 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T12:29:00.923-04:00  INFO 99754 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T12:29:00.944-04:00  INFO 99754 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T12:29:01.228-04:00  INFO 99754 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T12:29:01.240-04:00  INFO 99754 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:29:01.269-04:00  INFO 99754 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T12:29:01.359-04:00  WARN 99754 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T12:29:01.503-04:00  INFO 99754 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T12:29:01.528-04:00  INFO 99754 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T12:29:01.531-04:00  INFO 99754 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.48 seconds (process running for 1.703)
+2026-06-17T12:29:05.665-04:00  INFO 99754 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T12:29:05.879-04:00  INFO 99754 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 110 ms
+2026-06-17T12:29:58.513-04:00  INFO 99754 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T12:29:58.517-04:00  INFO 99754 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T12:29:58.520-04:00  INFO 99754 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:29:58.522-04:00  INFO 99754 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T12:29:58.523-04:00  INFO 99754 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T12:29:59.833-04:00  INFO 99802 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 99802 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T12:29:59.834-04:00  INFO 99802 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T12:30:00.048-04:00  INFO 99802 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T12:30:00.061-04:00  INFO 99802 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-17T12:30:00.219-04:00  INFO 99802 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T12:30:00.224-04:00  INFO 99802 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T12:30:00.224-04:00  INFO 99802 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T12:30:00.237-04:00  INFO 99802 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 392 ms
+2026-06-17T12:30:00.289-04:00  INFO 99802 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T12:30:00.307-04:00  INFO 99802 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T12:30:00.441-04:00  INFO 99802 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T12:30:00.452-04:00  INFO 99802 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T12:30:00.517-04:00  INFO 99802 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T12:30:00.518-04:00  INFO 99802 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T12:30:00.539-04:00  INFO 99802 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T12:30:00.813-04:00  INFO 99802 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T12:30:00.826-04:00  INFO 99802 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:30:00.854-04:00  INFO 99802 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T12:30:00.939-04:00  WARN 99802 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T12:30:01.079-04:00  INFO 99802 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T12:30:01.103-04:00  INFO 99802 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T12:30:01.106-04:00  INFO 99802 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.425 seconds (process running for 1.65)
+2026-06-17T12:30:03.559-04:00  INFO 99802 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T12:30:03.784-04:00  INFO 99802 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 116 ms
+2026-06-17T12:31:36.097-04:00  INFO 99802 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T12:31:36.102-04:00  INFO 99802 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T12:31:36.104-04:00  INFO 99802 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:31:36.107-04:00  INFO 99802 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T12:31:36.108-04:00  INFO 99802 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T12:31:38.247-04:00  INFO 99912 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 99912 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T12:31:38.248-04:00  INFO 99912 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T12:31:38.510-04:00  INFO 99912 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T12:31:38.535-04:00  INFO 99912 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2026-06-17T12:31:38.701-04:00  INFO 99912 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T12:31:38.707-04:00  INFO 99912 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T12:31:38.707-04:00  INFO 99912 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T12:31:38.723-04:00  INFO 99912 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 464 ms
+2026-06-17T12:31:38.782-04:00  INFO 99912 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T12:31:38.801-04:00  INFO 99912 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T12:31:38.946-04:00  INFO 99912 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T12:31:38.957-04:00  INFO 99912 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T12:31:39.021-04:00  INFO 99912 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T12:31:39.021-04:00  INFO 99912 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T12:31:39.043-04:00  INFO 99912 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T12:31:39.333-04:00  INFO 99912 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T12:31:39.346-04:00  INFO 99912 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:31:39.374-04:00  INFO 99912 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T12:31:39.466-04:00  WARN 99912 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T12:31:39.610-04:00  INFO 99912 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T12:31:39.635-04:00  INFO 99912 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T12:31:39.637-04:00  INFO 99912 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.544 seconds (process running for 1.806)
+2026-06-17T12:31:42.789-04:00  INFO 99912 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T12:31:43.013-04:00  INFO 99912 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 117 ms
+2026-06-17T12:32:38.615-04:00  INFO 99912 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T12:32:38.619-04:00  INFO 99912 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T12:32:38.622-04:00  INFO 99912 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T12:32:38.624-04:00  INFO 99912 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T12:32:38.624-04:00  INFO 99912 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T22:30:36.131-04:00  INFO 5060 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 5060 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T22:30:36.132-04:00  INFO 5060 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T22:30:36.390-04:00  INFO 5060 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:30:36.405-04:00  INFO 5060 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2026-06-17T22:30:36.562-04:00  INFO 5060 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T22:30:36.567-04:00  INFO 5060 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:30:36.567-04:00  INFO 5060 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:30:36.581-04:00  INFO 5060 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 437 ms
+2026-06-17T22:30:36.648-04:00  INFO 5060 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:30:36.676-04:00  INFO 5060 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:30:36.831-04:00  INFO 5060 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:30:36.844-04:00  INFO 5060 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:30:36.921-04:00  INFO 5060 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T22:30:36.921-04:00  INFO 5060 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:30:36.944-04:00  INFO 5060 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:30:37.246-04:00  INFO 5060 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:30:37.258-04:00  INFO 5060 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:30:37.288-04:00  INFO 5060 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:30:37.389-04:00  WARN 5060 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:30:37.559-04:00  INFO 5060 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T22:30:37.593-04:00  INFO 5060 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T22:30:37.596-04:00  INFO 5060 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.63 seconds (process running for 1.943)
+2026-06-17T22:30:59.904-04:00  INFO 5060 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T22:31:00.126-04:00  INFO 5060 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 112 ms
+2026-06-17T22:31:06.866-04:00  INFO 5060 --- [corredorSeguro] [http-nio-8091-exec-5] d.c.service.CorredorSeguroService        : Buscando Corredor con id 11
+2026-06-17T22:31:22.752-04:00  INFO 5060 --- [corredorSeguro] [http-nio-8091-exec-6] d.c.service.CorredorSeguroService        : Buscando Corredor con id 10
+2026-06-17T22:31:37.448-04:00  INFO 5060 --- [corredorSeguro] [http-nio-8091-exec-7] d.c.service.CorredorSeguroService        : Buscando Corredor con id 2
+2026-06-17T22:32:11.474-04:00  INFO 5060 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T22:32:11.478-04:00  INFO 5060 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T22:32:11.481-04:00  INFO 5060 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:32:11.484-04:00  INFO 5060 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T22:32:11.485-04:00  INFO 5060 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T22:32:12.904-04:00  INFO 5202 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 5202 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T22:32:12.905-04:00  INFO 5202 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T22:32:13.137-04:00  INFO 5202 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:32:13.153-04:00  INFO 5202 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-06-17T22:32:13.309-04:00  INFO 5202 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T22:32:13.314-04:00  INFO 5202 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:32:13.314-04:00  INFO 5202 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:32:13.328-04:00  INFO 5202 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 409 ms
+2026-06-17T22:32:13.389-04:00  INFO 5202 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:32:13.411-04:00  INFO 5202 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:32:13.558-04:00  INFO 5202 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:32:13.571-04:00  INFO 5202 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:32:13.642-04:00  INFO 5202 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T22:32:13.643-04:00  INFO 5202 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:32:13.664-04:00  INFO 5202 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:32:13.954-04:00  INFO 5202 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:32:13.966-04:00  INFO 5202 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:32:13.996-04:00  INFO 5202 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:32:14.089-04:00  WARN 5202 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:32:14.234-04:00  INFO 5202 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T22:32:14.258-04:00  INFO 5202 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T22:32:14.261-04:00  INFO 5202 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.525 seconds (process running for 1.783)
+2026-06-17T22:32:30.788-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T22:32:30.986-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 107 ms
+2026-06-17T22:32:36.316-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-5] d.c.service.CorredorSeguroService        : Buscando Corredor con id 2
+2026-06-17T22:33:06.166-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-6] d.c.service.CorredorSeguroService        : Buscando Corredor con id 20
+2026-06-17T22:33:06.174-04:00  WARN 5202 --- [corredorSeguro] [http-nio-8091-exec-6] d.c.exception.GlobalExceptionHandler     : No se encontró corredor con ese id 20 en la ruta /api/v1/corredores/20
+2026-06-17T22:33:24.879-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-7] d.c.service.CorredorSeguroService        : Eliminando Corredor con id 20
+2026-06-17T22:33:24.880-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-7] d.c.service.CorredorSeguroService        : Buscando Corredor con id 20
+2026-06-17T22:33:24.882-04:00  WARN 5202 --- [corredorSeguro] [http-nio-8091-exec-7] d.c.exception.GlobalExceptionHandler     : No se encontró corredor con ese id 20 en la ruta /api/v1/corredores/20
+2026-06-17T22:33:29.977-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-8] d.c.service.CorredorSeguroService        : Eliminando Corredor con id 2
+2026-06-17T22:33:29.977-04:00  INFO 5202 --- [corredorSeguro] [http-nio-8091-exec-8] d.c.service.CorredorSeguroService        : Buscando Corredor con id 2
+2026-06-17T22:34:24.486-04:00  WARN 5202 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores
+2026-06-17T22:36:35.578-04:00  WARN 5202 --- [corredorSeguro] [http-nio-8091-exec-2] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores/1
+2026-06-17T22:38:28.555-04:00  INFO 5202 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T22:38:28.559-04:00  INFO 5202 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T22:38:28.561-04:00  INFO 5202 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:38:28.563-04:00  INFO 5202 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T22:38:28.563-04:00  INFO 5202 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T22:39:15.736-04:00  INFO 5505 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 5505 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T22:39:15.737-04:00  INFO 5505 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T22:39:15.988-04:00  INFO 5505 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:39:16.002-04:00  INFO 5505 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-17T22:39:16.160-04:00  INFO 5505 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T22:39:16.164-04:00  INFO 5505 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:39:16.164-04:00  INFO 5505 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:39:16.178-04:00  INFO 5505 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 428 ms
+2026-06-17T22:39:16.244-04:00  INFO 5505 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:39:16.266-04:00  INFO 5505 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:39:16.430-04:00  INFO 5505 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:39:16.444-04:00  INFO 5505 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:39:16.524-04:00  INFO 5505 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T22:39:16.524-04:00  INFO 5505 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:39:16.546-04:00  INFO 5505 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:39:16.869-04:00  INFO 5505 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:39:16.881-04:00  INFO 5505 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:39:16.911-04:00  INFO 5505 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:39:17.006-04:00  WARN 5505 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:39:17.159-04:00  INFO 5505 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T22:39:17.185-04:00  INFO 5505 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T22:39:17.188-04:00  INFO 5505 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.612 seconds (process running for 1.993)
+2026-06-17T22:39:22.305-04:00  INFO 5505 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T22:39:22.528-04:00  INFO 5505 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 118 ms
+2026-06-17T22:40:02.637-04:00  WARN 5505 --- [corredorSeguro] [http-nio-8091-exec-5] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores
+2026-06-17T22:44:42.574-04:00  INFO 5505 --- [corredorSeguro] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T22:44:42.578-04:00  INFO 5505 --- [corredorSeguro] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-17T22:44:42.581-04:00  INFO 5505 --- [corredorSeguro] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:44:42.583-04:00  INFO 5505 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T22:44:42.584-04:00  INFO 5505 --- [corredorSeguro] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T22:44:44.072-04:00  INFO 5676 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Starting CorredorSeguroApplication using Java 21.0.1 with PID 5676 (/Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1/corredorSeguro)
+2026-06-17T22:44:44.073-04:00  INFO 5676 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T22:44:44.304-04:00  INFO 5676 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T22:44:44.316-04:00  INFO 5676 --- [corredorSeguro] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2026-06-17T22:44:44.466-04:00  INFO 5676 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8091 (http)
+2026-06-17T22:44:44.472-04:00  INFO 5676 --- [corredorSeguro] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T22:44:44.472-04:00  INFO 5676 --- [corredorSeguro] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-17T22:44:44.488-04:00  INFO 5676 --- [corredorSeguro] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 403 ms
+2026-06-17T22:44:44.548-04:00  INFO 5676 --- [corredorSeguro] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-17T22:44:44.565-04:00  INFO 5676 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-17T22:44:44.704-04:00  INFO 5676 --- [corredorSeguro] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T22:44:44.714-04:00  INFO 5676 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T22:44:44.780-04:00  INFO 5676 --- [corredorSeguro] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:dv_corredor user=SA
+2026-06-17T22:44:44.781-04:00  INFO 5676 --- [corredorSeguro] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T22:44:44.800-04:00  INFO 5676 --- [corredorSeguro] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:dv_corredor]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DV_CORREDOR/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T22:44:45.089-04:00  INFO 5676 --- [corredorSeguro] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T22:44:45.103-04:00  INFO 5676 --- [corredorSeguro] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T22:44:45.129-04:00  INFO 5676 --- [corredorSeguro] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T22:44:45.218-04:00  WARN 5676 --- [corredorSeguro] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T22:44:45.367-04:00  INFO 5676 --- [corredorSeguro] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dv_corredor'
+2026-06-17T22:44:45.392-04:00  INFO 5676 --- [corredorSeguro] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8091 (http) with context path '/'
+2026-06-17T22:44:45.395-04:00  INFO 5676 --- [corredorSeguro] [main] d.c.CorredorSeguroApplication            : Started CorredorSeguroApplication in 1.517 seconds (process running for 1.8)
+2026-06-17T22:45:36.644-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17T22:45:36.865-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 115 ms
+2026-06-17T22:46:02.869-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-5] d.c.service.CorredorSeguroService        : Creando Corredor Con Run:20.145.111-9
+2026-06-17T22:48:19.127-04:00  WARN 5676 --- [corredorSeguro] [http-nio-8091-exec-8] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores/12
+2026-06-17T22:48:30.943-04:00  WARN 5676 --- [corredorSeguro] [http-nio-8091-exec-9] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores/12
+2026-06-17T22:48:42.124-04:00  WARN 5676 --- [corredorSeguro] [http-nio-8091-exec-10] d.c.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/corredores/12
+2026-06-17T22:48:55.488-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.service.CorredorSeguroService        : Actualizando Corredor con id 12
+2026-06-17T22:48:55.488-04:00  INFO 5676 --- [corredorSeguro] [http-nio-8091-exec-1] d.c.service.CorredorSeguroService        : Buscando Corredor con id 12

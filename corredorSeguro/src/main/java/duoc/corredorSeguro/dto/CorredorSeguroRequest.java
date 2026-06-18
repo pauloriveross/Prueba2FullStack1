@@ -26,7 +26,7 @@ public class CorredorSeguroRequest {
     @NotNull(message = "El sueldo es obligatorio ")
     @Min(value = 520000 , message = "El sueldo no puede ser inferior al sueldo base legal ")
     @Max(value = 1200000,message = "El sueldo excede el limite permitido ")
-    private Integer sueldoCorredor;
+    private Integer sueldoBaseCorredor;
 
 
     public CorredorSeguroRequest(){}
@@ -62,12 +62,15 @@ public class CorredorSeguroRequest {
         this.emailCorredor = emailCorredor;
     }
 
-    public Integer getSueldoCorredor(){
-        return sueldoCorredor;
+    public Integer getSueldoBaseCorredor(){
+        return sueldoBaseCorredor;
     }
-    public void setSueldoCorredor(Integer sueldoCorredor){
-        this.sueldoCorredor = sueldoCorredor;
+
+    public void setSueldoBaseCorredor(Integer sueldoBaseCorredor){
+        this.sueldoBaseCorredor = sueldoBaseCorredor;
     }
+
+
 
 
 

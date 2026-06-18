@@ -29,7 +29,7 @@ public class DataLoader {
                         for (int i = 0; i < 10 ; i ++){
                             String nombre = faker.name().fullName();
                             String apellido = faker.name().lastName();
-                            String correo = nombre.toLowerCase() + "."+apellido.toLowerCase() + "@seguros.cl";
+                            String correo = nombre.toLowerCase()+"."+apellido.toLowerCase()+"@seguros.cl";
                             repository.save(CorredorSeguro.builder()
                                     .rutCorredor(faker.idNumber().valid())
                                     .nombreCorredor(nombre)
