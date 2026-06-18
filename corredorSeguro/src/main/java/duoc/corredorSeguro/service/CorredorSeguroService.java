@@ -68,7 +68,7 @@ public class CorredorSeguroService {
         log.info("Actualizando Corredor con id {}",id);
         CorredorSeguro corredorUpdate = buscarPorId(id);
 
-        if(corredorSeguroRepository.existsByRutCorredorAndIdCorredor(request.getRutCorredor(), id)){
+        if(corredorSeguroRepository.existsByRutCorredorAndIdCorredorNot(request.getRutCorredor(), id)){
             throw new RutDuplicadoCorredor("El rut ya se encuentra registrado por otro corredor");
         }
 

@@ -66,7 +66,7 @@ public class PersonalAseoService {
         log.info("Actualizando personal de aseo con id: {}", idPersonalAseo);
         PersonalAseo personalAseo = buscarPorId(idPersonalAseo);
 
-        if(personalAseoRepository.existsByRutPersonalAseoAndIdPersonalAseo(request.getRutPersonalAseo(), idPersonalAseo)){
+        if(personalAseoRepository.existsByRutPersonalAseoAndIdPersonalAseoNot(request.getRutPersonalAseo(), idPersonalAseo)){
             throw new RutDuplicadoException("El rut ya se encuentra registrado por otro personal de aseo");
         }
 
@@ -92,3 +92,5 @@ public class PersonalAseoService {
         throw new RuntimeException("Error simulando para pruebas");
     }
 }
+
+

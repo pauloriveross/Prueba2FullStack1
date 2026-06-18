@@ -6,35 +6,49 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      routes:
-        - id: cliente
-          uri: ${CLIENTE_URL:lb://CLIENTE}
-          predicates:
-            - Path=/api/clientes/**
-        - id: mantenciones
-          uri: ${MANTENCIONES_URL:lb://MANTENCIONES}
-          predicates:
-            - Path=/api/mantenciones/**
-        - id: mecanicos
-          uri: ${MECANICOS_URL:lb://MECANICOS}
-          predicates:
-            - Path=/api/mecanicos/**
-        - id: vehiculo
-          uri: ${VEHICULO_URL:lb://VEHICULO}
-          predicates:
-            - Path=/api/vehiculos/**
-        - id: vendedor
-          uri: ${VENDEDOR_URL:lb://VENDEDOR}
-          predicates:
-            - Path=/api/vendedores/**
-        - id: ventas-Update
-          uri: ${VENTAS_UPDATE_URL:lb://VENTAS-UPDATE}
-          predicates:
-            - Path=/api/ventas/**
-        - id: auth-service
-          uri: ${AUTH_SERVICE_URL:lb://AUTH-SERVICE}
-          predicates:
-            - Path=/api/auth/**
+      server:
+        webflux:
+          routes:
+            - id: corredores
+              uri: http://localhost:8091
+              predicates:
+                - Path=/api/v1/corredores/**
+            - id: clientes
+              uri: http://localhost:8082
+              predicates:
+                - Path=/api/v1/clientes/**
+            - id: mantencion
+              uri: http://localhost:8085
+              predicates:
+                - Path=/api/v1/mantenciones/**
+            - id: mecanicos
+              uri: http://localhost:8084
+              predicates:
+                - Path=/api/v1/mecanicos/**
+            - id: personalaseo
+              uri: http://localhost:8088
+              predicates:
+                - Path=/api/v1/personalaseo/**
+            - id: seguro
+              uri: http://localhost:8090
+              predicates:
+                - Path=/api/v1/seguros/**
+            - id: vehiculo
+              uri: http://localhost:8089
+              predicates:
+                - Path=/api/v1/vehiculos/**
+            - id: vendedor
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/v1/vendedores/**
+            - id: ventas-Update
+              uri: http://localhost:8083
+              predicates:
+                - Path=/api/v1/ventas/**
+            - id: auth-service
+              uri: http://localhost:8086
+              predicates:
+                - Path=/auth/**
 
 management:
   endpoint:

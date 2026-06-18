@@ -11,7 +11,7 @@ public interface CorredorSeguroRepository  extends JpaRepository<CorredorSeguro,
     boolean existsByRutCorredor(String rutCorredor);
 
 
-    boolean existsByRutCorredorAndIdCorredor(String rut , Integer idCorredor);
+    boolean existsByRutCorredorAndIdCorredorNot(String rut , Integer idCorredor);
 
 
 
