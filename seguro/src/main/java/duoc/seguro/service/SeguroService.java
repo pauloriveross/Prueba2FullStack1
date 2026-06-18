@@ -46,7 +46,7 @@ public class SeguroService {
     }
 
     //Post
-    public Seguro guardarVenta(SeguroRequest request) {
+    public Seguro guardarSeguro(SeguroRequest request) {
 
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())

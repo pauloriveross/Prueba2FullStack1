@@ -45,8 +45,9 @@ app:
 services:
   cliente:
     url: ${CLIENTE_URL:http://CLIENTE}
-#  corredor-seguro:
-#    url: ${CORREDOR-SEGURO-URL:http://CORREDOR-SEGURO}  revisar xDDDDDD
+#revisar corredor xD
+  corredor-seguro:
+    url: ${CORREDOR-SEGURO-URL:http://CORREDOR-SEGURO}
   vehiculo:
     url: ${VEHICULO_URL:http://VEHICULO}
 
