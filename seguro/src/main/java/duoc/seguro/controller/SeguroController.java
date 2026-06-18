@@ -46,21 +46,23 @@ public class SeguroController {
 
     //Post
     @PostMapping
-    public ResponseEntity<EntityModel<Seguro>> crearVenta(@Valid @RequestBody SeguroRequest seguroRequest){
-        Seguro seguro = seguroService.guardarSeguro(seguroRequest);
+    public ResponseEntity<EntityModel<Seguro>> crearSeguro(@Valid @RequestBody SeguroRequest seguroRequest,
+                                                          @RequestHeader("Authorization") String token){
+        Seguro seguro = seguroService.guardarSeguro(seguroRequest,token);
         return ResponseEntity.status(HttpStatus.CREATED).body(toModel(seguro));
     }
 
     //Put
     @PutMapping("/{idSeguro}")
-    public ResponseEntity<EntityModel<Seguro>>actualizarVenta(@PathVariable Integer idSeguro , @Valid @RequestBody SeguroRequest seguroRequest){
-        Seguro seguroActualizado = seguroService.actualizarSeguro(idSeguro, seguroRequest);
+    public ResponseEntity<EntityModel<Seguro>>actualizarSeguros(@PathVariable Integer idSeguro , @Valid @RequestBody SeguroRequest seguroRequest,
+                                                                @RequestHeader("Authorization") String token){
+        Seguro seguroActualizado = seguroService.actualizarSeguro(idSeguro, seguroRequest,token);
         return ResponseEntity.ok(toModel(seguroActualizado));
     }
 
     //Delete
     @DeleteMapping("/{idSeguro}")
-    public ResponseEntity<Void> eliminarVenta(@PathVariable Integer idSeguro ){
+    public ResponseEntity<Void> eliminarSeguro(@PathVariable Integer idSeguro ){
         seguroService.eliminarSeguro(idSeguro);
         return ResponseEntity.noContent().build();
     }
