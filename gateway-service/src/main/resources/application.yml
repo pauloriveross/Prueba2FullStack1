@@ -49,6 +49,11 @@ spring:
               uri: http://localhost:8086
               predicates:
                 - Path=/auth/**
+            - id: testDrive
+              uri: http://localhost:8092
+              predicates:
+                - Path=/api/v1/testDrive/**
+
 
 management:
   endpoint:
