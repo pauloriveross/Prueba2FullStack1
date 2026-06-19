@@ -29,4 +29,16 @@ logging:
   file:
     name: logs/corredor.log
 
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8869/eureka/}
+  instance:
+    prefer-ip-address: true
+app:
+  discovery:
+    enabled: ${APP_DISCOVERY_ENABLED:true}
+
+
 
