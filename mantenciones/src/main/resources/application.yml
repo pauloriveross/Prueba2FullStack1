@@ -50,7 +50,7 @@ services:
     url: ${VEHICULO_URL:http://VEHICULO}
 
 jwt:
-  secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot0"
+  secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot"
   expiration-ms: 3600000
 
 

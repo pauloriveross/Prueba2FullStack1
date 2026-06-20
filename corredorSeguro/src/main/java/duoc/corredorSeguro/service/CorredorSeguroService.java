@@ -37,7 +37,7 @@ public class CorredorSeguroService {
     public CorredorSeguro guardarCorredor(CorredorSeguroRequest request){
         if(corredorSeguroRepository.existsByRutCorredor(request.getRutCorredor())){
             throw new RutDuplicadoCorredor("No se puede registrar el rut : " + request.getRutCorredor() +
-                    "porque esta duplicado");
+                    " porque esta duplicado");
         }
 
         CorredorSeguro corredorSeguro = crearDesdeRequest(request);

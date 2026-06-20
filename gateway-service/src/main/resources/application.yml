@@ -55,6 +55,7 @@ spring:
                 - Path=/api/v1/testdrives/**
 
 
+
 management:
   endpoint:
     gateway:

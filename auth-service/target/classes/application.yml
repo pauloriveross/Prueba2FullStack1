@@ -19,3 +19,12 @@ spring:
 jwt:
   secret: "ClaveSuperSeguraJWTParaDuocUC2026SpringBoot"
   expiration-ms: 3600000
+
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8869/eureka/}
+  instance:
+    prefer-ip-address: true
+

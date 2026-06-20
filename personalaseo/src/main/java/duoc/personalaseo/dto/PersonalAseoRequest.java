@@ -18,7 +18,7 @@ public class PersonalAseoRequest {
 
     @NotNull(message = "El sueldo es obligatorio")
     @Min(value = 553553, message = "El sueldo no puede ser inferior al sueldo base legal")
-    @Max(value = 800000, message = "El sueldo axcede el limite permitido")
+    @Max(value = 800000, message = "El sueldo excede el limite permitido")
     private Integer sueldoPersonalAseo;
 
     public PersonalAseoRequest(){}

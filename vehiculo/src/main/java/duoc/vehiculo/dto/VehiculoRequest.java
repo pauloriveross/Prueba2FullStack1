@@ -1,9 +1,7 @@
 package duoc.vehiculo.dto;
 
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 
 public class VehiculoRequest {
@@ -15,12 +13,16 @@ public class VehiculoRequest {
     private String modeloVehiculo;
 
     @NotNull(message = "El año del vehiculo es obligatorio")
+    @Min(value = 1990,message = "El año del vehiculo debe ser mayor 1990")
+    @Max(value = 2027,message = "El año no puede superar al año actual")
     private Integer annioVehiculo;
 
 
     private String tipoVehiculo;
 
     @NotNull(message = "El vehiculo debe tener un precio valido")
+    @Min(value = 1000000, message = "El precio no puede ser inferior a $1.000.000")
+    @Max(value = 100000000, message = "El precio  excede el limite permitido")
     private Integer precioVehiculo;
 
 
