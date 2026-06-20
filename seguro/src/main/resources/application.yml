@@ -40,7 +40,7 @@ eureka:
     prefer-ip-address: true
 app:
   discovery:
-    enabled: ${APP_DISCOVERY_ENABLED:true}
+   enabled: ${APP_DISCOVERY_ENABLED:true}
 
 services:
   cliente:
