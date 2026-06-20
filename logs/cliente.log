@@ -1,48 +1,71 @@
-2026-06-14T13:09:20.467-04:00  INFO 89754 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 89754 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
-2026-06-14T13:09:20.469-04:00  INFO 89754 --- [cliente] [main] duoc.cliente.ClienteApplication          : No active profile set, falling back to 1 default profile: "default"
-2026-06-14T13:09:20.688-04:00  INFO 89754 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-14T13:09:20.704-04:00  INFO 89754 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
-2026-06-14T13:09:20.862-04:00  INFO 89754 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
-2026-06-14T13:09:20.867-04:00  INFO 89754 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-14T13:09:20.867-04:00  INFO 89754 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-14T13:09:20.881-04:00  INFO 89754 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 396 ms
-2026-06-14T13:09:21.016-04:00  INFO 89754 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-14T13:09:21.156-04:00  INFO 89754 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68d8eb4f
-2026-06-14T13:09:21.157-04:00  INFO 89754 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-14T13:09:21.183-04:00  INFO 89754 --- [cliente] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_cliente (MySQL 8.0)
-2026-06-14T13:09:21.223-04:00  INFO 89754 --- [cliente] [main] o.f.core.internal.command.DbValidate     : Successfully validated 5 migrations (execution time 00:00.015s)
-2026-06-14T13:09:21.231-04:00  INFO 89754 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_cliente`: 5
-2026-06-14T13:09:21.232-04:00  INFO 89754 --- [cliente] [main] o.f.core.internal.command.DbMigrate      : Schema `db_cliente` is up to date. No migration necessary.
-2026-06-14T13:09:21.265-04:00  INFO 89754 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-14T13:09:21.293-04:00  INFO 89754 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-14T13:09:21.431-04:00  INFO 89754 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-14T13:09:21.467-04:00  INFO 89754 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:mysql://localhost:3306/db_cliente]
-	Database driver: MySQL Connector/J
-	Database dialect: MySQLDialect
-	Database version: 8.0.45
-	Default catalog/schema: db_cliente/undefined
+2026-06-20T13:28:58.864-04:00  INFO 41713 --- [cliente] [main] duoc.cliente.ClienteApplication          : Starting ClienteApplication using Java 21.0.1 with PID 41713 (/Users/moka/Documents/GitHub/Prueba2FullStack1/cliente/cliente/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
+2026-06-20T13:28:58.865-04:00  INFO 41713 --- [cliente] [main] duoc.cliente.ClienteApplication          : The following 1 profile is active: "default"
+2026-06-20T13:28:59.246-04:00  INFO 41713 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T13:28:59.297-04:00  INFO 41713 --- [cliente] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2026-06-20T13:28:59.420-04:00  INFO 41713 --- [cliente] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f3196b45-ca71-336c-8709-ec6460509753
+2026-06-20T13:28:59.546-04:00  INFO 41713 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-06-20T13:28:59.550-04:00  INFO 41713 --- [cliente] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T13:28:59.550-04:00  INFO 41713 --- [cliente] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-20T13:28:59.568-04:00  INFO 41713 --- [cliente] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 689 ms
+2026-06-20T13:28:59.669-04:00  INFO 41713 --- [cliente] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T13:28:59.684-04:00  INFO 41713 --- [cliente] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-20T13:28:59.828-04:00  INFO 41713 --- [cliente] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T13:28:59.839-04:00  INFO 41713 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T13:28:59.909-04:00  INFO 41713 --- [cliente] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db_cliente user=SA
+2026-06-20T13:28:59.909-04:00  INFO 41713 --- [cliente] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T13:28:59.919-04:00  WARN 41713 --- [cliente] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20T13:28:59.926-04:00  INFO 41713 --- [cliente] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:db_cliente]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DB_CLIENTE/PUBLIC
 	Autocommit mode: undefined/unknown
-	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
-	JDBC fetch size: none
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-06-14T13:09:21.753-04:00  INFO 89754 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-14T13:09:21.774-04:00  INFO 89754 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T13:09:21.799-04:00  INFO 89754 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-14T13:09:21.872-04:00  WARN 89754 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-14T13:09:21.893-04:00  WARN 89754 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+2026-06-20T13:29:00.212-04:00  INFO 41713 --- [cliente] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T13:29:00.235-04:00  INFO 41713 --- [cliente] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T13:29:00.264-04:00  INFO 41713 --- [cliente] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T13:29:00.371-04:00  WARN 41713 --- [cliente] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T13:29:00.420-04:00  WARN 41713 --- [cliente] [main] .s.a.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 42f4305d-4d8c-4427-9b67-51005a0f8808
+Using generated security password: fd5117f3-9db1-4524-b286-76080b0df619
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-06-14T13:09:21.896-04:00  INFO 89754 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-06-14T13:09:22.054-04:00  INFO 89754 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
-2026-06-14T13:09:22.057-04:00  INFO 89754 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 1.747 seconds (process running for 1.99)
-2026-06-14T13:29:09.444-04:00  INFO 89754 --- [cliente] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-14T13:29:09.466-04:00  INFO 89754 --- [cliente] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-14T13:29:09.479-04:00  INFO 89754 --- [cliente] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-14T13:29:09.485-04:00  INFO 89754 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-14T13:29:09.491-04:00  INFO 89754 --- [cliente] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-20T13:29:00.425-04:00  INFO 41713 --- [cliente] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-20T13:29:00.718-04:00  INFO 41713 --- [cliente] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db_cliente'
+2026-06-20T13:29:00.764-04:00  INFO 41713 --- [cliente] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-20T13:29:00.777-04:00  WARN 41713 --- [cliente] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-20T13:29:00.779-04:00  INFO 41713 --- [cliente] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-20T13:29:00.821-04:00  INFO 41713 --- [cliente] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-20T13:29:00.829-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-20T13:29:00.830-04:00  INFO 41713 --- [cliente] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:29:00.832-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-20T13:29:00.832-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-20T13:29:00.833-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-20T13:29:00.833-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-20T13:29:00.833-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-20T13:29:00.833-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-20T13:29:00.833-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-20T13:29:00.964-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-20T13:29:00.964-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-20T13:29:00.965-04:00  INFO 41713 --- [cliente] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-20T13:29:00.965-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781976540965 with initial instances count: 2
+2026-06-20T13:29:00.967-04:00  INFO 41713 --- [cliente] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLIENTE with eureka with status UP
+2026-06-20T13:29:00.967-04:00  INFO 41713 --- [cliente] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781976540967, current=UP, previous=STARTING]
+2026-06-20T13:29:00.968-04:00  INFO 41713 --- [cliente] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTE/192.168.100.152:cliente:8082: registering service...
+2026-06-20T13:29:00.976-04:00  INFO 41713 --- [cliente] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-06-20T13:29:00.976-04:00  INFO 41713 --- [cliente] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-06-20T13:29:01.002-04:00  INFO 41713 --- [cliente] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLIENTE/192.168.100.152:cliente:8082 - registration status: 204
+2026-06-20T13:29:01.015-04:00  INFO 41713 --- [cliente] [main] duoc.cliente.ClienteApplication          : Started ClienteApplication in 2.316 seconds (process running for 2.627)
+2026-06-20T13:29:01.571-04:00  INFO 41713 --- [cliente] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T13:32:01.473-04:00  INFO 41713 --- [cliente] [http-nio-8082-exec-2] duoc.cliente.service.ClienteService      : Listando todos los clientes
+2026-06-20T13:34:00.837-04:00  INFO 41713 --- [cliente] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:39:00.847-04:00  INFO 41713 --- [cliente] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:44:00.847-04:00  INFO 41713 --- [cliente] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:49:00.848-04:00  INFO 41713 --- [cliente] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:54:00.862-04:00  INFO 41713 --- [cliente] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

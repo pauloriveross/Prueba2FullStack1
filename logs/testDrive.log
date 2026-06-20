@@ -1,0 +1,69 @@
+2026-06-20T13:29:39.122-04:00  INFO 41748 --- [testDrive] [main] duoc.TestDriveApplication                : Starting TestDriveApplication using Java 21.0.1 with PID 41748 (/Users/moka/Documents/GitHub/Prueba2FullStack1/testDrive/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
+2026-06-20T13:29:39.123-04:00  INFO 41748 --- [testDrive] [main] duoc.TestDriveApplication                : No active profile set, falling back to 1 default profile: "default"
+2026-06-20T13:29:39.513-04:00  INFO 41748 --- [testDrive] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20T13:29:39.568-04:00  INFO 41748 --- [testDrive] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-06-20T13:29:39.691-04:00  INFO 41748 --- [testDrive] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1383a565-43af-3aa0-9093-3d6142d377e5
+2026-06-20T13:29:39.830-04:00  INFO 41748 --- [testDrive] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8092 (http)
+2026-06-20T13:29:39.836-04:00  INFO 41748 --- [testDrive] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-20T13:29:39.836-04:00  INFO 41748 --- [testDrive] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-06-20T13:29:39.855-04:00  INFO 41748 --- [testDrive] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 718 ms
+2026-06-20T13:29:39.961-04:00  INFO 41748 --- [testDrive] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-20T13:29:39.983-04:00  INFO 41748 --- [testDrive] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-20T13:29:40.139-04:00  INFO 41748 --- [testDrive] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20T13:29:40.151-04:00  INFO 41748 --- [testDrive] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-20T13:29:40.220-04:00  INFO 41748 --- [testDrive] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db_testDrive user=SA
+2026-06-20T13:29:40.220-04:00  INFO 41748 --- [testDrive] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-20T13:29:40.247-04:00  INFO 41748 --- [testDrive] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:db_testDrive]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DB_TESTDRIVE/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-20T13:29:40.562-04:00  INFO 41748 --- [testDrive] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20T13:29:40.576-04:00  INFO 41748 --- [testDrive] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20T13:29:40.605-04:00  INFO 41748 --- [testDrive] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20T13:29:40.732-04:00  WARN 41748 --- [testDrive] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20T13:29:40.965-04:00  INFO 41748 --- [testDrive] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db_testDrive'
+2026-06-20T13:29:40.992-04:00  WARN 41748 --- [testDrive] [main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ed543c24-8892-4f6e-b22b-214cf0fbecd4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-20T13:29:41.002-04:00  INFO 41748 --- [testDrive] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-20T13:29:41.080-04:00  INFO 41748 --- [testDrive] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-20T13:29:41.108-04:00  INFO 41748 --- [testDrive] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-06-20T13:29:41.119-04:00  WARN 41748 --- [testDrive] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-06-20T13:29:41.149-04:00  INFO 41748 --- [testDrive] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-06-20T13:29:41.157-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-06-20T13:29:41.158-04:00  INFO 41748 --- [testDrive] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-06-20T13:29:41.161-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-06-20T13:29:41.310-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-06-20T13:29:41.311-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-06-20T13:29:41.312-04:00  INFO 41748 --- [testDrive] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-06-20T13:29:41.312-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781976581312 with initial instances count: 7
+2026-06-20T13:29:41.313-04:00  INFO 41748 --- [testDrive] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TESTDRIVE with eureka with status UP
+2026-06-20T13:29:41.314-04:00  INFO 41748 --- [testDrive] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781976581314, current=UP, previous=STARTING]
+2026-06-20T13:29:41.314-04:00  INFO 41748 --- [testDrive] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TESTDRIVE/192.168.100.152:testDrive:8092: registering service...
+2026-06-20T13:29:41.326-04:00  INFO 41748 --- [testDrive] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8092 (http) with context path '/'
+2026-06-20T13:29:41.327-04:00  INFO 41748 --- [testDrive] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8092
+2026-06-20T13:29:41.337-04:00  INFO 41748 --- [testDrive] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TESTDRIVE/192.168.100.152:testDrive:8092 - registration status: 204
+2026-06-20T13:29:41.339-04:00  INFO 41748 --- [testDrive] [main] duoc.TestDriveApplication                : Started TestDriveApplication in 2.4 seconds (process running for 2.785)
+2026-06-20T13:29:41.780-04:00  INFO 41748 --- [testDrive] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20T13:34:41.162-04:00  INFO 41748 --- [testDrive] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:39:41.173-04:00  INFO 41748 --- [testDrive] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:44:41.178-04:00  INFO 41748 --- [testDrive] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:49:41.182-04:00  INFO 41748 --- [testDrive] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-20T13:54:41.193-04:00  INFO 41748 --- [testDrive] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
