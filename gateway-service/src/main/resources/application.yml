@@ -52,7 +52,7 @@ spring:
             - id: testDrive
               uri: http://localhost:8092
               predicates:
-                - Path=/api/v1/testDrive/**
+                - Path=/api/v1/testdrives/**
 
 
 management:

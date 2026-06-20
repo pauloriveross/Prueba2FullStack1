@@ -4,10 +4,7 @@ import duoc.dto.ClienteResponse;
 import duoc.dto.TestDriveRequest;
 import duoc.dto.VehiculoResponse;
 import duoc.dto.VendedorResponse;
-import duoc.exception.IdVehiculoDuplicadoException;
-import duoc.exception.IdVehiculoNoEncontradoException;
-import duoc.exception.IdVendedorNoEncontradoException;
-import duoc.exception.TestDriveNoEncotradoException;
+import duoc.exception.*;
 import duoc.model.TestDrive;
 import duoc.repository.TestDriveRepository;
 import lombok.RequiredArgsConstructor;
@@ -16,6 +13,7 @@ import org.jspecify.annotations.NonNull;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -45,22 +43,36 @@ public class TestDriveService {
     public List<TestDrive> listarTestDrive(){return testDriveRepository.findAll();}
 
     //Guardar TestDrive
-    public TestDrive guardarTestDrive(TestDriveRequest request) {
+    public TestDrive guardarTestDrive(TestDriveRequest request ,String token ) {
+
+
+        if(testDriveRepository.existsByIdVehiculoAndFechaTestDrive(request.getIdVehiculo(), request.getFechaTestDrive())){
+            throw new IdVehiculoDuplicadoException("El vehiculo ya esta asignado a otro test drive en esa fecha");
+        }
 
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
-                .retrieve().bodyToMono(ClienteResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(ClienteResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}", request.getIdVehiculo())
-                .retrieve().bodyToMono(VehiculoResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VehiculoResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VendedorResponse vendedor = webClientBuilder.build().get()
                 .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}", request.getIdVendedor())
-                .retrieve().bodyToMono(VendedorResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VendedorResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
 
 
-        // Validación comunicación con clases adyacentes
+        //Validar que no sea nula la comunicación
         if (cliente == null) {
-            throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente() + " no existe");
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");
         }
 
         if (vehiculo == null) {
@@ -71,39 +83,48 @@ public class TestDriveService {
             throw new IdVendedorNoEncontradoException("El vendedor con el id " + request.getIdVendedor() + " no existe");
         }
 
-        if(testDriveRepository.existsByIdVehiculo(request.getIdVehiculo())){
-            throw new IdVehiculoDuplicadoException("El vehiculo ya esta registrado en otro Test Drive");
 
-        }
-
-        TestDrive testDrive = TestDrive.builder().
-                fechaTestDrive(request.getFechaTestDrive())
-                .idCliente(request.getIdCliente())
-                .idVehiculo(request.getIdVehiculo())
-                .idVendedor(request.getIdVendedor())
+        TestDrive testDrive = TestDrive.builder()
+                .fechaTestDrive(request.getFechaTestDrive())
+                .idCliente(cliente.idCliente())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idVendedor(vendedor.idVendedor())
                 .build();
         log.info("Test Drive registrado");
         return testDriveRepository.save(testDrive);
     }
 
     //Actualizar TestDrive
-    public TestDrive actualizarTestDrive(Integer idTestDrive, @NonNull TestDriveRequest request) {
+    public TestDrive actualizarTestDrive(Integer idTestDrive, TestDriveRequest request , String token) {
         log.info("Actualizando Test Drive con id {}", idTestDrive);
         TestDrive testDrive = buscarTestDrivePorId(idTestDrive);
+
+        if(testDriveRepository.existsByIdVehiculoAndFechaTestDriveAndIdTestDriveNot(request.getIdVehiculo(), request.getFechaTestDrive(),idTestDrive)){
+            throw new IdVehiculoDuplicadoException("El vehiculo ya esta asignado en otro test drive con esa fecha");
+        }
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
-                .retrieve().bodyToMono(ClienteResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(ClienteResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VehiculoResponse vehiculo = webClientBuilder.build().get()
                 .uri(vehiculoServiceUrl + "/api/v1/vehiculos/{idVehiculo}", request.getIdVehiculo())
-                .retrieve().bodyToMono(VehiculoResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VehiculoResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
         VendedorResponse vendedor = webClientBuilder.build().get()
                 .uri(vendedorServiceUrl + "/api/v1/vendedores/{id}", request.getIdVendedor())
-                .retrieve().bodyToMono(VendedorResponse.class).block();
+                .header("Authorization",token)
+                .retrieve().bodyToMono(VendedorResponse.class)
+                .onErrorResume(e -> Mono.empty())
+                .block();
 
 
         // Validar que no sea nula la comunicación
         if (cliente == null) {
-            throw new IllegalArgumentException("El cliente con el id " + request.getIdCliente() + " no existe");
+            throw new IdClienteNoEncontradoException("El cliente con el id " + request.getIdCliente() + " no existe");
         }
 
         if (vehiculo == null) {
@@ -114,11 +135,12 @@ public class TestDriveService {
             throw new IdVendedorNoEncontradoException("El vendedor con el id " + request.getIdVendedor() + " no existe");
         }
 
-        TestDrive testDriveActualizado = TestDrive.builder().
-                fechaTestDrive(request.getFechaTestDrive())
-                .idCliente(request.getIdCliente())
-                .idVehiculo(request.getIdVehiculo())
-                .idVendedor(request.getIdVendedor())
+        TestDrive testDriveActualizado = TestDrive.builder()
+                .idTestDrive(testDrive.getIdTestDrive())
+                .fechaTestDrive(request.getFechaTestDrive())
+                .idCliente(cliente.idCliente())
+                .idVehiculo(vehiculo.idVehiculo())
+                .idVendedor(vendedor.idVendedor())
                 .build();
         return testDriveRepository.save(testDriveActualizado);
     }

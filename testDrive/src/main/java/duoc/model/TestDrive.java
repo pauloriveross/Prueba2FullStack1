@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,10 +19,10 @@ public class TestDrive {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idTesDrive;
+    private Integer idTestDrive;
 
     @Column(nullable = false)
-    private String fechaTestDrive;
+    private Date fechaTestDrive;
 
     @Column(nullable = false)
     private Integer idCliente;

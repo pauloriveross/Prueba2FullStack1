@@ -1,8 +1,11 @@
 package duoc.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotNull;
+
+import java.util.Date;
 
 
 public class TestDriveRequest {
@@ -10,8 +13,9 @@ public class TestDriveRequest {
     @NotNull(message = "El Id del Test Drive es obligatorio")
     private Integer idTestDrive;
 
-    @Column(nullable = false)
-    private String fechaTestDrive;
+    @NotNull(message = "La fecha es obligatoria para registrar una venta")
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date fechaTestDrive;
 
     @NotNull(message = "El id del cliente es obligatorio")
     private Integer idCliente;
@@ -34,11 +38,11 @@ public class TestDriveRequest {
         this.idTestDrive = idTestDrive;
     }
 
-    public String getFechaTestDrive() {
+    public Date getFechaTestDrive() {
         return fechaTestDrive;
     }
 
-    public void setFechaTestDrive(String fechaTestDrive) {
+    public void setFechaTestDrive(Date fechaTestDrive) {
         this.fechaTestDrive = fechaTestDrive;
     }
 

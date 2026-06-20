@@ -17,7 +17,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
-@RequestMapping("api/v1/testDrive")
+@RequestMapping("api/v1/testdrives")
 @RequiredArgsConstructor
 
 public class TestDriveController {
@@ -26,7 +26,7 @@ public class TestDriveController {
 
     private EntityModel<TestDrive> toModel(TestDrive testDrive){
         return EntityModel.of(testDrive,
-                linkTo(methodOn(TestDriveController.class).buscarTestDrive(testDrive.getIdTesDrive())).withSelfRel(),
+                linkTo(methodOn(TestDriveController.class).buscarTestDrive(testDrive.getIdTestDrive())).withSelfRel(),
                 linkTo(methodOn(TestDriveController.class).listarTestDrive()).withRel("todos"));
 
     }
@@ -47,15 +47,17 @@ public class TestDriveController {
 
     // Crear Test Drive
     @PostMapping
-    public ResponseEntity<EntityModel<TestDrive>> crearTestDrive(@Valid @RequestBody TestDriveRequest TestDriveRequest){
-        TestDrive testDrive = testDriveService.guardarTestDrive(TestDriveRequest);
+    public ResponseEntity<EntityModel<TestDrive>> crearTestDrive(@Valid @RequestBody TestDriveRequest TestDriveRequest,
+                                                                 @RequestHeader("Authorization") String token){
+        TestDrive testDrive = testDriveService.guardarTestDrive(TestDriveRequest,token);
         return ResponseEntity.status(HttpStatus.CREATED).body(toModel(testDrive));
     }
 
     // Actualizar TestDrive
     @PutMapping("/{idTestDrive}")
-    public ResponseEntity<EntityModel<TestDrive>>actualizarTestDrive(@PathVariable Integer idTestDrive , @Valid @RequestBody TestDriveRequest TestDriveRequest){
-        TestDrive TestDriveActualizado = testDriveService.actualizarTestDrive(idTestDrive, TestDriveRequest);
+    public ResponseEntity<EntityModel<TestDrive>>actualizarTestDrive(@PathVariable Integer idTestDrive , @Valid @RequestBody TestDriveRequest TestDriveRequest,
+                                                                     @RequestHeader("Authorization") String token){
+        TestDrive TestDriveActualizado = testDriveService.actualizarTestDrive(idTestDrive, TestDriveRequest,token);
         return ResponseEntity.ok(toModel(TestDriveActualizado));
     }
 
