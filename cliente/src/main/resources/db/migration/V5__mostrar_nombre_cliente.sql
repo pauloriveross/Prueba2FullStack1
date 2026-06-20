@@ -1,0 +1,4 @@
+SELECT
+    nombreCliente
+FROM
+    Clientes;

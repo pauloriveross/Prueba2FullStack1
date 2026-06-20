@@ -1,4 +1,0 @@
-SELECT
-    nombreCliente
-FROM
-    Clientes;

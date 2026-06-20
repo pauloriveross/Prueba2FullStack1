@@ -16,7 +16,7 @@
     <modules>
         <module>eureka-server</module>
         <module>auth-service</module>
-        <module>cliente/cliente</module>
+        <module>cliente</module>
         <module>gateway-service</module>
         <module>mantenciones</module>
         <module>mecanicos</module>

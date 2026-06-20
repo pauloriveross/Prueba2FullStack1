@@ -28,7 +28,7 @@ public class MantencionService {
     private String clienteServiceUrl;
     @Value("${services.vehiculo.url:http://VEHICULO}")
     private String vehiculoServiceUrl;
-    @Value("${services.mecanico.url:http://MECANICO}")
+    @Value("${services.mecanico.url:http://MECANICOS}")
     private String mecanicoServiceUrl;
 
 

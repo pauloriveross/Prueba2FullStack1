@@ -20,13 +20,10 @@
         <module name="seguro" />
         <module name="vendedor" />
         <module name="personalaseo" />
-        <module name="vendedor (1)" />
         <module name="vehiculo" />
         <module name="corredorSeguro" />
-        <module name="vehiculo (1)" />
         <module name="cliente" />
         <module name="testDrive" />
-        <module name="ventas-Update (1)" />
         <module name="ventas-Update" />
         <module name="gateway-service" />
         <module name="mantenciones" />
@@ -34,39 +31,22 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="auth-service (1)" target="21" />
-      <module name="cliente (1)" target="21" />
-      <module name="eureka-server (1)" target="21" />
-      <module name="gateway-service (1)" target="21" />
-      <module name="mantenciones (1)" target="21" />
-      <module name="mecanicos (1)" target="21" />
-      <module name="plataforma-automotora-microservicio (1)" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth-service" options="-parameters" />
-      <module name="auth-service (1)" options="-parameters" />
       <module name="cliente" options="-parameters" />
-      <module name="cliente (1)" options="-parameters" />
       <module name="corredorSeguro" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
-      <module name="eureka-server (1)" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
-      <module name="gateway-service (1)" options="-parameters" />
       <module name="mantenciones" options="-parameters" />
-      <module name="mantenciones (1)" options="-parameters" />
       <module name="mecanicos" options="-parameters" />
-      <module name="mecanicos (1)" options="-parameters" />
       <module name="personalaseo" options="-parameters" />
       <module name="seguro" options="-parameters" />
       <module name="testDrive" options="-parameters" />
       <module name="vehiculo" options="-parameters" />
-      <module name="vehiculo (1)" options="-parameters" />
       <module name="vendedor" options="-parameters" />
-      <module name="vendedor (1)" options="-parameters" />
       <module name="ventas-Update" options="-parameters" />
-      <module name="ventas-Update (1)" options="-parameters" />
     </option>
   </component>
 </project>

@@ -6,19 +6,17 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      server:
-        webflux:
-          routes:
+      routes:
             - id: corredores
-              uri: ${CORREDORES_URL:lb://CORREDORSEGURO}
+              uri: ${CORREDOR_URL:lb://CORREDORSEGURO}
               predicates:
                 - Path=/api/v1/corredores/**
             - id: clientes
-              uri: ${CLIENTES_URL:lb://CLIENTES}
+              uri: ${CLIENTES_URL:lb://CLIENTE}
               predicates:
                 - Path=/api/v1/clientes/**
             - id: mantencion
-              uri: ${MANTENCION_URL:lb://MANTENCION}
+              uri: ${MANTENCIONES_URL:lb://MANTENCION}
               predicates:
                 - Path=/api/v1/mantenciones/**
             - id: mecanicos
@@ -26,7 +24,7 @@ spring:
               predicates:
                 - Path=/api/v1/mecanicos/**
             - id: personalaseo
-              uri: ${PERSONALASEO:lb://PERSONALASEO}
+              uri: ${PERSONALASEO_URL:lb://PERSONALASEO}
               predicates:
                 - Path=/api/v1/personalaseo/**
             - id: seguro

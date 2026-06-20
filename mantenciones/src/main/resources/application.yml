@@ -45,7 +45,7 @@ services:
   cliente:
     url: ${CLIENTE_URL:http://CLIENTE}
   mecanico:
-    url: ${MECANICO_URL:http://MECANICO}
+    url: ${MECANICOS_URL:http://MECANICOS}
   vehiculo:
     url: ${VEHICULO_URL:http://VEHICULO}
 

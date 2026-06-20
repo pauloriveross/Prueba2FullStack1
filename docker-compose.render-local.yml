@@ -93,6 +93,7 @@ services:
     environment:
       - EUREKA_ENABLED=false
   ventas-Update:
+    image: ventas-update
     build: ./ventas-Update
     ports:
       - "8083:8083"
@@ -113,6 +114,7 @@ services:
     environment:
       - EUREKA_ENABLED=false
   testDrive:
+    image: testdrive
     build: ./testDrive
     ports:
       - "8092:8092"
