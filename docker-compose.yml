@@ -1,0 +1,155 @@
+services:
+  eureka-server:
+    build: ./eureka-server
+    ports:
+      - "8869:8869"
+
+
+
+  gateway-service:
+    build: ./gateway-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+  cliente:
+    build: ./cliente
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+  corredor:
+    build: ./corredorSeguro
+    ports:
+      - "8091:8091"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  personalaseo:
+    build: ./personalaseo
+    ports:
+      - "8088:8088"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  vehiculo:
+    build: ./vehiculo
+    ports:
+      - "8089:8089"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  vendedor:
+    build: ./vendedor
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8086:8086"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  ventas-Update:
+    build: ./ventas-Update
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka-server
+      - cliente
+      - vehiculo
+      - vendedor
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+
+  testDrive:
+    build: ./testDrive
+    ports:
+      - "8092:8092"
+    depends_on:
+      - eureka-server
+      - cliente
+      - vehiculo
+      - vendedor
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+  seguro:
+    build: ./seguro
+    ports:
+      - "8090:8090"
+    depends_on:
+      - eureka-server
+      - cliente
+      - vehiculo
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+  mantenciones:
+    build: ./mantenciones
+    ports:
+      - "8085:8085"
+    depends_on:
+      - eureka-server
+      - cliente
+      - vehiculo
+      - mecanicos
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
+
+
+
+
+

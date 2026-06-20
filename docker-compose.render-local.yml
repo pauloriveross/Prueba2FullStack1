@@ -1,0 +1,140 @@
+services:
+  gateway-service:
+    build: ./gateway-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - cliente
+      - corredor
+      - mantenciones
+      - mecanicos
+      - personalaseo
+      - seguro
+      - vehiculo
+      - vendedor
+      - ventas-Update
+      - auth-service
+      - testDrive
+    environment:
+      - EUREKA_ENABLED=false
+      - CLIENTE_URL=http://cliente:8082
+      - CORREDOR_URL=http://corredor:8091
+      - MANTENCIONES_URL=http://mantenciones:8085
+      - MECANICOS_URL=http://mecanicos:8084
+      - PERSONALASEO_URL=http://personalaseo:8088
+      - SEGURO_URL=http://seguro:8090
+      - VEHICULO_URL=http://vehiculo:8089
+      - VENDEDOR_URL=http://vendedor:8081
+      - VENTAS_UPDATE_URL=http://ventas-Update:8083
+      - AUTH_SERVICE_URL=http://auth-service:8086
+      - TEST_DRIVE_URL=http://testDrive:8092
+  cliente:
+    build: ./cliente
+    ports:
+      - "8082:8082"
+    environment:
+     - EUREKA_ENABLED=false
+  corredor:
+    build: ./corredorSeguro
+    ports:
+      - "8091:8091"
+    environment:
+      - EUREKA_ENABLED=false
+  mantenciones:
+    build: ./mantenciones
+    ports:
+      - "8085:8085"
+    depends_on:
+      - cliente
+      - vehiculo
+      - mecanicos
+    environment:
+      - EUREKA_ENABLED=false
+      - APP_DISCOVERY_ENABLED=false
+      - CLIENTE_URL=http://cliente:8082
+      - VEHICULO_URL=http://vehiculo:8089
+      - MECANICOS_URL=http://mecanicos:8084
+  mecanicos:
+    build: ./mecanicos
+    ports:
+      - "8084:8084"
+    environment:
+      - EUREKA_ENABLED=false
+  personalaseo:
+    build: ./personalaseo
+    ports:
+      - "8088:8088"
+    environment:
+      - EUREKA_ENABLED=false
+  seguro:
+    build: ./seguro
+    ports:
+      - "8090:8090"
+    depends_on:
+      - vehiculo
+      - cliente
+      - corredor
+    environment:
+      - EUREKA_ENABLED=false
+      - APP_DISCOVERY_ENABLED=false
+      - CLIENTE_URL=http://cliente:8082
+      - VEHICULO_URL=http://vehiculo:8089
+      - CORREDOR_URL=http://corredor:8091
+  vehiculo:
+    build: ./vehiculo
+    ports:
+      - "8089:8089"
+    environment:
+      - EUREKA_ENABLED=false
+  vendedor:
+    build: ./vendedor
+    ports:
+      - "8081:8081"
+    environment:
+      - EUREKA_ENABLED=false
+  ventas-Update:
+    build: ./ventas-Update
+    ports:
+      - "8083:8083"
+    depends_on:
+      - cliente
+      - vehiculo
+      - vendedor
+    environment:
+      - EUREKA_ENABLED=false
+      - APP_DISCOVERY_ENABLED=false
+      - CLIENTE_URL=http://cliente:8082
+      - VEHICULO_URL=http://vehiculo:8089
+      - VENDEDOR_URL=http://vendedor:8081
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8086:8086"
+    environment:
+      - EUREKA_ENABLED=false
+  testDrive:
+    build: ./testDrive
+    ports:
+      - "8092:8092"
+    depends_on:
+      - cliente
+      - vehiculo
+      - vendedor
+    environment:
+      - EUREKA_ENABLED=false
+      - APP_DISCOVERY_ENABLED=false
+      - CLIENTE_URL=http://cliente:8082
+      - VEHICULO_URL=http://vehiculo:8089
+      - VENDEDOR_URL=http://vendedor:8081
+
+
+
+
+
+
+
+
+
+
+
+

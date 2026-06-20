@@ -10,47 +10,47 @@ spring:
         webflux:
           routes:
             - id: corredores
-              uri: http://localhost:8091
+              uri: ${CORREDORES_URL:lb://CORREDORES}
               predicates:
                 - Path=/api/v1/corredores/**
             - id: clientes
-              uri: http://localhost:8082
+              uri: ${CLIENTES_URL:lb://CLIENTES}
               predicates:
                 - Path=/api/v1/clientes/**
             - id: mantencion
-              uri: http://localhost:8085
+              uri: ${MANTENCION_URL:lb://MANTENCION}
               predicates:
                 - Path=/api/v1/mantenciones/**
             - id: mecanicos
-              uri: http://localhost:8084
+              uri: ${MECANICOS_URL:lb://MECANICOS}
               predicates:
                 - Path=/api/v1/mecanicos/**
             - id: personalaseo
-              uri: http://localhost:8088
+              uri: ${PERSONALASEO:lb://PERSONALASEO}
               predicates:
                 - Path=/api/v1/personalaseo/**
             - id: seguro
-              uri: http://localhost:8090
+              uri: ${SEGURO_URL:lb://SEGURO}
               predicates:
                 - Path=/api/v1/seguros/**
             - id: vehiculo
-              uri: http://localhost:8089
+              uri: ${VEHICULO_URL:lb://VEHICULO}
               predicates:
                 - Path=/api/v1/vehiculos/**
             - id: vendedor
-              uri: http://localhost:8081
+              uri: ${VENDEDOR_URL:lb://VENDEDOR}
               predicates:
                 - Path=/api/v1/vendedores/**
             - id: ventas-Update
-              uri: http://localhost:8083
+              uri: ${VENTAS_UPDATE_URL:lb://VENTAS-UPDATE}
               predicates:
                 - Path=/api/v1/ventas/**
             - id: auth-service
-              uri: http://localhost:8086
+              uri: ${AUTH_SERVICE_URL:lb://AUTH-SERVICE}
               predicates:
                 - Path=/auth/**
             - id: testDrive
-              uri: http://localhost:8092
+              uri: ${TEST_DRIVE_URL:lb://TESTDRIVE}
               predicates:
                 - Path=/api/v1/testdrives/**
 
