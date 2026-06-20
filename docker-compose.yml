@@ -26,8 +26,19 @@ services:
       - EUREKA_URL=http://eureka-server:8869/eureka/
 
 
+  mecanicos:
+    build: ./mecanicos
+    ports:
+      - "8084:8084"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8869/eureka/
 
-  corredor:
+
+
+
+  corredorSeguro:
     build: ./corredorSeguro
     ports:
       - "8091:8091"
@@ -131,6 +142,7 @@ services:
       - eureka-server
       - cliente
       - vehiculo
+      - corredorSeguro
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
 

@@ -10,7 +10,7 @@ spring:
         webflux:
           routes:
             - id: corredores
-              uri: ${CORREDORES_URL:lb://CORREDORES}
+              uri: ${CORREDORES_URL:lb://CORREDORSEGURO}
               predicates:
                 - Path=/api/v1/corredores/**
             - id: clientes
