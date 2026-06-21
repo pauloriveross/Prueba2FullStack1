@@ -1,0 +1,198 @@
+
+
+services:
+  - type: web
+    name: automotora-cliente
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/cliente.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+
+  - type: web
+    name: automotora-auth-service
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/auth-service.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+  - type: web
+    name: automotora-corredorseguro
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/corredorSeguro.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+  - type: web
+    name: automotora-gateway-service
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/gateway-service.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+      - key: CLIENTES_URL
+        value: https://automotora-cliente.onrender.com
+      - key: MECANICOS_URL
+        value: https://automotora-mecanicos.onrender.com
+      - key: VEHICULO_URL
+        value: https://automotora-vehiculo.onrender.com
+      - key: CORREDOR_URL
+        value: https://automotora-corredorseguro.onrender.com
+      - key: VENDEDOR_URL
+        value: https://automotora-vendedor.onrender.com
+      - key: MANTENCIONES_URL
+        value: https://automotora-mantenciones.onrender.com
+      - key: PERSONALASEO_URL
+        value: https://automotora-personal-aseo.onrender.com
+      - key: SEGURO_URL
+        value: https://automotora-seguro.onrender.com
+      - key: VENTAS_UPDATE_URL
+        value: https://automotora-ventas-update.onrender.com
+      - key: AUTH_SERVICE_URL
+        value: https://automotora-auth-service.onrender.com
+      - key: TEST_DRIVE_URL
+        value: https://automotora-testdrive.onrender.com
+
+  - type: web
+    name: automotora-mantenciones
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/mantenciones.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+      - key: APP_DISCOVERY_ENABLED
+        value: false
+      - key: CLIENTE_URL
+        value: https://automotora-cliente.onrender.com
+      - key: MECANICOS_URL
+        value: https://automotora-mecanicos.onrender.com
+      - key: VEHICULO_URL
+        value: https://automotora-vehiculo.onrender.com
+
+
+  - type: web
+    name: automotora-mecanicos
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/mecanicos.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+
+  - type: web
+    name: automotora-personal-aseo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/personalaseo.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+
+
+  - type: web
+    name: automotora-seguro
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/seguro.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+      - key: APP_DISCOVERY_ENABLED
+        value: false
+      - key: CLIENTE_URL
+        value: https://automotora-cliente.onrender.com
+      - key: VEHICULO_URL
+        value: https://automotora-vehiculo.onrender.com
+      - key: CORREDOR_URL
+        value: https://automotora-corredorseguro.onrender.com
+
+  - type: web
+    name: automotora-testdrive
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/testDrive.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+      - key: APP_DISCOVERY_ENABLED
+        value: false
+      - key: CLIENTE_URL
+        value: https://automotora-cliente.onrender.com
+      - key: VEHICULO_URL
+        value: https://automotora-vehiculo.onrender.com
+      - key: VENDEDOR_URL
+        value: https://automotora-vendedor.onrender.com
+
+  - type: web
+    name: automotora-vehiculo
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/vehiculo.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+  - type: web
+    name: automotora-vendedor
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/vendedor.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+
+
+  - type: web
+    name: automotora-ventas-update
+    runtime: docker
+    plan: free
+    dockerfilePath: ./render/docker/ventas-Update.Dockerfile
+    dockerContext: .
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: EUREKA_ENABLED
+        value: false
+      - key: APP_DISCOVERY_ENABLED
+        value: false
+      - key: CLIENTE_URL
+        value: https://automotora-cliente.onrender.com
+      - key: VEHICULO_URL
+        value: https://automotora-vehiculo.onrender.com
+      - key: VENDEDOR_URL
+        value: https://automotora-vendedor.onrender.com
+
+
+
+
