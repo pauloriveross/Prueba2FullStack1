@@ -11,7 +11,7 @@ import java.util.Date;
 public class TestDriveRequest {
 
 
-    @NotNull(message = "La fecha es obligatoria para registrar una venta")
+    @NotNull(message = "La fecha es obligatoria para registrar un Test Drive")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date fechaTestDrive;
 
