@@ -1,5 +1,6 @@
 services:
   eureka-server:
+    image: eureka-server
     build: ./eureka-server
     ports:
       - "8869:8869"
@@ -7,6 +8,7 @@ services:
 
 
   gateway-service:
+    image: gateway-service
     build: ./gateway-service
     ports:
       - "8080:8080"
@@ -17,6 +19,7 @@ services:
 
 
   cliente:
+    image: clientes
     build: ./cliente
     ports:
       - "8082:8082"
@@ -27,6 +30,7 @@ services:
 
 
   mecanicos:
+    image: mecanicos
     build: ./mecanicos
     ports:
       - "8084:8084"
@@ -53,6 +57,7 @@ services:
 
 
   personalaseo:
+    image: personal-aseo
     build: ./personalaseo
     ports:
       - "8088:8088"
@@ -66,6 +71,7 @@ services:
 
 
   vehiculo:
+    image: vehiculos
     build: ./vehiculo
     ports:
       - "8089:8089"
@@ -79,6 +85,7 @@ services:
 
 
   vendedor:
+    image: vendedores
     build: ./vendedor
     ports:
       - "8081:8081"
@@ -92,6 +99,7 @@ services:
 
 
   auth-service:
+    image: auth-service
     build: ./auth-service
     ports:
       - "8086:8086"
@@ -138,6 +146,7 @@ services:
 
 
   seguro:
+    image: seguro
     build: ./seguro
     ports:
       - "8090:8090"
@@ -153,6 +162,7 @@ services:
 
 
   mantenciones:
+    image: mantenciones
     build: ./mantenciones
     ports:
       - "8085:8085"

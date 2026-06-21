@@ -20,6 +20,7 @@ public class DataLoader {
                         .idCliente(1)
                         .idVehiculo(1)
                         .idCorredorSeguro(1)
+                        .comisionSeguro(120000)
                         .build()
                 );
                 Faker faker = new Faker();
@@ -30,6 +31,7 @@ public class DataLoader {
                             .idCliente(faker.number().numberBetween(1,11))
                             .idVehiculo(faker.number().numberBetween(1,11))
                             .idCorredorSeguro(faker.number().numberBetween(1,11))
+                            .comisionSeguro(faker.number().numberBetween(10000,500000))
                             .build());
                 }
             }
