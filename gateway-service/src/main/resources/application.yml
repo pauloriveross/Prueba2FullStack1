@@ -6,7 +6,9 @@ spring:
     name: gateway-service
   cloud:
     gateway:
-      routes:
+      server:
+        webflux:
+          routes:
             - id: corredores
               uri: ${CORREDOR_URL:lb://CORREDORSEGURO}
               predicates:
@@ -51,7 +53,6 @@ spring:
               uri: ${TEST_DRIVE_URL:lb://TESTDRIVE}
               predicates:
                 - Path=/api/v1/testdrives/**
-
 
 
 management:

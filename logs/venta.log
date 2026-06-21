@@ -1,167 +1,42 @@
-2026-06-20T13:30:05.896-04:00  INFO 41771 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : Starting VentasApplication using Java 21.0.1 with PID 41771 (/Users/moka/Documents/GitHub/Prueba2FullStack1/ventas-Update/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
-2026-06-20T13:30:05.898-04:00  INFO 41771 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-20T13:30:06.297-04:00  INFO 41771 --- [ventas-Update] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-20T13:30:06.348-04:00  INFO 41771 --- [ventas-Update] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
-2026-06-20T13:30:06.489-04:00  INFO 41771 --- [ventas-Update] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2bf83f0f-d7a9-3e36-aff9-c63858e5d8d1
-2026-06-20T13:30:06.624-04:00  INFO 41771 --- [ventas-Update] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
-2026-06-20T13:30:06.629-04:00  INFO 41771 --- [ventas-Update] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-20T13:30:06.629-04:00  INFO 41771 --- [ventas-Update] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-20T13:30:06.648-04:00  INFO 41771 --- [ventas-Update] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 736 ms
-2026-06-20T13:30:06.762-04:00  INFO 41771 --- [ventas-Update] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-20T13:30:06.780-04:00  INFO 41771 --- [ventas-Update] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-20T13:30:06.934-04:00  INFO 41771 --- [ventas-Update] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-20T13:30:06.946-04:00  INFO 41771 --- [ventas-Update] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-20T13:30:07.021-04:00  INFO 41771 --- [ventas-Update] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db_ventas user=SA
-2026-06-20T13:30:07.022-04:00  INFO 41771 --- [ventas-Update] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-20T13:30:07.045-04:00  INFO 41771 --- [ventas-Update] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:db_ventas]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: DB_VENTAS/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-20T13:30:07.340-04:00  INFO 41771 --- [ventas-Update] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-20T13:30:07.352-04:00  INFO 41771 --- [ventas-Update] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-20T13:30:07.384-04:00  INFO 41771 --- [ventas-Update] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-20T13:30:07.509-04:00  WARN 41771 --- [ventas-Update] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-20T13:30:07.757-04:00  INFO 41771 --- [ventas-Update] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db_ventas'
-2026-06-20T13:30:07.794-04:00  WARN 41771 --- [ventas-Update] [main] .s.a.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 0515c36b-dbc6-4a54-aa37-3dbdd588fc49
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2026-06-20T13:30:07.804-04:00  INFO 41771 --- [ventas-Update] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-06-20T13:30:07.877-04:00  INFO 41771 --- [ventas-Update] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-06-20T13:30:07.904-04:00  INFO 41771 --- [ventas-Update] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
-2026-06-20T13:30:07.917-04:00  WARN 41771 --- [ventas-Update] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-06-20T13:30:07.961-04:00  INFO 41771 --- [ventas-Update] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-06-20T13:30:07.970-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-06-20T13:30:07.972-04:00  INFO 41771 --- [ventas-Update] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-06-20T13:30:07.975-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-06-20T13:30:08.116-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-06-20T13:30:08.117-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-06-20T13:30:08.118-04:00  INFO 41771 --- [ventas-Update] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-06-20T13:30:08.118-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781976608118 with initial instances count: 11
-2026-06-20T13:30:08.120-04:00  INFO 41771 --- [ventas-Update] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VENTAS-UPDATE with eureka with status UP
-2026-06-20T13:30:08.120-04:00  INFO 41771 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781976608120, current=UP, previous=STARTING]
-2026-06-20T13:30:08.120-04:00  INFO 41771 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083: registering service...
-2026-06-20T13:30:08.127-04:00  INFO 41771 --- [ventas-Update] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
-2026-06-20T13:30:08.127-04:00  INFO 41771 --- [ventas-Update] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
-2026-06-20T13:30:08.138-04:00  INFO 41771 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : Started VentasApplication in 2.495 seconds (process running for 3.017)
-2026-06-20T13:30:08.143-04:00  INFO 41771 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - registration status: 204
-2026-06-20T13:30:08.293-04:00  INFO 41771 --- [ventas-Update] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-20T13:35:07.976-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T13:40:07.988-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T13:45:07.992-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T13:50:07.996-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T13:55:08.008-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:00:08.012-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:05:08.017-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:10:08.030-04:00  INFO 41771 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:14:20.758-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VENTAS-UPDATE with eureka with status DOWN
-2026-06-20T14:14:20.758-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781979260758, current=DOWN, previous=UP]
-2026-06-20T14:14:20.759-04:00  INFO 41771 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083: registering service...
-2026-06-20T14:14:20.764-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-20T14:14:20.767-04:00  INFO 41771 --- [ventas-Update] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-20T14:14:20.767-04:00  INFO 41771 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - registration status: 204
-2026-06-20T14:14:20.784-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-20T14:14:20.789-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-20T14:14:20.790-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-20T14:14:20.790-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-06-20T14:14:23.792-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-06-20T14:14:23.798-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - deregister  status: 200
-2026-06-20T14:14:23.798-04:00  INFO 41771 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2026-06-20T14:14:26.340-04:00  INFO 43251 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : Starting VentasApplication using Java 21.0.1 with PID 43251 (/Users/moka/Documents/GitHub/Prueba2FullStack1/ventas-Update/target/classes started by moka in /Users/moka/Documents/GitHub/Prueba2FullStack1)
-2026-06-20T14:14:26.341-04:00  INFO 43251 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-06-20T14:14:26.696-04:00  INFO 43251 --- [ventas-Update] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-06-20T14:14:26.752-04:00  INFO 43251 --- [ventas-Update] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface.
-2026-06-20T14:14:26.865-04:00  INFO 43251 --- [ventas-Update] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2b77b684-6ac0-32a7-b7bf-0f5cd5fa1f6c
-2026-06-20T14:14:26.994-04:00  INFO 43251 --- [ventas-Update] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
-2026-06-20T14:14:26.999-04:00  INFO 43251 --- [ventas-Update] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-06-20T14:14:26.999-04:00  INFO 43251 --- [ventas-Update] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
-2026-06-20T14:14:27.018-04:00  INFO 43251 --- [ventas-Update] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 664 ms
-2026-06-20T14:14:27.114-04:00  INFO 43251 --- [ventas-Update] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-06-20T14:14:27.132-04:00  INFO 43251 --- [ventas-Update] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
-2026-06-20T14:14:27.282-04:00  INFO 43251 --- [ventas-Update] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-06-20T14:14:27.292-04:00  INFO 43251 --- [ventas-Update] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-06-20T14:14:27.355-04:00  INFO 43251 --- [ventas-Update] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db_ventas user=SA
-2026-06-20T14:14:27.356-04:00  INFO 43251 --- [ventas-Update] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-06-20T14:14:27.381-04:00  INFO 43251 --- [ventas-Update] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:db_ventas]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: DB_VENTAS/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-06-20T14:14:27.658-04:00  INFO 43251 --- [ventas-Update] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-06-20T14:14:27.670-04:00  INFO 43251 --- [ventas-Update] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-06-20T14:14:27.698-04:00  INFO 43251 --- [ventas-Update] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-06-20T14:14:27.815-04:00  WARN 43251 --- [ventas-Update] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-06-20T14:14:28.031-04:00  INFO 43251 --- [ventas-Update] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db_ventas'
-2026-06-20T14:14:28.076-04:00  INFO 43251 --- [ventas-Update] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
-2026-06-20T14:14:28.092-04:00  WARN 43251 --- [ventas-Update] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2026-06-20T14:14:28.094-04:00  INFO 43251 --- [ventas-Update] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-06-20T14:14:28.129-04:00  INFO 43251 --- [ventas-Update] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2026-06-20T14:14:28.137-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2026-06-20T14:14:28.138-04:00  INFO 43251 --- [ventas-Update] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2026-06-20T14:14:28.141-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2026-06-20T14:14:28.271-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2026-06-20T14:14:28.272-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2026-06-20T14:14:28.273-04:00  INFO 43251 --- [ventas-Update] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2026-06-20T14:14:28.273-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1781979268273 with initial instances count: 12
-2026-06-20T14:14:28.275-04:00  INFO 43251 --- [ventas-Update] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VENTAS-UPDATE with eureka with status UP
-2026-06-20T14:14:28.275-04:00  INFO 43251 --- [ventas-Update] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781979268275, current=UP, previous=STARTING]
-2026-06-20T14:14:28.276-04:00  INFO 43251 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083: registering service...
-2026-06-20T14:14:28.284-04:00  INFO 43251 --- [ventas-Update] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
-2026-06-20T14:14:28.284-04:00  INFO 43251 --- [ventas-Update] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
-2026-06-20T14:14:28.292-04:00  INFO 43251 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - registration status: 204
-2026-06-20T14:14:28.295-04:00  INFO 43251 --- [ventas-Update] [main] duoc.ventas.VentasApplication            : Started VentasApplication in 2.178 seconds (process running for 2.57)
-2026-06-20T14:14:28.528-04:00  INFO 43251 --- [ventas-Update] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-06-20T14:14:36.254-04:00  INFO 43251 --- [ventas-Update] [http-nio-8083-exec-2] duoc.ventas.service.VentaService         : Buscando Venta con id 2
-2026-06-20T14:14:36.289-04:00  WARN 43251 --- [ventas-Update] [http-nio-8083-exec-2] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: No se encontró la venta con el id 2 en la ruta /api/v1/ventas/2
-2026-06-20T14:14:46.188-04:00  INFO 43251 --- [ventas-Update] [http-nio-8083-exec-3] duoc.ventas.service.VentaService         : Buscando Venta con id 1
-2026-06-20T14:14:46.192-04:00  WARN 43251 --- [ventas-Update] [http-nio-8083-exec-3] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: No se encontró la venta con el id 1 en la ruta /api/v1/ventas/1
-2026-06-20T14:14:51.079-04:00  INFO 43251 --- [ventas-Update] [http-nio-8083-exec-4] duoc.ventas.service.VentaService         : Eliminando Venta con Id 1
-2026-06-20T14:14:51.080-04:00  INFO 43251 --- [ventas-Update] [http-nio-8083-exec-4] duoc.ventas.service.VentaService         : Buscando Venta con id 1
-2026-06-20T14:14:51.083-04:00  WARN 43251 --- [ventas-Update] [http-nio-8083-exec-4] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: No se encontró la venta con el id 1 en la ruta /api/v1/ventas/1
-2026-06-20T14:15:11.532-04:00  INFO 43251 --- [ventas-Update] [http-nio-8083-exec-5] duoc.ventas.service.VentaService         : Buscando Venta con id 1
-2026-06-20T14:15:11.535-04:00  WARN 43251 --- [ventas-Update] [http-nio-8083-exec-5] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: No se encontró la venta con el id 1 en la ruta /api/v1/ventas/1
-2026-06-20T14:19:28.145-04:00  INFO 43251 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2026-06-20T14:21:54.140-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VENTAS-UPDATE with eureka with status DOWN
-2026-06-20T14:21:54.147-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1781979714146, current=DOWN, previous=UP]
-2026-06-20T14:21:54.148-04:00  INFO 43251 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083: registering service...
-2026-06-20T14:21:54.198-04:00  INFO 43251 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - registration status: 204
-2026-06-20T14:21:54.205-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-06-20T14:21:54.212-04:00  INFO 43251 --- [ventas-Update] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-06-20T14:21:54.277-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-06-20T14:21:54.301-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-06-20T14:21:54.303-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-06-20T14:21:54.305-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2026-06-20T14:21:57.310-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2026-06-20T14:21:57.333-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8869/eureka/} exception=I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
+2026-06-21T00:04:48.881-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:09:48.907-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:14:48.881-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:19:48.888-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:20:46.701-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-6] d.v.exception.GlobalExceptionHandler     : Error de validación en la ruta /api/v1/ventas
+2026-06-21T00:20:57.996-04:00 ERROR 49708 --- [ventas-Update] [http-nio-8083-exec-7] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-06-21T00:20:58.209-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-7] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: El vendedor con el id 20 no existe en la ruta /api/v1/ventas
+2026-06-21T00:21:04.128-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-8] duoc.ventas.service.VentaService         : Registrando Venta ....
+2026-06-21T00:21:18.645-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-9] d.v.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/ventas: El vehiculo ya esta registrado en otra venta
+2026-06-21T00:22:07.892-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-10] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: El cliente con el id 2 no existe en la ruta /api/v1/ventas
+2026-06-21T00:22:13.012-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-1] duoc.ventas.service.VentaService         : Registrando Venta ....
+2026-06-21T00:22:16.707-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-2] d.v.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/ventas: El vehiculo ya esta registrado en otra venta
+2026-06-21T00:22:26.963-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-3] duoc.ventas.service.VentaService         : Registrando Venta ....
+2026-06-21T00:23:23.295-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-5] duoc.ventas.service.VentaService         : Actualizando Venta con id 3
+2026-06-21T00:23:23.296-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-5] duoc.ventas.service.VentaService         : Buscando Venta con id 3
+2026-06-21T00:23:23.316-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-5] d.v.exception.GlobalExceptionHandler     : Intento de venta fallido ya que no se puede vender dos veces el mismo vehiculo /api/v1/ventas/3: El ID Del Vehiculo se encuentra asignado a otra venta 
+2026-06-21T00:23:31.257-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-6] duoc.ventas.service.VentaService         : Actualizando Venta con id 3
+2026-06-21T00:23:31.257-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-6] duoc.ventas.service.VentaService         : Buscando Venta con id 3
+2026-06-21T00:23:38.301-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-7] duoc.ventas.service.VentaService         : Eliminando Venta con Id 34
+2026-06-21T00:23:38.303-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-7] duoc.ventas.service.VentaService         : Buscando Venta con id 34
+2026-06-21T00:23:38.305-04:00  WARN 49708 --- [ventas-Update] [http-nio-8083-exec-7] d.v.exception.GlobalExceptionHandler     : Recurso no hallado: No se encontró la venta con el id 34 en la ruta /api/v1/ventas/34
+2026-06-21T00:23:41.098-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-8] duoc.ventas.service.VentaService         : Eliminando Venta con Id 3
+2026-06-21T00:23:41.099-04:00  INFO 49708 --- [ventas-Update] [http-nio-8083-exec-8] duoc.ventas.service.VentaService         : Buscando Venta con id 3
+2026-06-21T00:24:48.895-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:29:48.896-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:34:48.903-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:39:48.911-04:00  INFO 49708 --- [ventas-Update] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-06-21T00:41:42.279-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VENTAS-UPDATE with eureka with status DOWN
+2026-06-21T00:41:42.304-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1782016902304, current=DOWN, previous=UP]
+2026-06-21T00:41:42.304-04:00  INFO 49708 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083: registering service...
+2026-06-21T00:41:42.379-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-21T00:41:42.392-04:00  INFO 49708 --- [ventas-Update] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-21T00:41:42.427-04:00  INFO 49708 --- [ventas-Update] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - registration status: 204
+2026-06-21T00:41:44.508-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-21T00:41:44.512-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-21T00:41:44.513-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-21T00:41:44.513-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-06-21T00:41:47.517-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-06-21T00:41:47.521-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8869/eureka/} exception=I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
@@ -241,8 +116,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
 	... 39 more
 
-2026-06-20T14:21:57.333-04:00  WARN 43251 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
-2026-06-20T14:21:57.340-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8869/eureka/}, exception=I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
+2026-06-21T00:41:47.521-04:00  WARN 49708 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
+2026-06-21T00:41:47.525-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8869/eureka/}, exception=I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:779)
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:624)
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:572)
@@ -323,8 +198,8 @@ Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http:
 	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:614)
 	... 40 more
 
-2026-06-20T14:21:57.340-04:00  WARN 43251 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
-2026-06-20T14:21:57.340-04:00 ERROR 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - de-registration failedCannot execute request on any known server
+2026-06-21T00:41:47.533-04:00  WARN 49708 --- [ventas-Update] [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8869/eureka/apps/VENTAS-UPDATE/192.168.100.152:ventas-Update:8083": Connect to http://localhost:8869 failed: Connection refused
+2026-06-21T00:41:47.533-04:00 ERROR 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VENTAS-UPDATE/192.168.100.152:ventas-Update:8083 - de-registration failedCannot execute request on any known server
 
 com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.5.jar:2.0.5]
@@ -358,4 +233,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-4.0.6.jar:4.0.6]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2026-06-20T14:21:57.344-04:00  INFO 43251 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-06-21T00:41:47.536-04:00  INFO 49708 --- [ventas-Update] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

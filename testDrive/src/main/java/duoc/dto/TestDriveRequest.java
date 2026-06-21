@@ -10,8 +10,6 @@ import java.util.Date;
 
 public class TestDriveRequest {
 
-    @NotNull(message = "El Id del Test Drive es obligatorio")
-    private Integer idTestDrive;
 
     @NotNull(message = "La fecha es obligatoria para registrar una venta")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -28,14 +26,6 @@ public class TestDriveRequest {
 
     public TestDriveRequest(){
 
-    }
-
-    public Integer getIdTestDrive() {
-        return idTestDrive;
-    }
-
-    public void setIdTestDrive(Integer idTestDrive) {
-        this.idTestDrive = idTestDrive;
     }
 
     public Date getFechaTestDrive() {

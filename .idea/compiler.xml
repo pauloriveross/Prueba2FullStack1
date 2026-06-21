@@ -18,19 +18,18 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="seguro" />
-        <module name="vendedor" />
-        <module name="personalaseo" />
-        <module name="vehiculo" />
-        <module name="corredorSeguro" />
         <module name="cliente" />
+        <module name="vendedor" />
         <module name="testDrive" />
         <module name="ventas-Update" />
         <module name="gateway-service" />
+        <module name="personalaseo" />
+        <module name="vehiculo" />
+        <module name="corredorSeguro" />
         <module name="mantenciones" />
         <module name="mecanicos" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

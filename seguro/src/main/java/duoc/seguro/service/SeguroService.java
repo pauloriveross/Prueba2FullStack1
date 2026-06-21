@@ -40,7 +40,7 @@ public class SeguroService {
     public Seguro buscarSeguroPorId(Integer idSeguro){
         log.info("Buscando seguro por ID {}",idSeguro);
         return seguroRepository.findById(idSeguro).orElseThrow(()->
-            new SeguroNoEncontradoException("No se encontro un seguro con el id" + idSeguro));
+            new SeguroNoEncontradoException("No se encontró un seguro con el id " + idSeguro));
     }
 
     //Post
@@ -101,7 +101,7 @@ public class SeguroService {
         log.info("Actualizando seguro con id {}", idSeguro);
         Seguro seguro = buscarSeguroPorId(idSeguro);
         if (seguroRepository.existsByIdVehiculoAndIdSeguroNot(request.getIdVehiculo(), idSeguro)) {
-            throw new IdVehiculoDuplicadoException("El ID del seguro se encuentra asignado a otra venta ");
+            throw new IdVehiculoDuplicadoException("El ID del seguro se encuentra asignado a otro seguro  ");
         }
         ClienteResponse cliente = webClientBuilder.build().get()
                 .uri(clienteServiceUrl + "/api/v1/clientes/{idCliente}", request.getIdCliente())
@@ -129,7 +129,7 @@ public class SeguroService {
         }
 
         if (vehiculo == null) {
-            throw new IdVehiculoNoEncontradoException("El vehiculo con el id " + request.getIdVehiculo() + "no existe");
+            throw new IdVehiculoNoEncontradoException("El vehiculo con el id " + request.getIdVehiculo() + " no existe");
         }
 
         if (corredorSeguro == null) {

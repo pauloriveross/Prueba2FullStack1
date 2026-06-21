@@ -36,7 +36,7 @@ public class DataLoader {
                             .rutVendedor(faker.idNumber().valid())
                             .nombreVendedor(nombre)
                             .apellidoVendedor(apellido)
-                            .seccionVendedor(faker.options().option("Ventas Vehiculos","Repuestos"))
+                            .seccionVendedor(faker.options().option("Ventas Vehículos","Repuestos"))
                             .turnoVendedor(faker.options().option("Tarde","Mañana","Rotativo"))
                             .sueldoBaseVendedor(faker.number().numberBetween(520000,1200000))
                             .emailVendedor(correo)

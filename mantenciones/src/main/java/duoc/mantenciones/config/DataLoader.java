@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
+
 
 @Configuration
 public class DataLoader {
@@ -23,8 +23,8 @@ public class DataLoader {
                         .precioMantencion(85000)
                         .tipoMantencion("Cambio de Pastillas de Freno")
                         .idVehiculo(1)
-                        .idMecanico(10)
-                        .idCliente(100)
+                        .idMecanico(1)
+                        .idCliente(1)
                         .build()
                 );
 
@@ -36,17 +36,17 @@ public class DataLoader {
                     Date fechaAleatoria = new Date(System.currentTimeMillis() - (diasAtras * 24 * 60 * 60 * 1000));
 
                     mantencionRepository.save(Mantencion.builder()
-                            .fechaMantencion(fechaAleatoria) // <--- Pasamos la fecha calculada
+                            .fechaMantencion(fechaAleatoria)
                             .precioMantencion(faker.number().numberBetween(20000, 300000))
                             .tipoMantencion(faker.options().option(
                                     "Cambio de Aceite",
                                     "Alineación y Balanceo",
                                     "Revisión de 10.000 KM",
-                                    "Mantención de Sistema Eléctrico"
+                                    "Mantención de sistema Eléctrico"
                             ))
-                            .idVehiculo(faker.number().numberBetween(1, 10))
-                            .idMecanico(faker.number().numberBetween(1, 5))
-                            .idCliente(faker.number().numberBetween(1, 20))
+                            .idVehiculo(faker.number().numberBetween(1, 11))
+                            .idMecanico(faker.number().numberBetween(1, 11))
+                            .idCliente(faker.number().numberBetween(1, 11))
                             .build()
                     );
                 }

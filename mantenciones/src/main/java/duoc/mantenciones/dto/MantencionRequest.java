@@ -1,6 +1,8 @@
 package duoc.mantenciones.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.util.Date;
@@ -12,6 +14,7 @@ public class MantencionRequest {
     private Date fechaMantencion;
 
     @NotNull(message = "El precio de la mantención es obligatorio")
+    @Min(value = 5000 , message = "El precio de la mantención no puede ser menor a $5.000 ")
     private Integer precioMantencion;
 
     @NotBlank(message = "El tipo de mantención es obligatorio")
