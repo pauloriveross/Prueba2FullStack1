@@ -1,8 +1,10 @@
 package cl.duoc.authservice.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 
 @Entity
+@Builder
 @Table(name = "usuarios")
 public class Usuario {
 
