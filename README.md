@@ -229,6 +229,6 @@ Prueba2FullStack1/
 
 <div align="center">
 
-**Duoc UC — FullStack 1 — 2025**
+**Duoc UC — FullStack 1 — 2026**
 
 </div>
