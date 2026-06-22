@@ -12,6 +12,7 @@
 ![JWT](https://img.shields.io/badge/Auth-JWT-%23000000?logo=jsonwebtokens&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-%2385EA2D?logo=swagger&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Ready-%232496ED?logo=docker&logoColor=white)
+![H2](https://img.shields.io/badge/DB-H2%20MySQL%20Mode-%230070C0?logo=h2&logoColor=white)
 
 </div>
 
@@ -19,7 +20,7 @@
 
 ## 📖 Sobre el Proyecto
 
-Sistema backend para Automotoras que busquen modernizar sus sistemas, construido con **13 microservicios** en **Spring Boot 4.0.6** y **Spring Cloud 2025.0.1**. Utiliza **Eureka** para descubrimiento de servicios, **Spring Cloud Gateway** como API Gateway, **JWT** para autenticación, y base de datos **MySQL** (cada microservicio con su propia BD).
+Sistema backend para Automotoras que busquen modernizar sus sistemas, construido con **13 microservicios** en **Spring Boot 4.0.6** y **Spring Cloud 2025.0.1**. Utiliza **Eureka** para descubrimiento de servicios, **Spring Cloud Gateway** como API Gateway, **JWT** para autenticación, y base de datos **H2 en modo MySQL** (cada microservicio con su propia BD independiente).
 
 Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
 
@@ -50,7 +51,7 @@ Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
 - **Java 21**
 - **Maven 3.9+**
 - **Laragon** (opcional, para scripts SQL MySQL)
-- **Docker Desktop** (opcional)
+- **Docker**
 - **Postman** (opcional)
 
 ---
@@ -102,7 +103,10 @@ mvn -pl personalaseo spring-boot:run
 Gateway:      http://localhost:8080
 Eureka:       http://localhost:8869
 Swagger:      http://localhost:<puerto>/swagger-ui.html
+H2 Console:   http://localhost:<puerto>/h2-console
 ```
+
+> Cada microservicio usa **H2 en memoria** con `MODE=MySQL`. Los datos persisten solo mientras el servicio esté corriendo. Para acceder a la consola H2 de un servicio, usa `sa` como usuario y sin contraseña. Ej: `http://localhost:8082/h2-console` (cliente).
 
 ---
 
@@ -147,15 +151,20 @@ Respuesta:
 
 **Endpoints protegidos:** Ventas, Mantenciones, Seguros y TestDrive requieren `Authorization: Bearer <token>`.
 
-**Usuarios por defecto:**
+**Usuario por defecto (cargado automáticamente):**
 
 | Username | Password | Rol |
 |---|---|---|
 | `admin` | `admin1234` | Admin |
-| `Joako` | `1234` | Admin |
-| `Emanuel` | `1234` | Admin |
-| `Paulo` | `1234` | Admin |
-| `Benjamin` | `1234` | Admin |
+
+> Los usuarios anteriores (Joako, Emanuel, Paulo, Benjamin) ya no se cargan automáticamente. Si quieres usarlos, insértalos manualmente desde la consola H2 de `auth-service` (`http://localhost:8086/h2-console`):
+> ```sql
+> INSERT INTO USUARIOS (username, password, rol) VALUES
+> ('Joako', '1234', 'Admin'),
+> ('Emanuel', '1234', 'Admin'),
+> ('Paulo', '1234', 'Admin'),
+> ('Benjamin', '1234', 'Admin');
+> ```
 
 ---
 
