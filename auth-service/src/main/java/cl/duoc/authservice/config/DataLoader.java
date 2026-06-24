@@ -14,16 +14,17 @@ public class DataLoader {
 
         return args -> {
             if(repository.count()==0){
-                repository.save(Usuario.builder()
-                        .username("admin")
-                        .password("admin1234")
-                        .rol("Admin")
-                        .build()
+                Usuario admin = new Usuario(
+                        null,"admin","admin1234","admin"
                 );
-
-
-
+                repository.save(admin);
             }
+
+
+
+
+
         };
-    }
+    };
 }
+
