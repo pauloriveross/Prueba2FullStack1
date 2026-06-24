@@ -130,6 +130,23 @@ docker-compose -f docker-compose.render-local.yml up --build
 # Dockerfiles en render/docker/
 ```
 
+### URLs de Servicios Desplegados
+
+| Servicio | URL |
+|----------|-----|
+| **Gateway Service** | https://automotora-gateway-service.onrender.com |
+| **Auth Service** | https://automotora-auth-service.onrender.com |
+| **Cliente** | https://automotora-cliente.onrender.com |
+| **Vendedor** | https://automotora-vendedor.onrender.com |
+| **Vehículo** | https://automotora-vehiculo.onrender.com |
+| **Ventas** | https://automotora-ventas-update.onrender.com |
+| **Mantenciones** | https://automotora-mantenciones.onrender.com |
+| **Mecánicos** | https://automotora-mecanicos.onrender.com |
+| **Seguro** | https://automotora-seguro.onrender.com |
+| **CorredorSeguro** | https://automotora-corredorseguro.onrender.com |
+| **Test Drive** | https://automotora-testdrive.onrender.com |
+| **Personal Aseo** | https://automotora-personal-aseo.onrender.com |
+
 ---
 
 ## 🔐 Autenticación
