@@ -5,9 +5,9 @@ spring:
   application:
     name: vendedor
   datasource:
-    url: jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/vendedor?sslmode=REQUIRED
+    url: ${DB_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: avnadmin
+    username: ${DB_USER}
     password: ${DB_PASSWORD}
     hikari:
       maximum-pool-size: 5
