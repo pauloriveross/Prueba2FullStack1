@@ -5,7 +5,7 @@ spring:
   application:
     name: vendedor
   datasource:
-    url: jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/vendedor?sslmode=REQUIRED
+    url: ${DB_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${DB_USER}
     password: ${DB_PASSWORD}

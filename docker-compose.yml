@@ -30,6 +30,8 @@ services:
       - DB_USER=avnadmin
       - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
       - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes?sslmode=REQUIRED
+      - DB_URL_TEST=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes_test?sslmode=REQUIRED
+      - DB_URL_DEV=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes_dev?sslmode=REQUIRED
 
 
   mecanicos:
