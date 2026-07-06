@@ -27,9 +27,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_CLIENTES}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes?sslmode=REQUIRED
 
 
   mecanicos:
@@ -41,9 +41,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_MECANICOS}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/mecanicos?sslmode=REQUIRED
 
 
 
@@ -57,9 +57,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_CORREDORSEGURO}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/corredorseguros?sslmode=REQUIRED
 
 
 
@@ -74,9 +74,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_PERSONALASEO}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/personalaseo?sslmode=REQUIRED
 
 
 
@@ -91,9 +91,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_VEHICULO}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/vehiculo?sslmode=REQUIRED
 
 
 
@@ -108,9 +108,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_VENDEDOR}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/vendedor?sslmode=REQUIRED
 
 
 
@@ -125,9 +125,9 @@ services:
       - eureka-server
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_AUTHSERVICE}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/auth-service?sslmode=REQUIRED
 
 
 
@@ -145,9 +145,9 @@ services:
       - vendedor
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_VENTAS}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/ventas?sslmode=REQUIRED
 
 
 
@@ -165,9 +165,9 @@ services:
       - vendedor
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_TESTDRIVE}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/testdrives?sslmode=REQUIRED
 
 
 
@@ -184,9 +184,9 @@ services:
       - corredorSeguro
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_SEGURO}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/seguros?sslmode=REQUIRED
 
 
 
@@ -203,9 +203,9 @@ services:
       - mecanicos
     environment:
       - EUREKA_URL=http://eureka-server:8869/eureka/
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
-      - DB_URL=${URL_MANTENCIONES}
+      - DB_USER=avnadmin
+      - DB_PASSWORD=AVNS_tGFI6-cDzGVv9I_h9O9
+      - DB_URL=jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/mantenciones?sslmode=REQUIRED
 
 
 

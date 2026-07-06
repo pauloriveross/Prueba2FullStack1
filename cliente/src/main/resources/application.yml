@@ -7,7 +7,7 @@ spring:
   profiles:
     active: default
   datasource:
-    url: ${DB_URL}
+    url: jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes?sslmode=REQUIRED
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${DB_USER}
     password: ${DB_PASSWORD}
@@ -15,6 +15,12 @@ spring:
     hikari:
       maximum-pool-size: 5
       minimum-idle: 1
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      connection-test-query: SELECT 1
+
+
   jpa:
     hibernate:
       ddl-auto: update

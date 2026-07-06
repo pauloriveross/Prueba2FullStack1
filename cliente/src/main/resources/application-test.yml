@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:db_cliente_test;DB_CLOSE_DELAY=-1;MODE=MySQL
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:mysql://automotoraduoc2026-duocautomotora2026.d.aivencloud.com:13319/clientes_test?sslmode=REQUIRED
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: create-drop
