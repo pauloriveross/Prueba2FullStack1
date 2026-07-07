@@ -103,10 +103,7 @@ mvn -pl personalaseo spring-boot:run
 Gateway:      http://localhost:8080
 Eureka:       http://localhost:8869
 Swagger:      http://localhost:<puerto>/swagger-ui.html
-H2 Console:   http://localhost:<puerto>/h2-console
 ```
-
-> Cada microservicio usa **H2 en memoria** con `MODE=MySQL`. Los datos persisten solo mientras el servicio esté corriendo. Para acceder a la consola H2 de un servicio, usa `sa` como usuario y sin contraseña. Ej: `http://localhost:8082/h2-console` (cliente).
 
 ---
 
