@@ -32,17 +32,17 @@ Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
 |---|----------|--------|----|-------------|
 | 1 | **eureka-server** | `8869` | — | Service Registry (Netflix Eureka) |
 | 2 | **gateway-service** | `8080` | — | API Gateway (Spring Cloud Gateway) |
-| 3 | **auth-service** | `8086` | `db_auth_service` | Autenticación y JWT |
-| 4 | **cliente** | `8082` | `db_cliente` | CRUD clientes (Flyway + DataFaker) |
-| 5 | **vehiculo** | `8089` | `db_vehiculo` | CRUD vehículos |
-| 6 | **vendedor** | `8081` | `db_vendedor` | CRUD vendedores |
-| 7 | **mecanicos** | `8084` | `db_mecanicos` | CRUD mecánicos |
-| 8 | **ventas-Update** | `8083` | `db_ventas` | Gestión de ventas |
-| 9 | **mantenciones** | `8085` | `db_mantencion` | Gestión de mantenciones |
-| 10 | **testDrive** | `8092` | `db_testDrive` | Gestión de test drives |
-| 11 | **seguro** | `8090` | `db_seguro` | Seguros vehiculares |
-| 12 | **corredorSeguro** | `8091` | `dv_corredor` | Corredores de seguros |
-| 13 | **personalaseo** | `8088` | `db_personal` | Personal de limpieza |
+| 3 | **auth-service** | `8086` | `auth-service` | Autenticación y JWT |
+| 4 | **cliente** | `8082` | `clientes` | CRUD clientes (Flyway + DataFaker) |
+| 5 | **vehiculo** | `8089` | `vehiculo` | CRUD vehículos |
+| 6 | **vendedor** | `8081` | `vendedor` | CRUD vendedores |
+| 7 | **mecanicos** | `8084` | `mecanicos` | CRUD mecánicos |
+| 8 | **ventas-Update** | `8083` | `ventas` | Gestión de ventas |
+| 9 | **mantenciones** | `8085` | `mantenciones` | Gestión de mantenciones |
+| 10 | **testDrive** | `8092` | `testdrives` | Gestión de test drives |
+| 11 | **seguro** | `8090` | `seguros` | Seguros vehiculares |
+| 12 | **corredorSeguro** | `8091` | `corredorseguros` | Corredores de seguros |
+| 13 | **personalaseo** | `8088` | `personalaseo` | Personal de limpieza |
 
 ---
 
