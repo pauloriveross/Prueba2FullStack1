@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚘 Automotora
+# 🚘 Automotora Run!
 
 **Plataforma de microservicios para gestión automotriz**
 
@@ -11,8 +11,10 @@
 ![Eureka](https://img.shields.io/badge/Eureka-Discovery-%23DB4437?logo=netflix&logoColor=white)
 ![JWT](https://img.shields.io/badge/Auth-JWT-%23000000?logo=jsonwebtokens&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-%2385EA2D?logo=swagger&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Connected-%234479A1?logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Ready-%232496ED?logo=docker&logoColor=white)
-![H2](https://img.shields.io/badge/DB-H2%20MySQL%20Mode-%230070C0?logo=h2&logoColor=white)
+![Render](https://img.shields.io/badge/Render-Live-%2346E3B7?logo=render&logoColor=white)
+![Aiven](https://img.shields.io/badge/Aiven-Active-%23FF4F00?logo=aiven&logoColor=white)
 
 </div>
 
@@ -107,14 +109,12 @@ Swagger:      http://localhost:<puerto>/swagger-ui.html
 
 ---
 
-## 🐳 Docker
+## 🐳  Contenedores De Docker
 
 ```bash
-# Con Eureka
+Para levantar el ecosistema completo en tu máquina local y probar la integración con las bases de datos en la nube, asegúrate de tener Docker activo y ejecuta en la raíz del proyecto:
 docker-compose up --build
 
-# Sin Eureka (desarrollo local)
-docker-compose -f docker-compose.render-local.yml up --build
 ```
 
 ---
@@ -170,15 +170,6 @@ Respuesta:
 | Username | Password | Rol |
 |---|---|---|
 | `admin` | `admin1234` | Admin |
-
-> Los usuarios anteriores (Joako, Emanuel, Paulo, Benjamin) ya no se cargan automáticamente. Si quieres usarlos, insértalos manualmente desde la consola H2 de `auth-service` (`http://localhost:8086/h2-console`):
-> ```sql
-> INSERT INTO USUARIOS (username, password, rol) VALUES
-> ('Joako', '1234', 'Admin'),
-> ('Emanuel', '1234', 'Admin'),
-> ('Paulo', '1234', 'Admin'),
-> ('Benjamin', '1234', 'Admin');
-> ```
 
 ---
 
