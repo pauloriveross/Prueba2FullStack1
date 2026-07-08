@@ -253,25 +253,35 @@ Prueba2FullStack1/
 
 **Ejecución de Docker** — *haz clic en la imagen para ver el video*
 
-[![Ejecución de Docker](https://img.youtube.com/vi/xwyWpW9PQ7g/0.jpg)](https://youtu.be/xwyWpW9PQ7g)
+<p align="center">
+  <a href="https://youtu.be/xwyWpW9PQ7g"><img src="https://img.youtube.com/vi/xwyWpW9PQ7g/0.jpg" alt="Ejecución de Docker"></a>
+</p>
 
 **Pruebas Postman Docker Local** — *haz clic en la imagen para ver el video*
 
-[![Pruebas Postman Docker Local](https://img.youtube.com/vi/NP3r050X_XQ/0.jpg)](https://youtu.be/NP3r050X_XQ)
+<p align="center">
+  <a href="https://youtu.be/NP3r050X_XQ"><img src="https://img.youtube.com/vi/NP3r050X_XQ/0.jpg" alt="Pruebas Postman Docker Local"></a>
+</p>
 
 ### Remoto
 
 **DBeaver — Muestra de Datos, Eliminar y Actualizar Venta** — *haz clic en la imagen para ver el video*
 
-[![DBeaver — Muestra de Datos, Eliminar y Actualizar Venta](https://img.youtube.com/vi/ULZQnanBPeo/0.jpg)](https://youtu.be/ULZQnanBPeo)
+<p align="center">
+  <a href="https://youtu.be/ULZQnanBPeo"><img src="https://img.youtube.com/vi/ULZQnanBPeo/0.jpg" alt="DBeaver — Muestra de Datos, Eliminar y Actualizar Venta"></a>
+</p>
 
 **Pruebas Render en Postman con URL de Gateway** — *haz clic en la imagen para ver el video*
 
-[![Pruebas Render en Postman con URL de Gateway](https://img.youtube.com/vi/ebAsaBwxM-c/0.jpg)](https://youtu.be/ebAsaBwxM-c)
+<p align="center">
+  <a href="https://youtu.be/ebAsaBwxM-c"><img src="https://img.youtube.com/vi/ebAsaBwxM-c/0.jpg" alt="Pruebas Render en Postman con URL de Gateway"></a>
+</p>
 
 **Render Aiven Dashboard** — *haz clic en la imagen para ver el video*
 
-[![Render Aiven Dashboard](https://img.youtube.com/vi/Phzl1fQQ60M/0.jpg)](https://youtu.be/Phzl1fQQ60M)
+<p align="center">
+  <a href="https://youtu.be/Phzl1fQQ60M"><img src="https://img.youtube.com/vi/Phzl1fQQ60M/0.jpg" alt="Render Aiven Dashboard"></a>
+</p>
 
 ---
 
