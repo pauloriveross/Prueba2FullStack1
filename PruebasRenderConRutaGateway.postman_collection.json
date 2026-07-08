@@ -1,0 +1,498 @@
+{
+  "info": {
+    "_postman_id": "b352f82a-f5ac-47a9-9bf1-2c451b88f7c0",
+    "name": "PruebasRenderConRutaGateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53339950",
+    "_collection_link": "https://go.postman.co/collection/53339950-b352f82a-f5ac-47a9-9bf1-2c451b88f7c0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar Mantenciones",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzgyMjcyOTk3LCJleHAiOjE3ODIyNzY1OTd9.KWEMAAOVvL5ZYM6CZyZ2BDGOQ8oqKSRpQ0kuZsJFuHk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin1234\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/mantenciones/listar",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "mantenciones",
+            "listar"
+          ]
+        },
+        "description": "Listar Todas Las Mantenciones\n"
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Vendedor que no existe",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/vendedores/20",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "vendedores",
+            "20"
+          ]
+        },
+        "description": "Buscar vendedor no existente"
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Vendedor",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/vendedores/2",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "vendedores",
+            "2"
+          ]
+        },
+        "description": "Eliminar vendedores"
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Mecanico",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"rutMecanico\":\"20.162.535-1\",\n    \"nombreMecanico\":\"Sohyun\",\n    \"apellidoMecanico\":\"Park\",\n    \"sueldoBaseMecanico\":650000\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/mecanicos",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "mecanicos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Seguros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/seguros",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "seguros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Ventas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/ventas",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "ventas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Test Drive Con Cliente Inexistente",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0gic}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"fechaTestDrive\":\"2026-10-10\",\n   \"idCliente\":20,\n   \"idVehiculo\":1,\n   \"idVendedor\":1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/testdrives",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "testdrives"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test Drive Valido",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0gic}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n   \"fechaTestDrive\":\"2026-10-10\",\n   \"idCliente\":4,\n   \"idVehiculo\":1,\n   \"idVendedor\":3\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/testdrives",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "testdrives"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Corredores",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/corredores/listar",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "corredores",
+            "listar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Seguro ",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{auth_secret_0gic}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"precioSeguro\":120000,\n  \"tipoSeguro\":\"Automotriz\",\n  \"idCliente\":9,\n  \"idVehiculo\":8,\n  \"idCorredorSeguro\":2,\n  \"comisionSeguro\":40000\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/seguros",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "seguros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Venta",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzgyMzYxMTUzLCJleHAiOjE3ODIzNjQ3NTN9.82IQy5QsYamt_OQRK8VQZZ1i_dVBkgAAsQTuCAqCoTI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"fechaVenta\":\"2026-10-10\",\n    \"tipoPago\":\"Efectivo\",\n    \"idCliente\":1,\n    \"idVehiculo\":4,\n    \"idVendedor\":6\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/ventas",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "ventas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Agregar Mantencion",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbCI6ImFkbWluIiwiaWF0IjoxNzgyMzYxMTUzLCJleHAiOjE3ODIzNjQ3NTN9.82IQy5QsYamt_OQRK8VQZZ1i_dVBkgAAsQTuCAqCoTI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"fechaMantencion\":\"2026-10-09\",\n    \"precioMantencion\":55000,\n    \"tipoMantencion\":\"Cambio Aceite\",\n    \"idVehiculo\":3,\n    \"idMecanico\":1,\n    \"idCliente\":1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/mantenciones",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "mantenciones"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Seguro",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/seguros/3",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "seguros",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar TestDrives",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/testdrives/12",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "testdrives",
+            "12"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Venta",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://automotora-gateway-service.onrender.com/api/v1/ventas/11",
+          "protocol": "https",
+          "host": [
+            "automotora-gateway-service",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "ventas",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_secret_0gic",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_04th",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_04th",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_04th",
+      "secret": true
+    }
+  ]
+}

@@ -11,3 +11,6 @@ target/
 *.iml
 .vscode/
 .DS_Store
+target/
+*.jar
+*.original
