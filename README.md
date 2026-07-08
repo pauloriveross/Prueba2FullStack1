@@ -22,7 +22,7 @@
 
 ## 📖 Sobre el Proyecto
 
-Sistema backend para Automotoras que busquen modernizar sus sistemas, construido con **13 microservicios** en **Spring Boot 4.0.6** y **Spring Cloud 2025.0.1**. Utiliza **Eureka** para descubrimiento de servicios, **Spring Cloud Gateway** como API Gateway, **JWT** para autenticación, y base de datos **H2 en modo MySQL** (cada microservicio con su propia BD independiente).
+Sistema backend para Automotoras que busquen modernizar sus sistemas, construido con **13 microservicios** en **Spring Boot 4.0.6** y **Spring Cloud 2025.0.1**. Utiliza **Eureka** para descubrimiento de servicios, **Spring Cloud Gateway** como API Gateway, **JWT** para autenticación, y base de datos **MySQL** en la nube vía **Aiven** (cada microservicio con su propia BD independiente).
 
 Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
 
@@ -45,6 +45,19 @@ Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
 | 11 | **seguro** | `8090` | `seguros` | Seguros vehiculares |
 | 12 | **corredorSeguro** | `8091` | `corredorseguros` | Corredores de seguros |
 | 13 | **personalaseo** | `8088` | `personalaseo` | Personal de limpieza |
+
+---
+
+## 🧪 Pruebas con Postman
+
+En la raíz del proyecto hay dos colecciones Postman en formato JSON listas para importar y probar todos los endpoints:
+
+| Archivo | Propósito |
+|---|---|
+| `PruebaLocalDocker.postman_collection.json` | Pruebas del ecosistema completo **en local con Docker** |
+| `PruebasRenderConRutaGateway.postman_collection.json` | Pruebas contra los servicios **desplegados en Render** vía Gateway |
+
+**Importar en Postman:** `File > Import` → seleccionar el archivo `.json` → las requests aparecerán organizadas con autenticación JWT incluida.
 
 ---
 
@@ -229,6 +242,26 @@ Prueba2FullStack1/
 | Joaquin Fuenzalida |
 | Paulo Riveros |
 | Benjamin Vargas |
+
+---
+
+## 🎥 Evidencia de Pruebas
+
+### Local
+
+![Eureka Discovery](Eureka_Image.png)
+
+[![Ejecución de Docker](https://img.youtube.com/vi/xwyWpW9PQ7g/0.jpg)](https://youtu.be/xwyWpW9PQ7g)
+
+[![Pruebas Postman Docker Local](https://img.youtube.com/vi/NP3r050X_XQ/0.jpg)](https://youtu.be/NP3r050X_XQ)
+
+### Remoto
+
+[![DBeaver — Muestra de Datos, Eliminar y Actualizar Venta](https://img.youtube.com/vi/ULZQnanBPeo/0.jpg)](https://youtu.be/ULZQnanBPeo)
+
+[![Pruebas Render en Postman con URL de Gateway](https://img.youtube.com/vi/ebAsaBwxM-c/0.jpg)](https://youtu.be/ebAsaBwxM-c)
+
+[![Render Aiven Dashboard](https://img.youtube.com/vi/Phzl1fQQ60M/0.jpg)](https://youtu.be/Phzl1fQQ60M)
 
 ---
 
