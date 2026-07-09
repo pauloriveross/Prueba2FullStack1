@@ -256,8 +256,12 @@ Prueba2FullStack1/
 
 ###  Render Desactivo Los Blueprint Por Usar Toda La Instancia Del Plan Free
 
-![Render Dashboard](https://github.com/user-attachments/assets/689b260d-5546-4649-baf9-252317b86b03)
-(https://github.com/user-attachments/assets/b01e8b7d-b3d3-4b70-aa2e-d6a6675e10e5)
+![Render Dashboard 1](https://github.com/user-attachments/assets/6aa757e4-147c-4e8a-b90c-9dd328c6185e)
+
+![Render Dashboard 2](https://github.com/user-attachments/assets/689b260d-5546-4649-baf9-252317b86b03)
+
+![Render Dashboard 3](https://github.com/user-attachments/assets/b01e8b7d-b3d3-4b70-aa2e-d6a6675e10e5)
+
 
 
 
