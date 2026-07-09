@@ -253,6 +253,15 @@ Prueba2FullStack1/
 
 ![Eureka Discovery](Eureka_Image.png)
 
+
+###  Render Desactivo Los Blueprint Por Usar Toda La Instancia Del Plan Free
+
+![Render Dashboard](https://github.com/user-attachments/assets/689b260d-5546-4649-baf9-252317b86b03)
+(https://github.com/user-attachments/assets/b01e8b7d-b3d3-4b70-aa2e-d6a6675e10e5)
+
+
+
+
 **Ejecución de Docker** — *haz clic en la imagen para ver el video*
 
 <p align="center">
