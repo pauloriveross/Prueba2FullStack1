@@ -254,15 +254,6 @@ Prueba2FullStack1/
 ![Eureka Discovery](Eureka_Image.png)
 
 
-###  Render Desactivo Los Blueprint Por Usar Toda La Instancia Del Plan Free
-
-![Render Dashboard 1](https://github.com/user-attachments/assets/6aa757e4-147c-4e8a-b90c-9dd328c6185e)
-
-### Correo De Render Indicando Que Se Llego Al Limite Del Plan Free
-![Correo De Gmail](https://github.com/user-attachments/assets/c7a8c403-bb60-4d60-b220-ec33a975f628)
-
-
-
 **Ejecución de Docker** — *haz clic en la imagen para ver el video*
 
 <p align="center">
@@ -294,6 +285,13 @@ Prueba2FullStack1/
 <p align="center">
   <a href="https://youtu.be/Phzl1fQQ60M"><img src="https://img.youtube.com/vi/Phzl1fQQ60M/0.jpg" alt="Render Aiven Dashboard"></a>
 </p>
+
+###  Render Desactivo Los Blueprint Por Usar Toda La Instancia Del Plan Free
+
+![Render Dashboard 1](https://github.com/user-attachments/assets/6aa757e4-147c-4e8a-b90c-9dd328c6185e)
+
+### Correo De Render Indicando Que Se Llego Al Limite Del Plan Free
+![Correo De Gmail](https://github.com/user-attachments/assets/c7a8c403-bb60-4d60-b220-ec33a975f628)
 
 ---
 
