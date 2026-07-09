@@ -24,7 +24,7 @@
 
 Sistema backend para Automotoras que busquen modernizar sus sistemas, construido con **13 microservicios** en **Spring Boot 4.0.6** y **Spring Cloud 2025.0.1**. Utiliza **Eureka** para descubrimiento de servicios, **Spring Cloud Gateway** como API Gateway, **JWT** para autenticación, y base de datos **MySQL** en la nube vía **Aiven** (cada microservicio con su propia BD independiente).
 
-Proyecto evaluativo número 3 para la asignatura de **FullStack 1** — Duoc UC.
+Proyecto evaluativo  para la asignatura de **FullStack I** — Duoc UC.
 
 ---
 
@@ -55,7 +55,7 @@ En la raíz del proyecto hay dos colecciones Postman en formato JSON listas para
 | Archivo | Propósito |
 |---|---|
 | `PruebaLocalDocker.postman_collection.json` | Pruebas del ecosistema completo **en local con Docker** |
-| `PruebasRenderConRutaGateway.postman_collection.json` | Pruebas contra los servicios **desplegados en Render** vía Gateway |
+| `PruebasRenderConRutaGateway.postman_collection.json` | Pruebas de los servicios **desplegados en Render** vía Gateway |
 
 **Importar en Postman:** `File > Import` → seleccionar el archivo `.json` → las requests aparecerán organizadas con autenticación JWT incluida.
 
@@ -230,6 +230,8 @@ Prueba2FullStack1/
 ├── pom.xml
 ├── render.yaml
 └── README.md
+└── PruebaLocalDocker.postman_collection.json
+└── PruebasRenderConRutaGateway.postman_collection.json
 ```
 
 ---
@@ -247,7 +249,7 @@ Prueba2FullStack1/
 
 ## 🎥 Evidencia de Pruebas
 
-### Local
+###  Eureka Local
 
 ![Eureka Discovery](Eureka_Image.png)
 
@@ -287,6 +289,6 @@ Prueba2FullStack1/
 
 <div align="center">
 
-**Duoc UC — FullStack 1 — 2026**
+**Duoc UC — FullStack I — 2026**
 
 </div>
